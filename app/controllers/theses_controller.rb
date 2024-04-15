@@ -5,6 +5,6 @@ class ThesesController < ApplicationController
   end
 
   def show
-    super("thesis/#{params["id"]}")
+    super("thesis/#{params["id"]}", -> (val) { Nokogiri::XML(val) })
   end
 end

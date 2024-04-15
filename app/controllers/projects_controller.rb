@@ -5,6 +5,6 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    super("pdb/rest/project/v3/#{params["id"]}")
+    super("pdb/rest/project/v3/#{params["id"]}", -> (val) { Nokogiri::XML(val) })
   end
 end

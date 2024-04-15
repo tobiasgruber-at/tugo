@@ -1,6 +1,12 @@
-<h1>Results:</h1>
-<ul>
-  <% @resources["results"].each do |result| %>
-    <li><%= result["title"] %></li>
-  <% end %>
-</ul>
+<% if @error %>
+ <h1>Error: <%= @error %></h1>
+<% else %>
+  <h1>Results:</h1>
+  <ul>
+    <% @resources["results"].each do |result| %>
+      <li>
+        <%= result["title"] %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>

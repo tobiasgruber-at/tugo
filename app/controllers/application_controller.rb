@@ -15,15 +15,25 @@ class ApplicationController < ActionController::Base
 
   def index(endpoint = "")
     @term = params["term"]
+    termModel = SearchTerm.new(query: @term)
+    unless termModel.valid?
+      @error = "Term #{termModel.errors.messages[:query][0]}"
+      return
+    end
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     @resources = JSON.parse(response)
+    if @resources['error_message']
+      @error = @resources['error_message']
+    end
+    puts @resources
   end
 
-  def show(endpoint = "")
+  def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
-    @resource = JSON.parse(response)
+    @resource = parser.call(response)
+    puts @resource
   end
 
 end

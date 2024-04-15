@@ -1,9 +1,13 @@
-<h1>Results for '<%= @term %>':</h1>
+<% if @error %>
+ <h1>Error: <%= @error %></h1>
+<% else %>
+  <h1>Results for '<%= @term %>':</h1>
 
-<ul>
-  <% @resources["results"].each do |result| %>
-    <li>
-      <%= link_to result["title"], result["id"] %>
-    </li>
-  <% end %>
-</ul>
+  <ul>
+    <% @resources["results"].each do |result| %>
+      <li>
+        <%= link_to result["title"], project_path(result["id"]) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
