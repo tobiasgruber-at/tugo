@@ -1,0 +1,9 @@
+<h1>Results for '<%= @resources["query"] %>':</h1>
+
+<ul>
+  <% @resources["results"].each do |resource| %>
+    <li>
+      <%= resource["first_name"] %> <%= resource["last_name"] %>
+    </li>
+  <% end %>
+</ul>

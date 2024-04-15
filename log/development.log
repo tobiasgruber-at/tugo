@@ -1,0 +1,612 @@
+Started GET "/" for 127.0.0.1 at 2024-04-15 13:41:39 +0200
+  [1m[35m (28.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.4ms | Allocations: 374)
+Completed 200 OK in 130ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 8778)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 13:42:16 +0200
+  
+ArgumentError (Route path not specified):
+  
+config/routes.rb:2:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-04-15 14:08:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.7ms | Allocations: 374)
+Completed 200 OK in 48ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4940)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 14:08:47 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.1ms | Allocations: 13)
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 222)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 14:15:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 374)
+Completed 200 OK in 38ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 4940)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:15:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/people/show/286328"):
+  
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:15:56 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+Completed 500 Internal Server Error in 712ms (ActiveRecord: 0.0ms | Allocations: 1975)
+
+
+  
+NoMethodError (undefined method `show' for an instance of String):
+  
+app/controllers/people_controller.rb:9:in `show'
+Started POST "/__web_console/repl_sessions/99795f7ac602942923d76748dc6b86e4/trace" for 127.0.0.1 at 2024-04-15 14:16:15 +0200
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:17:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 379.6ms | Allocations: 88950)
+Completed 500 Internal Server Error in 910ms (ActiveRecord: 0.0ms | Allocations: 90863)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/Programmieren/tu-go/tmp/cache/assets/sprockets/v4.0.0/QR/QRMi2AT8kPzzcla7FH8QTJasXMag_C6TBbTHWjnNJyc.cache.35340.10220.231982, D:/Programmieren/tu-go/tmp/cache/assets/sprockets/v4.0.0/QR/QRMi2AT8kPzzcla7FH8QTJasXMag_C6TBbTHWjnNJyc.cache)):
+  
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.1) lib/sprockets/loader.rb:265:in `store_asset'
+sprockets (4.2.1) lib/sprockets/loader.rb:228:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+<internal:kernel>:187:in `loop'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:18:39 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 97)
+  Rendered layout layouts/application.html.erb (Duration: 83.3ms | Allocations: 30052)
+Completed 200 OK in 681ms (Views: 96.6ms | ActiveRecord: 0.0ms | Allocations: 31965)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:19:48 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 103.2ms | Allocations: 18265)
+Completed 200 OK in 641ms (Views: 107.7ms | ActiveRecord: 0.0ms | Allocations: 20178)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:20:06 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 15401)
+Completed 200 OK in 587ms (Views: 44.9ms | ActiveRecord: 0.0ms | Allocations: 17317)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:20:48 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 15385)
+Completed 200 OK in 909ms (Views: 66.2ms | ActiveRecord: 0.0ms | Allocations: 17301)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:22:00 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 15449)
+Completed 200 OK in 628ms (Views: 48.0ms | ActiveRecord: 0.0ms | Allocations: 17362)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:23:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+Completed 500 Internal Server Error in 594ms (ActiveRecord: 0.0ms | Allocations: 2869)
+
+
+  
+JSON::ParserError (unexpected token at '<!DOCTYPE html>
+<html>
+<head>
+  <title>TISS - TU Wien Informations-Systeme &amp; Services | TU Wien</title>
+  <link rel="apple-touch-icon" type="image/png" href="/static/2.5.2/global/images/mobile/apple-touch-icon.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57" href="/static/2.5.2/global/images/mobile/apple-touch-icon-57x57.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="72x72" href="/static/2.5.2/global/images/mobile/apple-touch-icon-72x72.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="/static/2.5.2/global/images/mobile/apple-touch-icon-76x76.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114" href="/static/2.5.2/global/images/mobile/apple-touch-icon-114x114.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="120x120" href="/static/2.5.2/global/images/mobile/apple-touch-icon-120x120.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="144x144" href="/static/2.5.2/global/images/mobile/apple-touch-icon-144x144.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="152x152" href="/static/2.5.2/global/images/mobile/apple-touch-icon-152x152.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="/static/2.5.2/global/images/mobile/apple-touch-icon-167x167.png"  />
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/static/2.5.2/global/images/mobile/apple-touch-icon-180x180.png"  />
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/icons/favicon.ico" />
+
+
+
+  
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/primefaces.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/reset.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/basic.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/content.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/widgets.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/jquery.ui.multiSelectList.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/jquery.ui.tissAccordion.css" />
+  <link rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/statusMessage.css" />
+<link id="mobileCSS" rel="stylesheet" media="screen" type="text/css" href="/static/2.5.2/global/css/mobile.css" />
+
+<link rel="stylesheet" media="screen" href="/assets/application-5c967972c53ee3772fc55f8cc28a99b010c2e6d23a85af13170a0761088a840d.css" data-turbo-track="reload" />
+<link rel="stylesheet" media="screen" href="/assets/components-3698f10359890ebdc6df62bdbccdf2527e105c88b29861f9bb7d4503ae09afde.css" data-turbo-track="reload" />
+<link rel="stylesheet" media="print" type="text/css" href="/static/2.5.2/global/css/print.css" />
+
+
+<script src="/assets/application_old-b4c55fed69d9e4560bcca046f9718b726d498ac654c7f1bc987980ec210f1471.js"></script>
+<script src="/assets/application-5acd88df29acbbdaf98d5d780fb7761b35dfd8c3abc7a71cfd9fd72f9d29872e.js"></script>
+
+  <script type="text/javascript" src="/static/2.5.2/global/js/statusMessage.js"></script>
+  <script type="text/javascript" src="/static/2.5.2/global/js/jquery.ui.tissAccordion.js"></script>
+  <script type="text/javascript" src="/static/2.5.2/global/js/mobile.js"></script>
+
+
+<script>
+//<![CDATA[
+
+  I18n.defaultLocale = "de";
+  I18n.locale = "de";
+  I18n.fallbacks = true;
+
+//]]>
+</script><meta id="desktopMeta" name="viewport" content="width=device-width, minimum-scale=0.25, maximum-scale=2.5, user-scalable=yes" />
+
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="robots" content="noindex" />
+  <link rel="search" type="application/opensearchdescription+xml" title="TISS Suche" href="/addons/tiss_schnellsuche.xml" />
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="V-QgPjrmpidUnqxI0upN5_C_CTXsLuSs0q-bQ4ZpAeMP_M-8fjnobpHAfMk9wZ7K7Jxa8rFKp3QU4xLeycZ8Xg" />
+  
+  <meta name="action-cable-url" content="/cable" />
+</head>
+<body class="lehre fehler de"  data-rtiss-controller="fehler" data-rtiss-action="route_not_found">
+  
+  <div id="glow_left"></div>
+  <div id="glow_right"></div>
+  <div id="wrapper">
+    <div id="header">
+    <div id="headerInnerWrapper">
+        <div id="headerInner">
+            <div id="headerLeft">
+                <div id="headerLeftInside">
+                    <div id="logo">
+                        <h1><a href="/"></a></h1>
+                    </div>
+                </div>
+            </div>
+            <div id="headerCenter">
+                <div id="headerCenterInside">
+                    <div id="paperHead">
+                      <form id="toolNavForm" name="toolNavForm" method="post" action="/nightly/core/login.jsf" enctype="application/x-www-form-urlencoded">
+  <ul class="clearfix toolNav">
+    <li>
+      <span id="toolNavForm:username" class="toolHome"><a href="/"></a></span>
+    </li>
+    <li>
+      <span id="toolNavFormLang">
+                                <a href="/api/api/person/v22/id/286328?locale=en">English</a>
+      </span>
+      </li>
+      <li>
+      <span><a href="/hilfe" target="_blank" title="
+Hotkey: &lt;CTRL+F1&gt;" data-rtiss-on-click-hotkey="Ctrl+F1 -///-/hilfe">Hilfe</a></span>
+    </li>
+    <li id="hotkey_button">
+      <span><a href="#">Hotkeys</a></span>
+      <div class="hotkeytext" id="hotkey_info">
+        <table class="standard">
+          <tr>
+          <td class="funktion">Hilfe</td>
+          <td class="hotkey">Strg+F1</td>
+          </tr>
+        </table>
+      </div>
+    </li>
+    <li class="rightAlign">
+    <span>
+                  <a class="toolLogin" href="/admin/authentifizierung">Login</a>
+
+
+    </span>
+    </li>
+  </ul>
+</form>
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="headerRight">
+                <div id="tuLogo"><a href="https://www.tuwien.ac.at"></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="contentWrapper">
+      <div id="supNav">
+  <div id="supNavHeaderWrapper">
+    <div id="supNavHeader">
+      <div id="supNavHeaderStroke"></div>
+      <div id="supNavHeading"></div>
+    </div>
+    <div id="shadow_top"></div>
+  </div>
+  <div id="supNavBody">
+
+    <ul>
+  <li id="menuItem_1300" class="">
+        <span><a id="menuAnchor_1300" class="supNavMenuHeader" href="/course/courseList.xhtml">Lehrangebot</a></span>
+        <ul class="linkBlock">
+          <li id="menuItem_1301" class="">
+            <span><a id="menuAnchor_1301" class="supNavMenuHeader" href="/course/courseList.xhtml">Lehrveranstaltungen</a></span>
+          </li>
+          <li id="menuItem_1302" class="">
+            <span><a id="menuAnchor_1302" class="supNavMenuHeader" href="/curriculum/studyCodes.xhtml">Studienangebot</a></span>
+          </li>
+          <li id="menuItem_2364" class="">
+            <span><a id="menuAnchor_2364" class="supNavMenuHeader" href="/thesis/theses.xhtml">Abschlussarbeiten</a></span>
+          </li>
+        </ul>
+      </li>
+  <li id="menuItem_3252" class="">
+        <span><a id="menuAnchor_3252" class="supNavMenuHeader" href="/aufnahme/aufnahmeverfahren">Studienbewerbung</a></span>
+      </li>
+  <li id="menuItem_1940" class="">
+        <span><a id="menuAnchor_1940" class="supNavMenuHeader" href="/mobility/mobs.xhtml">Mobility Services</a></span>
+      </li>
+  <li id="menuItem_3953" class="">
+        <span><a id="menuAnchor_3953" class="supNavMenuHeader" href="/events/roomTuLearn.xhtml">roomTUlearn</a></span>
+      </li>
+  <li id="menuItem_1314" class="">
+        <span><a id="menuAnchor_1314" class="supNavMenuHeader" href="/events/selectRoom.xhtml">Raumverwaltung</a></span>
+        <ul class="linkBlock">
+          <li id="menuItem_1315" class="">
+            <span><a id="menuAnchor_1315" class="supNavMenuHeader" href="/events/selectRoom.xhtml">Belegungsplan</a></span>
+          </li>
+        </ul>
+      </li>
+  <li id="menuItem_4032" class="">
+        <span><a id="menuAnchor_4032" class="supNavMenuHeader" href="https://www.tuwien.at/studium/student-support">Unterstützungsangebote für Studierende</a></span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+      <div id="mainNav">
+    <div>
+      <a id="lehreLink" href="/curriculum/studyCodes.xhtml">Lehre</a>
+      <a id="forschungLink" href="/fpl/">Forschung</a>
+      <a id="organisationLink" href="/">Organisation</a>
+    </div>
+</div>
+
+      <div id="content">
+        <div id="contentInnerWrapper" class="clearfix">
+          <div id="contentInner">
+              <h1>TISS - TU Wien Informations-Systeme & Services</h1>
+              <div id="subHeader">
+                <br>
+              </div>
+            <ul id="globalMessagesPanel">
+</ul>
+
+            <div class="block">
+  
+</div>
+<div class="block">
+  <div id="globalMessagesPanel">
+    <ul id="globalMessages">
+      <li class="errorMessage">
+        Es ist ein Fehler aufgetreten. Die von Ihnen angeforderte URL ist ungültig!
+      </li>
+    </ul>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+  <div id="footerContent">
+    <div id="footer-left"></div>
+    <div id="footer-right"></div>
+    <div id="pageEnd"></div>
+  </div>
+  <div id="footerShadow">
+    <div id="footerShadow-left"></div>
+    <div id="footerShadow-right"></div>
+    <div id="baseLinks">
+      <a href="/hilfe/zu/tiss/support" target="_blank">Support</a>
+      |
+      <a href="https://www.it.tuwien.ac.at/regelungen/" target="_blank">Policies</a>
+      |
+      <a href="/ueber_tiss/impressum">Impressum</a>
+      |
+      <a href="/ueber_tiss/datenschutz">Datenschutz</a>
+    </div>
+    <div id="legalInfo">
+      Technische Universität Wien - Karlsplatz 13 | 1040 Wien, Österreich | Tel. +43-1-58801-0 | Fax +43-1-58801-41088
+    </div>
+    
+  </div>
+</div>
+
+  </div>
+  <script type="text/javascript">
+    
+  </script>
+</body>
+</html>
+'):
+  
+app/controllers/application_controller.rb:16:in `show'
+app/controllers/people_controller.rb:9:in `show'
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:24:58 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 192)
+  Rendered layout layouts/application.html.erb (Duration: 95.4ms | Allocations: 34966)
+Completed 200 OK in 847ms (Views: 100.4ms | ActiveRecord: 0.0ms | Allocations: 37180)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:25:35 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1055)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1145)
+Completed 500 Internal Server Error in 744ms (ActiveRecord: 0.0ms | Allocations: 3124)
+
+
+  
+ActionView::Template::Error (undefined method `name' for an instance of Hash):
+    1: <%= @resource.name %>
+  
+app/views/people/show.html.erb:1
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:25:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.0ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 44.0ms | Allocations: 15458)
+Completed 200 OK in 713ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 17453)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:26:03 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 15434)
+Completed 200 OK in 745ms (Views: 38.2ms | ActiveRecord: 0.0ms | Allocations: 17379)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:27:29 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 36.3ms | Allocations: 15469)
+Completed 200 OK in 741ms (Views: 41.7ms | ActiveRecord: 0.0ms | Allocations: 17461)
+
+
+Started GET "/people/show/286328" for 127.0.0.1 at 2024-04-15 14:39:31 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 226)
+  Rendered layout layouts/application.html.erb (Duration: 148.0ms | Allocations: 36540)
+Completed 200 OK in 1212ms (Views: 183.9ms | ActiveRecord: 0.0ms | Allocations: 42815)
+
+
+Started GET "/people/index" for 127.0.0.1 at 2024-04-15 14:40:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/people/index"):
+  
+Started GET "/people" for 127.0.0.1 at 2024-04-15 14:40:41 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1203)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1293)
+Completed 500 Internal Server Error in 906ms (ActiveRecord: 0.0ms | Allocations: 3248)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    3: <ul>
+    4:   <% @resources.each do |resource| %>
+    5:     <li>
+    6:       <%= resource["first_name"] %> <%= resource["last_name"] %>
+    7:     </li>
+    8:   <% end %>
+    9: </ul>
+  
+app/views/people/index.html.erb:6:in `[]'
+app/views/people/index.html.erb:6
+app/views/people/index.html.erb:4:in `each'
+app/views/people/index.html.erb:4
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:45:14 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1121)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 1211)
+Completed 500 Internal Server Error in 3524ms (ActiveRecord: 0.0ms | Allocations: 4517)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    3: <ul>
+    4:   <% @resources.each do |resource| %>
+    5:     <li>
+    6:       <%= resource["first_name"] %> <%= resource["last_name"] %>
+    7:     </li>
+    8:   <% end %>
+    9: </ul>
+  
+app/views/people/index.html.erb:6:in `[]'
+app/views/people/index.html.erb:6
+app/views/people/index.html.erb:4:in `each'
+app/views/people/index.html.erb:4
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:45:54 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1634)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1758)
+Completed 500 Internal Server Error in 3703ms (ActiveRecord: 0.0ms | Allocations: 9351)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    3: <ul>
+    4:   <% @resources.each do |resource| %>
+    5:     <li>
+    6:       <%= resource["first_name"] %> <%= resource["last_name"] %>
+    7:     </li>
+    8:   <% end %>
+    9: </ul>
+  
+app/views/people/index.html.erb:6:in `[]'
+app/views/people/index.html.erb:6
+app/views/people/index.html.erb:4:in `each'
+app/views/people/index.html.erb:4
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:46:58 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 4507)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4597)
+Completed 500 Internal Server Error in 4327ms (ActiveRecord: 0.0ms | Allocations: 7889)
+
+
+  
+ActionView::Template::Error (no implicit conversion of String into Integer):
+    4:   <%= @resources %>
+    5:   <% @resources.each do |resource| %>
+    6:     <li>
+    7:       <%= resource["first_name"] %> <%= resource["last_name"] %>
+    8:     </li>
+    9:   <% end %>
+   10: </ul>
+  
+app/views/people/index.html.erb:7:in `[]'
+app/views/people/index.html.erb:7
+app/views/people/index.html.erb:5:in `each'
+app/views/people/index.html.erb:5
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:47:26 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 3490)
+  Rendered layout layouts/application.html.erb (Duration: 99.4ms | Allocations: 38372)
+Completed 200 OK in 3753ms (Views: 105.6ms | ActiveRecord: 0.0ms | Allocations: 41723)
+
+
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:47:57 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 286)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 15607)
+Completed 200 OK in 3760ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 18921)
+
+
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:48:57 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 15653)
+Completed 200 OK in 3418ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 18966)
+
+
+Started GET "/people/search/max" for 127.0.0.1 at 2024-04-15 14:49:11 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 311)
+  Rendered layout layouts/application.html.erb (Duration: 27.8ms | Allocations: 15659)
+Completed 200 OK in 4066ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 19011)
+
+
