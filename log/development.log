@@ -7250,3 +7250,3537 @@ Processing by CoursesController#index as HTML
 Completed 200 OK in 580ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3812)
 
 
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:34:32 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 944)
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:34:33 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendered layout layouts/application.html.erb (Duration: 443.2ms | Allocations: 59829)
+Completed 200 OK in 1078ms (Views: 453.0ms | ActiveRecord: 0.0ms | Allocations: 67299)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 2612)
+Completed 200 OK in 613ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 46725)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 21:34:34 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.8ms | Allocations: 272)
+Completed 200 OK in 9ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 1016)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:34:51 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 12335)
+Completed 200 OK in 680ms (Views: 92.9ms | ActiveRecord: 0.0ms | Allocations: 13722)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:34:57 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 94.6ms | Allocations: 12341)
+Completed 200 OK in 670ms (Views: 96.5ms | ActiveRecord: 0.0ms | Allocations: 13738)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:35:14 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 12358)
+Completed 200 OK in 611ms (Views: 58.4ms | ActiveRecord: 0.0ms | Allocations: 13745)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:35:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 54.2ms | Allocations: 12354)
+Completed 200 OK in 615ms (Views: 55.3ms | ActiveRecord: 0.0ms | Allocations: 13749)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:36:03 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 51.4ms | Allocations: 12365)
+Completed 200 OK in 654ms (Views: 52.3ms | ActiveRecord: 0.0ms | Allocations: 13765)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:36:09 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2618)
+Completed 200 OK in 595ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4007)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:36:24 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 95.2ms | Allocations: 12352)
+Completed 200 OK in 895ms (Views: 96.9ms | ActiveRecord: 0.0ms | Allocations: 13749)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:37:14 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 831)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 17001)
+Completed 200 OK in 649ms (Views: 44.7ms | ActiveRecord: 0.0ms | Allocations: 19773)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:37:23 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 12343)
+Completed 200 OK in 989ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 13739)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:37:27 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 54.0ms | Allocations: 12395)
+Completed 200 OK in 602ms (Views: 54.9ms | ActiveRecord: 0.0ms | Allocations: 13782)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:37:31 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 75.0ms | Allocations: 12353)
+Completed 200 OK in 1696ms (Views: 76.0ms | ActiveRecord: 0.0ms | Allocations: 13758)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:52:29 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 111.2ms | Allocations: 14794)
+Completed 200 OK in 689ms (Views: 112.1ms | ActiveRecord: 0.0ms | Allocations: 16191)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:53:04 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 64.6ms | Allocations: 12610)
+Completed 200 OK in 1353ms (Views: 65.7ms | ActiveRecord: 0.0ms | Allocations: 14008)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:53:31 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 143.6ms | Allocations: 12589)
+Completed 200 OK in 731ms (Views: 145.5ms | ActiveRecord: 0.0ms | Allocations: 13993)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:54:10 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 831)
+  Rendered layout layouts/application.html.erb (Duration: 114.8ms | Allocations: 26977)
+Completed 200 OK in 677ms (Views: 117.2ms | ActiveRecord: 0.0ms | Allocations: 29750)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:55:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 819)
+  Rendered layout layouts/application.html.erb (Duration: 85.0ms | Allocations: 26983)
+Completed 200 OK in 658ms (Views: 87.6ms | ActiveRecord: 0.0ms | Allocations: 29760)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:00:10 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 822)
+  Rendered layout layouts/application.html.erb (Duration: 55.9ms | Allocations: 16989)
+Completed 200 OK in 711ms (Views: 63.1ms | ActiveRecord: 0.0ms | Allocations: 19762)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:00:15 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2643)
+Completed 200 OK in 1188ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4869)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:00:19 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2175)
+Completed 200 OK in 851ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3527)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:00:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2090)
+Completed 200 OK in 757ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 3411)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:01:51 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 12339)
+Completed 200 OK in 1058ms (Views: 100.0ms | ActiveRecord: 0.0ms | Allocations: 14401)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:01:54 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 2075)
+Completed 200 OK in 1629ms (Views: 29.3ms | ActiveRecord: 0.0ms | Allocations: 3438)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:01:58 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 100.6ms | Allocations: 12342)
+Completed 200 OK in 1189ms (Views: 101.7ms | ActiveRecord: 0.0ms | Allocations: 14417)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:02:03 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 57.7ms | Allocations: 12327)
+Completed 200 OK in 1350ms (Views: 58.9ms | ActiveRecord: 0.0ms | Allocations: 14397)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:02:05 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 22:02:06 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2179)
+Completed 200 OK in 654ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 4245)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2072)
+Completed 200 OK in 641ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 3402)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:02:07 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 2090)
+Completed 200 OK in 1842ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 3431)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:02:15 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:02:16 +0200
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 2424)
+Completed 200 OK in 856ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3874)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2078)
+Completed 200 OK in 755ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3413)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:02:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:02:29 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 2075)
+Completed 200 OK in 889ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 4831)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:02:30 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:02:30 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 2175)
+Completed 200 OK in 1694ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 8935)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 2105)
+Completed 200 OK in 686ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 7504)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 22:02:32 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 14.5ms | Allocations: 2145)
+Completed 200 OK in 1767ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 4026)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+Started GET "/people/295098" for 127.0.0.1 at 2024-04-15 22:02:33 +0200
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 2411)
+Completed 200 OK in 640ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 3875)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"295098"}
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:02:36 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2100)
+Completed 200 OK in 607ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3670)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 2087)
+Completed 200 OK in 3675ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 8350)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:03:28 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 67.7ms | Allocations: 12314)
+Completed 200 OK in 1311ms (Views: 68.8ms | ActiveRecord: 0.0ms | Allocations: 14370)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:03:31 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2072)
+Completed 200 OK in 742ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3382)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:03:32 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2075)
+Completed 200 OK in 636ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 3388)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:03:33 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:03:34 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2076)
+Completed 200 OK in 870ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4854)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2066)
+Completed 200 OK in 664ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 6659)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:03:35 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2072)
+Completed 200 OK in 602ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 3412)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:04:19 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2190)
+Completed 200 OK in 570ms (Views: 12.7ms | ActiveRecord: 0.0ms | Allocations: 3526)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:04:20 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2304)
+Completed 200 OK in 956ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 4362)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:04:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:04:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2084)
+Completed 200 OK in 615ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4865)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:04:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2082)
+Completed 200 OK in 731ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 8355)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2072)
+Completed 200 OK in 621ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6669)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:04:43 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 81.7ms | Allocations: 12314)
+Completed 200 OK in 1159ms (Views: 83.0ms | ActiveRecord: 0.0ms | Allocations: 14370)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:04:45 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:04:45 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2075)
+Completed 200 OK in 812ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 5079)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2075)
+Completed 200 OK in 765ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 6660)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:06:35 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 83.8ms | Allocations: 14483)
+Completed 200 OK in 1155ms (Views: 84.8ms | ActiveRecord: 0.0ms | Allocations: 16551)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:06:37 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2066)
+Completed 200 OK in 727ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3399)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:06:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2063)
+Completed 200 OK in 614ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3376)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:06:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2081)
+Completed 200 OK in 677ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3412)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:06:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2067)
+Completed 200 OK in 552ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3382)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:07:00 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 88.6ms | Allocations: 12337)
+Completed 200 OK in 1187ms (Views: 89.7ms | ActiveRecord: 0.0ms | Allocations: 14396)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:07:03 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:07:03 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2072)
+Completed 200 OK in 626ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5078)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2069)
+Completed 200 OK in 659ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 6643)
+
+
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:07:06 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+Started GET "/people/324954" for 127.0.0.1 at 2024-04-15 22:07:06 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"324954"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2079)
+Completed 200 OK in 642ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 4809)
+
+
+Started GET "/people/251862" for 127.0.0.1 at 2024-04-15 22:07:07 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"251862"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2078)
+Completed 200 OK in 683ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 8263)
+
+
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:07:07 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 2077)
+Completed 200 OK in 691ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 8342)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2082)
+Completed 200 OK in 588ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 6640)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:08:13 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 101.1ms | Allocations: 13574)
+Completed 200 OK in 1141ms (Views: 102.2ms | ActiveRecord: 0.0ms | Allocations: 15635)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:08:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2125)
+Completed 200 OK in 623ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3460)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:08:31 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 12867)
+Completed 200 OK in 2299ms (Views: 64.1ms | ActiveRecord: 0.0ms | Allocations: 14938)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:08:34 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:08:35 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 14.9ms | Allocations: 2373)
+Completed 200 OK in 1045ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 25733)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:08:36 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2259)
+Completed 200 OK in 708ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 8548)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:08:36 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2122)
+Completed 200 OK in 677ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 5124)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2142)
+Completed 200 OK in 767ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 6745)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:08:51 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 93.4ms | Allocations: 13168)
+Completed 200 OK in 2075ms (Views: 94.5ms | ActiveRecord: 0.0ms | Allocations: 15228)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:09:06 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 242)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2478)
+Completed 200 OK in 1312ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 4558)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:10:58 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 488)
+  Rendered layout layouts/application.html.erb (Duration: 96.5ms | Allocations: 27785)
+Completed 200 OK in 1239ms (Views: 99.2ms | ActiveRecord: 0.0ms | Allocations: 31242)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:11:01 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2223)
+Completed 200 OK in 715ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3603)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:11:02 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2141)
+Completed 200 OK in 791ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3452)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:11:04 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2141)
+Completed 200 OK in 655ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3451)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:11:06 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 2117)
+Completed 200 OK in 718ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 3430)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:11:32 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 484)
+  Rendered layout layouts/application.html.erb (Duration: 61.6ms | Allocations: 16717)
+Completed 200 OK in 1065ms (Views: 69.8ms | ActiveRecord: 0.0ms | Allocations: 20142)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:11:39 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:11:39 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:11:40 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.4ms | Allocations: 116)
+  Rendered layout layouts/application.html.erb (Duration: 17.5ms | Allocations: 2259)
+Completed 200 OK in 903ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 5986)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2126)
+Completed 200 OK in 624ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 8588)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2126)
+Completed 200 OK in 807ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 6793)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:18:18 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 125.6ms | Allocations: 30328)
+Completed 200 OK in 1340ms (Views: 128.2ms | ActiveRecord: 0.0ms | Allocations: 33789)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:18:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2289)
+Completed 200 OK in 678ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3685)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:18:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:18:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2201)
+Completed 200 OK in 593ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5188)
+
+
+Started GET "/people/324954" for 127.0.0.1 at 2024-04-15 22:18:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"324954"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2201)
+Completed 200 OK in 616ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 8538)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2198)
+Completed 200 OK in 778ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 6889)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:18:34 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 16761)
+Completed 200 OK in 1249ms (Views: 59.5ms | ActiveRecord: 0.0ms | Allocations: 20221)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:18:36 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:18:37 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2289)
+Completed 200 OK in 775ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 5337)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:18:37 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2189)
+Completed 200 OK in 816ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 8642)
+
+
+Started GET "/people/295098" for 127.0.0.1 at 2024-04-15 22:18:38 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"295098"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2186)
+Completed 200 OK in 856ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 8523)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2180)
+Completed 200 OK in 743ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 6865)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:18:43 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 67.7ms | Allocations: 13970)
+Completed 200 OK in 1023ms (Views: 68.7ms | ActiveRecord: 0.0ms | Allocations: 16026)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:18:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:18:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:18:46 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2554)
+Completed 200 OK in 674ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 4656)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:18:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:18:47 +0200
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 2559)
+Completed 200 OK in 1076ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 12378)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:18:47 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2303)
+Completed 200 OK in 606ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 11823)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 2201)
+Completed 200 OK in 765ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 13638)
+
+
+Started GET "/people/251862" for 127.0.0.1 at 2024-04-15 22:18:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"251862"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2204)
+Completed 200 OK in 787ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 13392)
+
+
+Started GET "/people/324954" for 127.0.0.1 at 2024-04-15 22:18:48 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"324954"}
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2526)
+Completed 200 OK in 637ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 13012)
+
+
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:18:48 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2198)
+Completed 200 OK in 880ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 13322)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2201)
+Completed 200 OK in 604ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6889)
+
+
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:18:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:18:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2192)
+Completed 200 OK in 1625ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 16304)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2193)
+Completed 200 OK in 702ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 8715)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:18:50 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2189)
+Completed 200 OK in 549ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 11889)
+
+
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:18:50 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2198)
+Completed 200 OK in 625ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 8551)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2207)
+Completed 200 OK in 760ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 6881)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:19:07 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 95.0ms | Allocations: 14016)
+Completed 200 OK in 1140ms (Views: 95.8ms | ActiveRecord: 0.0ms | Allocations: 16155)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:19:09 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 2207)
+Completed 200 OK in 1719ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 3681)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:19:18 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:19:19 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 14016)
+Completed 200 OK in 1169ms (Views: 72.1ms | ActiveRecord: 0.0ms | Allocations: 17761)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 2294)
+Completed 200 OK in 854ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 20030)
+
+
+Started GET "/people/295098" for 127.0.0.1 at 2024-04-15 22:19:20 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"295098"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:19:21 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2300)
+Completed 200 OK in 577ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 4361)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:19:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2192)
+Completed 200 OK in 596ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5159)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2195)
+Completed 200 OK in 573ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 6842)
+
+
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:19:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:19:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2199)
+Completed 200 OK in 613ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 4935)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:19:23 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2198)
+Completed 200 OK in 1711ms (Views: 21.7ms | ActiveRecord: 0.0ms | Allocations: 8280)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:19:27 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 75.3ms | Allocations: 13868)
+Completed 200 OK in 3794ms (Views: 76.4ms | ActiveRecord: 0.0ms | Allocations: 20228)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:19:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:19:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:19:29 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2796)
+Completed 200 OK in 699ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 6659)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2380)
+Completed 200 OK in 2099ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 27900)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2183)
+Completed 200 OK in 820ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 15445)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2184)
+Completed 200 OK in 516ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 15937)
+
+
+Started GET "/people/324954" for 127.0.0.1 at 2024-04-15 22:19:30 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"324954"}
+Started GET "/people/251862" for 127.0.0.1 at 2024-04-15 22:19:30 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"251862"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2192)
+Completed 200 OK in 782ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 4927)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2195)
+Completed 200 OK in 3611ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6910)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:19:56 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 90.8ms | Allocations: 15026)
+Completed 200 OK in 1083ms (Views: 91.7ms | ActiveRecord: 0.0ms | Allocations: 17093)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:19:58 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:19:58 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:19:59 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2320)
+Completed 200 OK in 707ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 6028)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2213)
+Completed 200 OK in 607ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 8583)
+
+
+Started GET "/people/251862" for 127.0.0.1 at 2024-04-15 22:19:59 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"251862"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2213)
+Completed 200 OK in 848ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 8622)
+
+
+Started GET "/people/381417" for 127.0.0.1 at 2024-04-15 22:20:00 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"381417"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2210)
+Completed 200 OK in 817ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 8658)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:20:00 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2222)
+Completed 200 OK in 699ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 8317)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:20:01 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:20:02 +0200
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 2542)
+Completed 200 OK in 1701ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 9024)
+
+
+Started GET "/people/251862" for 127.0.0.1 at 2024-04-15 22:20:02 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"251862"}
+Started GET "/people/375878" for 127.0.0.1 at 2024-04-15 22:20:02 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"375878"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2199)
+Completed 200 OK in 1732ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 11887)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2195)
+Completed 200 OK in 612ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 9366)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2193)
+Completed 200 OK in 799ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 11932)
+
+
+Started GET "/people/295098" for 127.0.0.1 at 2024-04-15 22:20:03 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"295098"}
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 22:20:04 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2215)
+Completed 200 OK in 1615ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 16738)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2195)
+Completed 200 OK in 632ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 7121)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2192)
+Completed 200 OK in 1660ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 12157)
+
+
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:20:06 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 2189)
+Completed 200 OK in 775ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 3520)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:23:13 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 481)
+  Rendered layout layouts/application.html.erb (Duration: 160.4ms | Allocations: 29482)
+Completed 200 OK in 1366ms (Views: 165.3ms | ActiveRecord: 0.0ms | Allocations: 32941)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:23:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:23:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:23:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2280)
+Completed 200 OK in 747ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 7027)
+
+
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:23:16 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2180)
+Completed 200 OK in 607ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 10318)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2180)
+Completed 200 OK in 595ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 11987)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2180)
+Completed 200 OK in 745ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 10198)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:23:25 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2195)
+Completed 200 OK in 682ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 3509)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:30:18 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 102.6ms | Allocations: 29527)
+Completed 200 OK in 1027ms (Views: 105.6ms | ActiveRecord: 0.0ms | Allocations: 32991)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:30:20 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2274)
+Completed 200 OK in 610ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3689)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:30:22 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:30:23 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2192)
+Completed 200 OK in 675ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4952)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 22:30:24 +0200
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 2541)
+Completed 200 OK in 636ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 7337)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:30:24 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2201)
+Completed 200 OK in 757ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 5192)
+
+
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 22:30:25 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 2763)
+Completed 200 OK in 819ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 8276)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2192)
+Completed 200 OK in 687ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 5006)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:30:27 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2211)
+Completed 200 OK in 595ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3548)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:31:00 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 98.9ms | Allocations: 28481)
+Completed 200 OK in 2234ms (Views: 101.3ms | ActiveRecord: 0.0ms | Allocations: 31943)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:31:05 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2310)
+Completed 200 OK in 694ms (Views: 17.8ms | ActiveRecord: 0.0ms | Allocations: 3716)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:31:57 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:31:58 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 16750)
+Completed 200 OK in 1120ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 20657)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 16394)
+Completed 200 OK in 901ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 18346)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:05 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 819)
+  Rendered layout layouts/application.html.erb (Duration: 18.7ms | Allocations: 3012)
+Completed 200 OK in 1602ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 5332)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:16 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:17 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2738)
+Completed 200 OK in 553ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 5843)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:17 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2738)
+Completed 200 OK in 549ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 9853)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2738)
+Completed 200 OK in 580ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 8127)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:19 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2753)
+Completed 200 OK in 3841ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 4142)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:24 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2729)
+Completed 200 OK in 574ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 4109)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:32:26 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2729)
+Completed 200 OK in 568ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 4111)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:32:29 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2196)
+Completed 200 OK in 606ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3513)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:32:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2187)
+Completed 200 OK in 574ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3485)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:33:04 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2199)
+Completed 200 OK in 800ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3517)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:33:08 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2198)
+Completed 200 OK in 844ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 3509)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 22:33:29 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 22:33:29 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.8ms | Allocations: 2213)
+Completed 200 OK in 588ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5162)
+
+
+Started GET "/people/295098" for 127.0.0.1 at 2024-04-15 22:33:30 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"295098"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2216)
+Completed 200 OK in 606ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 8495)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2184)
+Completed 200 OK in 691ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6868)
+
+
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 22:33:41 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 22:33:42 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 16411)
+Completed 200 OK in 1613ms (Views: 36.3ms | ActiveRecord: 0.0ms | Allocations: 18807)
+
+
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 16599)
+Completed 200 OK in 1114ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 20047)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:33:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 815)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 3027)
+Completed 200 OK in 576ms (Views: 21.1ms | ActiveRecord: 0.0ms | Allocations: 4548)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:37:39 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 824)
+  Rendered layout layouts/application.html.erb (Duration: 141.3ms | Allocations: 29081)
+Completed 200 OK in 773ms (Views: 150.4ms | ActiveRecord: 0.0ms | Allocations: 31853)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:39:33 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 84.2ms | Allocations: 14479)
+Completed 200 OK in 652ms (Views: 85.4ms | ActiveRecord: 0.0ms | Allocations: 15859)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:39:53 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 90.7ms | Allocations: 14457)
+Completed 200 OK in 1695ms (Views: 91.9ms | ActiveRecord: 0.0ms | Allocations: 15851)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:39:57 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 2729)
+Completed 200 OK in 551ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 4118)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:40:00 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2723)
+Completed 200 OK in 574ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 4102)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:40:03 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2736)
+Completed 200 OK in 541ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 4121)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 22:41:13 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 68.8ms | Allocations: 14437)
+Completed 200 OK in 626ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 15823)
+
+
+Started GET "/courses?term=testtestsetstsetsetsetssssssssssssssssssssssssssssssssssssssssss" for 127.0.0.1 at 2024-04-15 22:42:07 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"testtestsetstsetsetsetssssssssssssssssssssssssssssssssssssssssss"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 29.7ms | Allocations: 2315)
+Completed 200 OK in 531ms (Views: 35.9ms | ActiveRecord: 0.0ms | Allocations: 3338)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 23:10:19 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 823)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 17106)
+Completed 200 OK in 604ms (Views: 39.6ms | ActiveRecord: 0.0ms | Allocations: 19876)
+
+
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 23:10:22 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 516)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2710)
+Completed 200 OK in 1726ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 4218)
+
+
+Started GET "/projects/2496514" for 127.0.0.1 at 2024-04-15 23:10:27 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2496514"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 2.0ms | Allocations: 289)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2479)
+Completed 200 OK in 226ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 3683)
+
+
+Started GET "/projects/2489545" for 127.0.0.1 at 2024-04-15 23:10:28 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2489545"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2227)
+Completed 200 OK in 135ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 3304)
+
+
+Started GET "/projects/2471167" for 127.0.0.1 at 2024-04-15 23:10:28 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2471167"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2236)
+Completed 200 OK in 110ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3314)
+
+
+Started GET "/projects/2470802" for 127.0.0.1 at 2024-04-15 23:10:29 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2470802"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2233)
+Completed 200 OK in 104ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3317)
+
+
+Started GET "/projects/2441099" for 127.0.0.1 at 2024-04-15 23:10:29 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2441099"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2245)
+Completed 200 OK in 102ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 3321)
+
+
+Started GET "/projects/2396238" for 127.0.0.1 at 2024-04-15 23:10:30 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2396238"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2246)
+Completed 200 OK in 110ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3322)
+
+
+Started GET "/projects/2396238" for 127.0.0.1 at 2024-04-15 23:10:32 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2396238"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2234)
+Completed 200 OK in 125ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 3311)
+
+
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 23:10:43 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 527)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 16824)
+Completed 200 OK in 1871ms (Views: 41.4ms | ActiveRecord: 0.0ms | Allocations: 19570)
+
+
+Started GET "/projects/2396238" for 127.0.0.1 at 2024-04-15 23:10:46 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2396238"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 150)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 2349)
+Completed 200 OK in 116ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 3494)
+
+
+Started GET "/projects/2382758" for 127.0.0.1 at 2024-04-15 23:10:46 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2382758"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 2241)
+Completed 200 OK in 126ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 3323)
+
+
+Started GET "/projects/2371850" for 127.0.0.1 at 2024-04-15 23:10:47 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2371850"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 47)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2240)
+Completed 200 OK in 102ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 3316)
+
+
+Started GET "/projects/2369126" for 127.0.0.1 at 2024-04-15 23:10:47 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2369126"}
+Started GET "/projects/2348719" for 127.0.0.1 at 2024-04-15 23:10:48 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2348719"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2217)
+Completed 200 OK in 100ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3293)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2218)
+Completed 200 OK in 1154ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 8095)
+
+
+Started GET "/projects/2369126" for 127.0.0.1 at 2024-04-15 23:10:49 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2369126"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 49)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2239)
+Completed 200 OK in 105ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 3315)
+
+
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 23:11:11 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/projects/2471167" for 127.0.0.1 at 2024-04-15 23:11:11 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 723)
+  Rendered layout layouts/application.html.erb (Duration: 45.5ms | Allocations: 17005)
+Completed 200 OK in 1853ms (Views: 49.3ms | ActiveRecord: 0.0ms | Allocations: 20186)
+
+
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2471167"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 157)
+  Rendered layout layouts/application.html.erb (Duration: 60.7ms | Allocations: 16436)
+Completed 200 OK in 203ms (Views: 80.5ms | ActiveRecord: 0.0ms | Allocations: 18129)
+
+
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 23:16:20 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 527)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 16813)
+Completed 200 OK in 1858ms (Views: 64.0ms | ActiveRecord: 0.0ms | Allocations: 19558)
+
+
+Started GET "/thesis?term=test" for 127.0.0.1 at 2024-04-15 23:16:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/thesis"):
+  
+Started GET "/theses?term=test" for 127.0.0.1 at 2024-04-15 23:16:32 +0200
+Processing by ThesesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/index.html.erb within layouts/application
+  Rendered theses/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 677)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 2875)
+Completed 200 OK in 1456ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 4364)
+
+
+Started GET "/theses/121202" for 127.0.0.1 at 2024-04-15 23:17:21 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121202"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2408)
+Completed 200 OK in 133ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 3453)
+
+
+Started GET "/theses?term=test" for 127.0.0.1 at 2024-04-15 23:17:37 +0200
+Processing by ThesesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/index.html.erb within layouts/application
+  Rendered theses/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 16980)
+Completed 200 OK in 1462ms (Views: 48.3ms | ActiveRecord: 0.0ms | Allocations: 19691)
+
+
+Started GET "/theses/121003" for 127.0.0.1 at 2024-04-15 23:17:41 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121003"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 2340)
+Completed 200 OK in 116ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3395)
+
+
+Started GET "/theses/120785" for 127.0.0.1 at 2024-04-15 23:17:41 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120785"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 2240)
+Completed 200 OK in 130ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 3214)
+
+
+Started GET "/theses/120740" for 127.0.0.1 at 2024-04-15 23:17:42 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120740"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2261)
+Completed 200 OK in 97ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 3235)
+
+
+Started GET "/theses/120785" for 127.0.0.1 at 2024-04-15 23:17:43 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120785"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2222)
+Completed 200 OK in 91ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 3196)
+
+
+Started GET "/theses/120861" for 127.0.0.1 at 2024-04-15 23:17:44 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120861"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 56)
+Started GET "/theses/121003" for 127.0.0.1 at 2024-04-15 23:17:45 +0200
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 2709)
+Completed 200 OK in 187ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 3689)
+
+
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121003"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2234)
+Completed 200 OK in 130ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 3211)
+
+
+Started GET "/theses/120785" for 127.0.0.1 at 2024-04-15 23:17:45 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120785"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2243)
+Completed 200 OK in 79ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 3217)
+
+
+Started GET "/theses?term=test" for 127.0.0.1 at 2024-04-15 23:19:17 +0200
+Processing by ThesesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/index.html.erb within layouts/application
+  Rendered theses/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 526)
+  Rendered layout layouts/application.html.erb (Duration: 38.6ms | Allocations: 16821)
+Completed 200 OK in 1463ms (Views: 41.9ms | ActiveRecord: 0.0ms | Allocations: 19534)
+
+
+Started GET "/theses/121200" for 127.0.0.1 at 2024-04-15 23:19:20 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121200"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 159)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2343)
+Completed 200 OK in 110ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 3387)
+
+
+Started GET "/theses/120861" for 127.0.0.1 at 2024-04-15 23:19:21 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120861"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2259)
+Completed 200 OK in 110ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 3244)
+
+
+Started GET "/theses/120785" for 127.0.0.1 at 2024-04-15 23:19:21 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120785"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 2246)
+Completed 200 OK in 236ms (Views: 15.4ms | ActiveRecord: 0.0ms | Allocations: 3224)
+
+
+Started GET "/theses/120785" for 127.0.0.1 at 2024-04-15 23:19:23 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"120785"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2234)
+Completed 200 OK in 1157ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 3209)
+
+
+Started GET "/theses?term=test" for 127.0.0.1 at 2024-04-15 23:20:27 +0200
+Processing by ThesesController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/theses/121202" for 127.0.0.1 at 2024-04-15 23:20:27 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121202"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 13997)
+Completed 200 OK in 239ms (Views: 93.3ms | ActiveRecord: 0.0ms | Allocations: 14977)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering theses/index.html.erb within layouts/application
+  Rendered theses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 246)
+Started GET "/theses/121203" for 127.0.0.1 at 2024-04-15 23:20:29 +0200
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2823)
+Completed 200 OK in 1459ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 20785)
+
+
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121203"}
+Started GET "/theses/121203" for 127.0.0.1 at 2024-04-15 23:20:29 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121203"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2240)
+Completed 200 OK in 92ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 3215)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 2240)
+Completed 200 OK in 1124ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 10858)
+
+
+Started GET "/theses/121203" for 127.0.0.1 at 2024-04-15 23:20:30 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121203"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 2250)
+Completed 200 OK in 176ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 3226)
+
+
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 23:20:36 +0200
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/index.html.erb within layouts/application
+  Rendered projects/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 515)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2724)
+Completed 200 OK in 1773ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4233)
+
+
+Started GET "/projects/2496514" for 127.0.0.1 at 2024-04-15 23:20:39 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2496514"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 149)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2333)
+Completed 200 OK in 125ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 3477)
+
+
+Started GET "/projects/2496514" for 127.0.0.1 at 2024-04-15 23:20:40 +0200
+Processing by ProjectsController#show as HTML
+  Parameters: {"id"=>"2496514"}
+  Rendering layout layouts/application.html.erb
+  Rendering projects/show.html.erb within layouts/application
+  Rendered projects/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 48)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 2247)
+Completed 200 OK in 136ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 3324)
+
+
+Started GET "/theses?term=test" for 127.0.0.1 at 2024-04-15 23:20:44 +0200
+Processing by ThesesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/index.html.erb within layouts/application
+  Rendered theses/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 246)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2451)
+Completed 200 OK in 2448ms (Views: 15.3ms | ActiveRecord: 0.0ms | Allocations: 3772)
+
+
+Started GET "/theses/121203" for 127.0.0.1 at 2024-04-15 23:20:47 +0200
+Processing by ThesesController#show as HTML
+  Parameters: {"id"=>"121203"}
+  Rendering layout layouts/application.html.erb
+  Rendering theses/show.html.erb within layouts/application
+  Rendered theses/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 56)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2229)
+Completed 200 OK in 142ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3209)
+
+
+Started GET "/persons/121203" for 127.0.0.1 at 2024-04-15 23:20:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/persons/121203"):
+  
+Started GET "/people/121203" for 127.0.0.1 at 2024-04-15 23:20:53 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"121203"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1120)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1209)
+Completed 500 Internal Server Error in 1356ms (ActiveRecord: 0.0ms | Allocations: 2579)
+
+
+  
+ActionView::Template::Error (undefined method `+' for nil):
+    1: <h1><%= full_name @resource %></h1>
+  
+app/helpers/people_helper.rb:3:in `full_name'
+app/views/people/show.html.erb:1
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:21:14 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 261)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 2490)
+Completed 200 OK in 41ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 3900)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:21:47 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 264)
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 16578)
+Completed 200 OK in 67ms (Views: 57.9ms | ActiveRecord: 0.0ms | Allocations: 18889)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:21:49 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2187)
+Completed 200 OK in 11ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 2908)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:21:53 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 2181)
+Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 2902)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:22:03 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 268)
+  Rendered layout layouts/application.html.erb (Duration: 40.3ms | Allocations: 16402)
+Completed 200 OK in 53ms (Views: 43.9ms | ActiveRecord: 0.0ms | Allocations: 18712)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:22:07 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 266)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 16568)
+Completed 200 OK in 38ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 18879)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:22:38 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 265)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 16589)
+Completed 200 OK in 39ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 18900)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:22:40 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2210)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 2931)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-15 23:22:46 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 263)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 16378)
+Completed 200 OK in 42ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 18688)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:23:10 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 219)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2426)
+Completed 200 OK in 949ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 4532)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 23:23:12 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 23:23:12 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 23:23:12 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2319)
+Completed 200 OK in 632ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 7045)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2186)
+Completed 200 OK in 815ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 8707)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2186)
+Completed 200 OK in 771ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 10358)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 23:23:15 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2193)
+Completed 200 OK in 821ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3504)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 23:23:17 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+Started GET "/people/241538" for 127.0.0.1 at 2024-04-15 23:23:17 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"241538"}
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 23:23:18 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2195)
+Completed 200 OK in 727ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6838)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2190)
+Completed 200 OK in 745ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 8542)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2189)
+Completed 200 OK in 558ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 10214)
+
+
+Started GET "/people/328943" for 127.0.0.1 at 2024-04-15 23:23:19 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"328943"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2201)
+Completed 200 OK in 678ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 3519)
+
+
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 23:23:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 33.6ms | Allocations: 2192)
+Completed 200 OK in 768ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 3468)
+
+
+Started GET "/people/384720" for 127.0.0.1 at 2024-04-15 23:23:23 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384720"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2201)
+Completed 200 OK in 575ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 3512)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 23:23:25 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2201)
+Completed 200 OK in 666ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3511)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 23:23:27 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2177)
+Completed 200 OK in 571ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 3490)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:30:04 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 479)
+  Rendered layout layouts/application.html.erb (Duration: 139.2ms | Allocations: 29589)
+Completed 200 OK in 1065ms (Views: 144.0ms | ActiveRecord: 0.0ms | Allocations: 33047)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:30:08 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2385)
+Completed 200 OK in 932ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4441)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:30:14 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 16792)
+Completed 200 OK in 1025ms (Views: 33.1ms | ActiveRecord: 0.0ms | Allocations: 20247)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:30:36 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 74.5ms | Allocations: 16788)
+Completed 200 OK in 1069ms (Views: 81.4ms | ActiveRecord: 0.0ms | Allocations: 20246)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:05 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 23:31:06 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 477)
+  Rendered layout layouts/application.html.erb (Duration: 37.2ms | Allocations: 16804)
+Completed 200 OK in 1094ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 20705)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 119)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 16449)
+Completed 200 OK in 630ms (Views: 33.3ms | ActiveRecord: 0.0ms | Allocations: 18377)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:08 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 2687)
+Completed 200 OK in 1155ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 5637)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:19 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2373)
+Completed 200 OK in 1170ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4429)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:22 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2388)
+Completed 200 OK in 990ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 4446)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:26 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2385)
+Completed 200 OK in 1359ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 4443)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:42 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 14215)
+Completed 200 OK in 1509ms (Views: 85.7ms | ActiveRecord: 0.0ms | Allocations: 16272)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:45 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 13.3ms | Allocations: 2376)
+Completed 200 OK in 895ms (Views: 14.5ms | ActiveRecord: 0.0ms | Allocations: 4431)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:47 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 2391)
+Completed 200 OK in 2108ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 4450)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:55 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 77.2ms | Allocations: 14212)
+Completed 200 OK in 1008ms (Views: 78.1ms | ActiveRecord: 0.0ms | Allocations: 16287)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:31:57 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 2388)
+Completed 200 OK in 926ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 4452)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-15 23:38:38 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 479)
+  Rendered layout layouts/application.html.erb (Duration: 146.2ms | Allocations: 29068)
+Completed 200 OK in 1408ms (Views: 154.5ms | ActiveRecord: 0.0ms | Allocations: 32523)
+
+
+Started GET "/people/384933" for 127.0.0.1 at 2024-04-15 23:38:51 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"384933"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2352)
+Completed 200 OK in 622ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 3740)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:39:04 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 21.2ms | Allocations: 3936)
+Completed 200 OK in 6715ms (Views: 22.3ms | ActiveRecord: 0.0ms | Allocations: 14057)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:42:36 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 101.3ms | Allocations: 15582)
+Completed 200 OK in 5988ms (Views: 102.5ms | ActiveRecord: 0.0ms | Allocations: 25690)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:47:08 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 112.4ms | Allocations: 15907)
+Completed 200 OK in 6125ms (Views: 113.6ms | ActiveRecord: 0.0ms | Allocations: 26035)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:47:20 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 3943)
+Completed 200 OK in 5840ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 14052)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:47:36 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:47:37 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2361)
+Completed 200 OK in 956ms (Views: 11.9ms | ActiveRecord: 0.0ms | Allocations: 4206)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+Started GET "/people/333446" for 127.0.0.1 at 2024-04-15 23:47:38 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"333446"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2253)
+Completed 200 OK in 597ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 5008)
+
+
+Started GET "/people/290712" for 127.0.0.1 at 2024-04-15 23:47:39 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"290712"}
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:47:39 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2286)
+Completed 200 OK in 795ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 5573)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2272)
+Completed 200 OK in 1936ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 13903)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2261)
+Completed 200 OK in 640ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 10508)
+
+
+Started GET "/people/61806" for 127.0.0.1 at 2024-04-15 23:47:41 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"61806"}
+Started GET "/people/337195" for 127.0.0.1 at 2024-04-15 23:47:41 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"337195"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2251)
+Completed 200 OK in 616ms (Views: 13.5ms | ActiveRecord: 0.0ms | Allocations: 5270)
+
+
+Started GET "/people/336413" for 127.0.0.1 at 2024-04-15 23:47:41 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"336413"}
+Started GET "/people/310612" for 127.0.0.1 at 2024-04-15 23:47:42 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2361)
+Completed 200 OK in 700ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 9499)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"310612"}
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-15 23:47:42 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2265)
+Completed 200 OK in 629ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2245)
+Completed 200 OK in 1130ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 13698)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2247)
+Completed 200 OK in 526ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 10390)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:49:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+Started GET "/" for 127.0.0.1 at 2024-04-15 23:49:18 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 374)
+Completed 200 OK in 175ms (Views: 31.1ms | ActiveRecord: 0.0ms | Allocations: 4090)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2051)
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:49:22 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendered layout layouts/application.html.erb (Duration: 691.5ms | Allocations: 67808)
+Completed 200 OK in 6614ms (Views: 693.9ms | ActiveRecord: 0.0ms | Allocations: 89363)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3949)
+Completed 200 OK in 5995ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 74628)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:49:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2363)
+Completed 200 OK in 666ms (Views: 12.5ms | ActiveRecord: 0.0ms | Allocations: 3784)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:49:59 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 103.3ms | Allocations: 16585)
+Completed 200 OK in 5841ms (Views: 111.1ms | ActiveRecord: 0.0ms | Allocations: 26692)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:50:19 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 16566)
+Completed 200 OK in 6415ms (Views: 92.9ms | ActiveRecord: 0.0ms | Allocations: 26685)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:51:00 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 84.0ms | Allocations: 16590)
+Completed 200 OK in 6319ms (Views: 85.0ms | ActiveRecord: 0.0ms | Allocations: 26719)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:51:50 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 106.7ms | Allocations: 16553)
+Completed 200 OK in 6576ms (Views: 117.7ms | ActiveRecord: 0.0ms | Allocations: 26681)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:52:51 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 113.0ms | Allocations: 16584)
+Completed 200 OK in 6091ms (Views: 118.0ms | ActiveRecord: 0.0ms | Allocations: 26714)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:53:37 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 99.9ms | Allocations: 16558)
+Completed 200 OK in 6174ms (Views: 100.9ms | ActiveRecord: 0.0ms | Allocations: 26685)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:54:34 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 81.5ms | Allocations: 17617)
+Completed 200 OK in 7279ms (Views: 96.0ms | ActiveRecord: 0.0ms | Allocations: 27748)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:54:59 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.6ms | Allocations: 2241)
+Completed 200 OK in 820ms (Views: 13.2ms | ActiveRecord: 0.0ms | Allocations: 3581)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:57:38 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 93.9ms | Allocations: 16657)
+Completed 200 OK in 5806ms (Views: 95.1ms | ActiveRecord: 0.0ms | Allocations: 26780)
+
+
+Started GET "/people/288993" for 127.0.0.1 at 2024-04-15 23:57:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"288993"}
+Started GET "/people/310612" for 127.0.0.1 at 2024-04-15 23:57:46 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"310612"}
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-15 23:57:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 2266)
+Completed 200 OK in 632ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 6981)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2261)
+Completed 200 OK in 607ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 8709)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:57:47 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2262)
+Completed 200 OK in 941ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 12159)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2255)
+Completed 200 OK in 696ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 7054)
+
+
+Started GET "/people/333446" for 127.0.0.1 at 2024-04-15 23:57:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"333446"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 2267)
+Completed 200 OK in 600ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3644)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-15 23:57:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2264)
+Completed 200 OK in 565ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 3619)
+
+
+Started GET "/people/274940" for 127.0.0.1 at 2024-04-15 23:57:51 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"274940"}
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-15 23:57:51 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2289)
+Completed 200 OK in 1003ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 5074)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 2284)
+Completed 200 OK in 1665ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-15 23:57:55 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2262)
+Completed 200 OK in 772ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 3590)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-15 23:58:40 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 236.9ms | Allocations: 16567)
+Completed 200 OK in 6234ms (Views: 237.8ms | ActiveRecord: 0.0ms | Allocations: 26673)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:00:35 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+Started GET "/people/362122" for 127.0.0.1 at 2024-04-16 00:00:35 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"362122"}
+Started GET "/people/321126" for 127.0.0.1 at 2024-04-16 00:00:35 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 4017)
+Completed 200 OK in 660ms (Views: 21.3ms | ActiveRecord: 0.0ms | Allocations: 6537)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 4615)
+Completed 200 OK in 833ms (Views: 23.2ms | ActiveRecord: 0.0ms | Allocations: 9229)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"321126"}
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:00:36 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2271)
+Completed 200 OK in 1831ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 5367)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 3942)
+Completed 200 OK in 6882ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 17767)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:00:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:00:49 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2286)
+Completed 200 OK in 643ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 5329)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2281)
+Completed 200 OK in 807ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 7121)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:06:14 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 180.6ms | Allocations: 32378)
+Completed 200 OK in 6697ms (Views: 185.7ms | ActiveRecord: 0.0ms | Allocations: 43893)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:06:54 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 18330)
+Completed 200 OK in 6389ms (Views: 50.1ms | ActiveRecord: 0.0ms | Allocations: 29839)
+
+
+Started GET "/people/333446" for 127.0.0.1 at 2024-04-16 00:07:01 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"333446"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 111)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 2364)
+Completed 200 OK in 776ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3809)
+
+
+Started GET "/people/333446" for 127.0.0.1 at 2024-04-16 00:07:04 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"333446"}
+Started GET "/people/290712" for 127.0.0.1 at 2024-04-16 00:07:04 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"290712"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 14.0ms | Allocations: 2255)
+Completed 200 OK in 820ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 5322)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:07:05 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2255)
+Completed 200 OK in 690ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 8722)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 2249)
+Completed 200 OK in 727ms (Views: 11.7ms | ActiveRecord: 0.0ms | Allocations: 7046)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:07:07 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2259)
+Completed 200 OK in 718ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 3599)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:08:12 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 163.5ms | Allocations: 31384)
+Completed 200 OK in 6721ms (Views: 171.2ms | ActiveRecord: 0.0ms | Allocations: 42878)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:09:38 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2383)
+Completed 200 OK in 815ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 3792)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:10:08 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 16664)
+Completed 200 OK in 6322ms (Views: 84.5ms | ActiveRecord: 0.0ms | Allocations: 26770)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:10:54 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1973)
+  Rendered layout layouts/application.html.erb (Duration: 56.0ms | Allocations: 18474)
+Completed 200 OK in 6083ms (Views: 61.5ms | ActiveRecord: 0.0ms | Allocations: 29981)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:12:20 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:12:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 153.8ms | Allocations: 15640)
+Completed 200 OK in 879ms (Views: 154.6ms | ActiveRecord: 0.0ms | Allocations: 18474)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 2304)
+Completed 200 OK in 586ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 20395)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:12:21 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 29.5ms | Allocations: 2253)
+Completed 200 OK in 826ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 3607)
+
+
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:13:40 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 108.6ms | Allocations: 15021)
+Completed 200 OK in 686ms (Views: 109.6ms | ActiveRecord: 0.0ms | Allocations: 16389)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:13:46 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3949)
+Completed 200 OK in 6628ms (Views: 43.7ms | ActiveRecord: 0.0ms | Allocations: 14080)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:13:53 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 3954)
+Completed 200 OK in 5866ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 14077)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:14:48 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3951)
+Completed 200 OK in 7434ms (Views: 14.2ms | ActiveRecord: 0.0ms | Allocations: 14064)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:15:25 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 94.4ms | Allocations: 16702)
+Completed 200 OK in 6214ms (Views: 95.6ms | ActiveRecord: 0.0ms | Allocations: 26809)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:15:33 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 3930)
+Completed 200 OK in 6570ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 14059)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:17:15 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 71.9ms | Allocations: 16712)
+Completed 200 OK in 5797ms (Views: 72.9ms | ActiveRecord: 0.0ms | Allocations: 26825)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:17:22 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 3936)
+Completed 200 OK in 6264ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 14044)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:18:50 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 120.1ms | Allocations: 16687)
+Completed 200 OK in 5716ms (Views: 121.6ms | ActiveRecord: 0.0ms | Allocations: 26788)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:19:01 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 3934)
+Completed 200 OK in 6339ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 14065)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:19:49 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 126.9ms | Allocations: 16721)
+Completed 200 OK in 7133ms (Views: 128.6ms | ActiveRecord: 0.0ms | Allocations: 26840)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:20:29 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 91.7ms | Allocations: 16691)
+Completed 200 OK in 6724ms (Views: 93.1ms | ActiveRecord: 0.0ms | Allocations: 26810)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:20:54 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 86.3ms | Allocations: 15767)
+Completed 200 OK in 6328ms (Views: 87.3ms | ActiveRecord: 0.0ms | Allocations: 25875)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:21:42 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 210.6ms | Allocations: 25367)
+Completed 500 Internal Server Error in 6058ms (ActiveRecord: 0.0ms | Allocations: 35511)
+
+
+  
+ActionView::Template::Error (Error: Invalid CSS after "...--shadow-huge);": expected "}", was ".&__start {"
+        on line 14:34 of app/assets/stylesheets/layouts/_nav.scss
+        from line 35:1 of app/assets/stylesheets/application.css.scss
+>>   box-shadow: var(--shadow-huge);
+   ---------------------------------^
+):
+    10:   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    11:   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    12: 
+    13:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    14:   <%= javascript_importmap_tags %>
+    15: </head>
+    16: 
+  
+app/views/layouts/application.html.erb:13
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:21:55 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 46.2ms | Allocations: 4065)
+Completed 200 OK in 5605ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 14189)
+
+
+Started GET "/people?term=max" for 127.0.0.1 at 2024-04-16 00:22:17 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"max"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1695)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 3933)
+Completed 200 OK in 5903ms (Views: 22.8ms | ActiveRecord: 0.0ms | Allocations: 14039)
+
+
+Started GET "/people/337527" for 127.0.0.1 at 2024-04-16 00:22:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"337527"}
+Started GET "/people/338894" for 127.0.0.1 at 2024-04-16 00:22:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"338894"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2279)
+Completed 200 OK in 617ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 5300)
+
+
+Started GET "/people/317493" for 127.0.0.1 at 2024-04-16 00:22:28 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"317493"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2279)
+Completed 200 OK in 724ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 8712)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2267)
+Completed 200 OK in 586ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 7012)
+
+
+Started GET "/people/288993" for 127.0.0.1 at 2024-04-16 00:22:30 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"288993"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 2252)
+Completed 200 OK in 673ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 3601)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:22:33 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+Started GET "/people/39187" for 127.0.0.1 at 2024-04-16 00:22:33 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"39187"}
+Started GET "/people/290712" for 127.0.0.1 at 2024-04-16 00:22:33 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"290712"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2255)
+Completed 200 OK in 899ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 6873)
+
+
+Started GET "/people/330421" for 127.0.0.1 at 2024-04-16 00:22:34 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"330421"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2255)
+Completed 200 OK in 600ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 10069)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 2255)
+Completed 200 OK in 916ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 12050)
+
+
+Started GET "/people/290712" for 127.0.0.1 at 2024-04-16 00:22:35 +0200
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 2282)
+Completed 200 OK in 969ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 11090)
+
+
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"290712"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 2243)
+Completed 200 OK in 754ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3608)
+
+
+Started GET "/people/353068" for 127.0.0.1 at 2024-04-16 00:22:40 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"353068"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/show.html.erb within layouts/application
+  Rendered people/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2243)
+Completed 200 OK in 784ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 3558)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-16 00:22:53 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-74ce713ed122062e4fb7844978e307f256087bfd49edeb96ef4769389e12a288.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-74ce713ed122062e4fb7844978e307f256087bfd49edeb96ef4769389e12a288.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-74ce713ed122062e4fb7844978e307f256087bfd49edeb96ef4769389e12a288.css"):
+  
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 2450)
+Completed 200 OK in 1025ms (Views: 33.8ms | ActiveRecord: 0.0ms | Allocations: 296643)
+
+
+Started GET "/people?term=test" for 127.0.0.1 at 2024-04-16 00:22:55 +0200
+Processing by PeopleController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 201)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 2442)
+Completed 200 OK in 1044ms (Views: 30.1ms | ActiveRecord: 0.0ms | Allocations: 4495)
+
+
+Started GET "/people" for 127.0.0.1 at 2024-04-16 00:22:58 +0200
+Processing by PeopleController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2256)
+Completed 200 OK in 11ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 3590)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-6a7431766707d00c11b3d2188c5ee39a1614f7ec1feafec16a0ed7c67398c890.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-6a7431766707d00c11b3d2188c5ee39a1614f7ec1feafec16a0ed7c67398c890.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-6a7431766707d00c11b3d2188c5ee39a1614f7ec1feafec16a0ed7c67398c890.css"):
+  

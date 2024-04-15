@@ -1,13 +1,17 @@
 <% if @error %>
- <h1>Error: <%= @error %></h1>
+  <div class="box box--error">
+    <div class="box__title fs--xxl">Error</div>
+    <%= @error %>
+  </div>
 <% else %>
-  <h1>Results for '<%= @term %>':</h1>
-
-  <ul>
+  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <div class="list">
     <% @resources["results"].each do |result| %>
-      <li>
-        <%= link_to full_name(result), person_path(result["tiss_id"]) %>
-      </li>
+      <a class="btn btn--block" href="<%= person_path(result["tiss_id"]) %>">
+        <div class="list__item">
+          <%= full_name(result) %>
+        </div>
+      </a>
     <% end %>
-  </ul>
+  </div>
 <% end %>

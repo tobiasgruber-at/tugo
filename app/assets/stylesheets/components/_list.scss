@@ -8,6 +8,7 @@
   align-content: flex-start;
 
   &__item {
+    display: block;
     padding: var(--space-s) var(--space-xs);
     border-bottom: var(--border);
   }

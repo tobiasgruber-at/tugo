@@ -1,0 +1,109 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 200ms;
+  user-select: none;
+  -webkit-user-drag: none;
+
+  &:hover,
+  &:focus,
+  &:focus-within,
+  &:active {
+    background-color: var(--color-lighter);
+  }
+
+  &--lighter {
+    background-color: var(--color-lighter);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-lighter-darker);
+    }
+  }
+
+  &--light {
+    background-color: var(--color-light);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-light-darker);
+    }
+  }
+
+  &--dark {
+    background-color: var(--color-dark);
+    color: var(--color-text-light);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-dark-darker);
+    }
+  }
+
+  &--primary {
+    background-color: var(--color-primary);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-primary-darker);
+    }
+  }
+
+  &--secondary {
+    background-color: var(--color-secondary);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-secondary-darker);
+    }
+  }
+
+  &--tertiary {
+    background-color: var(--color-tertiary);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-tertiary-darker);
+    }
+  }
+
+  &--error {
+    background-color: var(--color-error);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-error-darker);
+    }
+  }
+
+  &--success {
+    background-color: var(--color-success);
+
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-success-darker);
+    }
+  }
+
+
+  &--block {
+    display: block;
+  }
+}

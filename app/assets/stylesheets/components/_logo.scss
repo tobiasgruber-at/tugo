@@ -1,0 +1,13 @@
+.logo {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  transition: 500ms;
+  font-size: var(--font-size-xxxl);
+
+  &:hover {
+    color: var(--color-text-light);
+    text-shadow: var(--text-shadow-glow);
+  }
+}

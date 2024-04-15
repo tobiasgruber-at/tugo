@@ -18,9 +18,9 @@ class ApplicationController < ActionController::Base
 
   def index(endpoint = "")
     @term = params["term"]
-    termModel = SearchTerm.new(query: @term)
-    unless termModel.valid?
-      @error = "Term #{termModel.errors.messages[:query][0]}"
+    term_model = SearchTerm.new(query: @term)
+    unless term_model.valid?
+      @error = "Term #{term_model.errors.messages[:query][0]}"
       return
     end
     uri = URI(base + endpoint)
