@@ -6077,3 +6077,1176 @@ Started GET "/2496514" for 127.0.0.1 at 2024-04-15 16:51:11 +0200
   
 ActionController::RoutingError (No route matches [GET] "/2496514"):
   
+Started GET "/projects?term=test" for 127.0.0.1 at 2024-04-15 18:31:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ProjectsController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering projects/index.html.erb
+  Rendered projects/index.html.erb (Duration: 1.7ms | Allocations: 455)
+Completed 200 OK in 1990ms (Views: 58.5ms | ActiveRecord: 0.0ms | Allocations: 6439)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:31:34 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 1.0ms | Allocations: 184)
+Completed 200 OK in 562ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1580)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:32:25 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 547ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:33:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.8ms | Allocations: 297)
+Completed 200 OK in 610ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 6360)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:34:12 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 552ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1262)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:34:50 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 580ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 1260)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:34:52 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 544ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1259)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:43:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.7ms | Allocations: 297)
+Completed 200 OK in 818ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6362)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 18:43:19 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering people/show.html.erb
+  Rendered people/show.html.erb (Duration: 1.4ms | Allocations: 120)
+Completed 200 OK in 598ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:43:24 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 551ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1264)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:43:28 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 545ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:43:37 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 586ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1260)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:44:08 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 576ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 1257)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 18:49:01 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 374)
+Completed 200 OK in 76ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:49:08 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.8ms | Allocations: 197)
+Completed 200 OK in 591ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 2465)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:49:10 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 551ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1263)
+
+
+Started GET "/people/308418" for 127.0.0.1 at 2024-04-15 18:49:12 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"308418"}
+  Rendering people/show.html.erb
+  Rendered people/show.html.erb (Duration: 0.9ms | Allocations: 120)
+Completed 200 OK in 608ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1539)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 18:50:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.0ms | Allocations: 374)
+Completed 200 OK in 59ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:51:01 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.9ms | Allocations: 197)
+Completed 200 OK in 616ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2469)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 18:56:26 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.6ms | Allocations: 374)
+Completed 200 OK in 55ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started GET "/courses/" for 127.0.0.1 at 2024-04-15 18:56:30 +0200
+Processing by CoursesController#index as HTML
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 46.7ms | Allocations: 1478)
+Completed 500 Internal Server Error in 173ms (ActiveRecord: 0.0ms | Allocations: 3451)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil):
+    1: <h1>Results:</h1>
+    2: <ul>
+    3:   <% @resources["results"].each do |result| %>
+    4:     <li><%= result["title"] %></li>
+    5:   <% end %>
+    6: </ul>
+  
+app/views/courses/index.html.erb:3
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:56:52 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 578ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1343)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:56:54 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 540ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 1259)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 18:58:00 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.7ms | Allocations: 181)
+Completed 200 OK in 574ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1960)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 19:00:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 374)
+Completed 200 OK in 38ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 4943)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:00:03 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.8ms | Allocations: 191)
+Completed 200 OK in 591ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2458)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:03:59 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 1.0ms | Allocations: 177)
+Completed 200 OK in 688ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1952)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:06:43 +0200
+Started GET "/" for 127.0.0.1 at 2024-04-15 19:06:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 374)
+Completed 200 OK in 38ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 5399)
+
+
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.7ms | Allocations: 185)
+Completed 200 OK in 591ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 8199)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:06:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 559ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1261)
+
+
+Started GET "/" for 127.0.0.1 at 2024-04-15 19:06:47 +0200
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.0ms | Allocations: 13)
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 226)
+
+
+Started GET "/people/382638" for 127.0.0.1 at 2024-04-15 19:07:00 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"382638"}
+  Rendering people/show.html.erb
+  Rendered people/show.html.erb (Duration: 0.7ms | Allocations: 118)
+Completed 200 OK in 2345ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 1509)
+
+
+Started GET "/people/286328" for 127.0.0.1 at 2024-04-15 19:07:25 +0200
+Processing by PeopleController#show as HTML
+  Parameters: {"id"=>"286328"}
+  Rendering people/show.html.erb
+  Rendered people/show.html.erb (Duration: 0.1ms | Allocations: 8)
+Completed 200 OK in 872ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1296)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:07:35 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:07:35 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 547ms (Views: 1.5ms | ActiveRecord: 0.0ms | Allocations: 2937)
+
+
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.1ms | Allocations: 22)
+Completed 200 OK in 559ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 2281)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:07:46 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering courses/index.html.erb
+  Rendered courses/index.html.erb (Duration: 0.6ms | Allocations: 179)
+Completed 200 OK in 1561ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:08:40 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 177)
+  Rendered layout layouts/application.html.erb (Duration: 330.4ms | Allocations: 12922)
+Completed 500 Internal Server Error in 876ms (ActiveRecord: 0.0ms | Allocations: 14805)
+
+
+  
+ActionView::Template::Error (Error: no mixin named media
+        on line 8:12 of app/assets/stylesheets/layouts/_container.scss
+>>   @include media(tabletAndUp) {
+
+   -----------^
+):
+     5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:   <%= javascript_importmap_tags %>
+    10: </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:13:08 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 213.5ms | Allocations: 50071)
+Completed 500 Internal Server Error in 781ms (ActiveRecord: 0.0ms | Allocations: 51321)
+
+
+  
+ActionView::Template::Error (Asset `application.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.css
+
+and restart your server):
+     5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:   <%= javascript_importmap_tags %>
+    10: </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:13:38 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 92.9ms | Allocations: 21797)
+Completed 500 Internal Server Error in 648ms (ActiveRecord: 0.0ms | Allocations: 23044)
+
+
+  
+ActionView::Template::Error (Asset `application.css` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link application.css
+
+and restart your server):
+     5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:   <%= javascript_importmap_tags %>
+    10: </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/" for 127.0.0.1 at 2024-04-15 19:15:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.0ms | Allocations: 374)
+Completed 200 OK in 200ms (Views: 75.0ms | ActiveRecord: 0.0ms | Allocations: 8784)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:15:45 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 191)
+  Rendered layout layouts/application.html.erb (Duration: 1029.0ms | Allocations: 102929)
+Completed 500 Internal Server Error in 1582ms (ActiveRecord: 0.0ms | Allocations: 105287)
+
+
+  
+ActionView::Template::Error (Permission denied @ rb_file_s_rename - (D:/Programmieren/tu-go/tmp/cache/assets/sprockets/v4.0.0/Ti/TitXYAzPbdh-oDiw3WneYikqWeSm5kTVFUPzPl1Ujl8.cache.25780.4908.641443, D:/Programmieren/tu-go/tmp/cache/assets/sprockets/v4.0.0/Ti/TitXYAzPbdh-oDiw3WneYikqWeSm5kTVFUPzPl1Ujl8.cache)):
+  
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `rename'
+sprockets (4.2.1) lib/sprockets/path_utils.rb:362:in `atomic_write'
+sprockets (4.2.1) lib/sprockets/cache/file_store.rb:112:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:227:in `set'
+sprockets (4.2.1) lib/sprockets/cache.rb:143:in `set'
+sprockets (4.2.1) lib/sprockets/loader.rb:343:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/bundle.rb:27:in `call'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.1) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/bundle.rb:32:in `block in call'
+D:/Programme/Ruby33-x64/lib/ruby/3.3.0/set.rb:501:in `each_key'
+D:/Programme/Ruby33-x64/lib/ruby/3.3.0/set.rb:501:in `each'
+sprockets (4.2.1) lib/sprockets/bundle.rb:31:in `call'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:84:in `call_processor'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:66:in `block in call_processors'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `reverse_each'
+sprockets (4.2.1) lib/sprockets/processor_utils.rb:65:in `call_processors'
+sprockets (4.2.1) lib/sprockets/loader.rb:184:in `load_from_unloaded'
+sprockets (4.2.1) lib/sprockets/loader.rb:59:in `block in load'
+sprockets (4.2.1) lib/sprockets/loader.rb:339:in `fetch_asset_from_dependency_cache'
+sprockets (4.2.1) lib/sprockets/loader.rb:43:in `load'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `block in load'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:207:in `block in fetch_or_store'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:187:in `fetch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/map.rb:206:in `fetch_or_store'
+sprockets (4.2.1) lib/sprockets/cached_environment.rb:44:in `load'
+sprockets (4.2.1) lib/sprockets/base.rb:81:in `find_asset'
+sprockets (4.2.1) lib/sprockets/base.rb:88:in `find_all_linked_assets'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `each'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `to_a'
+sprockets (4.2.1) lib/sprockets/manifest.rb:125:in `block (2 levels) in find'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:24:in `block in execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `block in synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/synchronization/mutex_lockable_object.rb:48:in `synchronize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/safe_task_executor.rb:22:in `execute'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/promise.rb:564:in `block in realize'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:359:in `run_task'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:350:in `block (3 levels) in create_worker'
+<internal:kernel>:187:in `loop'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:341:in `block (2 levels) in create_worker'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `catch'
+concurrent-ruby (1.2.3) lib/concurrent-ruby/concurrent/executor/ruby_thread_pool_executor.rb:340:in `block in create_worker'
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:23:12 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2024-04-15 19:23:12 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+Processing by Rails::WelcomeController#index as HTML
+  Rendering D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered D:/Programme/Ruby33-x64/lib/ruby/gems/3.3.0/gems/railties-7.1.3.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.3ms | Allocations: 374)
+Completed 200 OK in 51ms (Views: 13.8ms | ActiveRecord: 0.0ms | Allocations: 5398)
+
+
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 185)
+  Rendered layout layouts/application.html.erb (Duration: 313.9ms | Allocations: 46308)
+Completed 200 OK in 924ms (Views: 316.7ms | ActiveRecord: 0.0ms | Allocations: 54436)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:23:48 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 179.1ms | Allocations: 23305)
+Completed 500 Internal Server Error in 755ms (ActiveRecord: 0.0ms | Allocations: 24588)
+
+
+  
+ActionView::Template::Error (Error: no mixin named media
+        on line 8:12 of app/assets/stylesheets/layouts/_container.scss
+>>   @include media(tabletAndUp) {
+
+   -----------^
+):
+     5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:   <%= javascript_importmap_tags %>
+    10: </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:24:27 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 4244)
+Completed 500 Internal Server Error in 774ms (ActiveRecord: 0.0ms | Allocations: 5507)
+
+
+  
+ActionView::Template::Error (Error: no mixin named media
+        on line 8:12 of app/assets/stylesheets/layouts/_container.scss
+>>   @include media(tabletAndUp) {
+
+   -----------^
+):
+     5:   <meta name="viewport" content="width=device-width,initial-scale=1">
+     6:   <%= csrf_meta_tags %>
+     7:   <%= csp_meta_tag %>
+     8:   <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+     9:   <%= javascript_importmap_tags %>
+    10: </head>
+    11: 
+  
+app/views/layouts/application.html.erb:8
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:31:00 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 9163)
+Completed 200 OK in 625ms (Views: 58.9ms | ActiveRecord: 0.0ms | Allocations: 10434)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:31:04 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 1862)
+Completed 200 OK in 567ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 3116)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:31:14 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 1850)
+Completed 200 OK in 569ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 3108)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:31:58 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 63.1ms | Allocations: 9068)
+Completed 200 OK in 618ms (Views: 64.4ms | ActiveRecord: 0.0ms | Allocations: 10322)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:32:06 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 66.2ms | Allocations: 9184)
+Completed 200 OK in 606ms (Views: 68.0ms | ActiveRecord: 0.0ms | Allocations: 10446)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:32:09 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 1858)
+Completed 200 OK in 557ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 3112)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:33:22 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 73.4ms | Allocations: 9291)
+Completed 200 OK in 640ms (Views: 74.5ms | ActiveRecord: 0.0ms | Allocations: 10547)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:33:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 49.5ms | Allocations: 9257)
+Completed 200 OK in 600ms (Views: 50.5ms | ActiveRecord: 0.0ms | Allocations: 10523)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:34:05 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 98.7ms | Allocations: 9256)
+Completed 200 OK in 684ms (Views: 100.3ms | ActiveRecord: 0.0ms | Allocations: 10514)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:34:28 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 188)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 16120)
+Completed 200 OK in 604ms (Views: 33.7ms | ActiveRecord: 0.0ms | Allocations: 17982)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:35:01 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 193)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 15960)
+Completed 200 OK in 588ms (Views: 39.2ms | ActiveRecord: 0.0ms | Allocations: 17822)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:37:10 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 63.2ms | Allocations: 9719)
+Completed 200 OK in 633ms (Views: 64.2ms | ActiveRecord: 0.0ms | Allocations: 10976)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:37:28 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 196)
+  Rendered layout layouts/application.html.erb (Duration: 38.5ms | Allocations: 16177)
+Completed 200 OK in 601ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 18039)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:38:06 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 86.8ms | Allocations: 9734)
+Completed 200 OK in 654ms (Views: 88.1ms | ActiveRecord: 0.0ms | Allocations: 10990)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:38:13 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 9772)
+Completed 200 OK in 607ms (Views: 48.7ms | ActiveRecord: 0.0ms | Allocations: 11039)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:38:27 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 2010)
+Completed 200 OK in 552ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3270)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:40:02 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 78.0ms | Allocations: 10834)
+Completed 200 OK in 632ms (Views: 79.3ms | ActiveRecord: 0.0ms | Allocations: 12089)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:40:13 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 60.9ms | Allocations: 9809)
+Completed 200 OK in 617ms (Views: 62.2ms | ActiveRecord: 0.0ms | Allocations: 11064)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:40:18 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 9841)
+Completed 200 OK in 632ms (Views: 62.5ms | ActiveRecord: 0.0ms | Allocations: 11104)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:40:24 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 84.8ms | Allocations: 9796)
+Completed 200 OK in 615ms (Views: 86.5ms | ActiveRecord: 0.0ms | Allocations: 11065)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:40:36 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 83.4ms | Allocations: 9886)
+Completed 200 OK in 651ms (Views: 84.5ms | ActiveRecord: 0.0ms | Allocations: 11147)
+
+
+Started GET "/courses?term=testtesttesttesttest" for 127.0.0.1 at 2024-04-15 19:40:47 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"testtesttesttesttest"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 1884)
+Completed 200 OK in 662ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 2884)
+
+
+Started GET "/courses?term=testtesttesttesttesttesttesttesttesttest" for 127.0.0.1 at 2024-04-15 19:40:53 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"testtesttesttesttesttesttesttesttesttest"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 1891)
+Completed 200 OK in 512ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 2867)
+
+
+Started GET "/courses?term=testtesttesttesttesttesttesttesttesttest" for 127.0.0.1 at 2024-04-15 19:41:22 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"testtesttesttesttesttesttesttesttesttest"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 68.3ms | Allocations: 9755)
+Completed 200 OK in 571ms (Views: 69.6ms | ActiveRecord: 0.0ms | Allocations: 10722)
+
+
+Started GET "/courses?term=testtesttesttesttesttesttesttesttesttest" for 127.0.0.1 at 2024-04-15 19:41:29 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"testtesttesttesttesttesttesttesttesttest"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 8)
+  Rendered layout layouts/application.html.erb (Duration: 54.5ms | Allocations: 9752)
+Completed 200 OK in 547ms (Views: 55.8ms | ActiveRecord: 0.0ms | Allocations: 10720)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:41:50 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2026)
+Completed 200 OK in 576ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3292)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:53:34 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 204)
+  Rendered layout layouts/application.html.erb (Duration: 79.1ms | Allocations: 24697)
+Completed 200 OK in 631ms (Views: 82.1ms | ActiveRecord: 0.0ms | Allocations: 26560)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:59:22 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 82.2ms | Allocations: 10363)
+Completed 200 OK in 643ms (Views: 83.5ms | ActiveRecord: 0.0ms | Allocations: 11629)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:59:39 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 58.5ms | Allocations: 10404)
+Completed 200 OK in 916ms (Views: 59.6ms | ActiveRecord: 0.0ms | Allocations: 11662)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 19:59:48 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 77.0ms | Allocations: 10386)
+Completed 200 OK in 644ms (Views: 78.4ms | ActiveRecord: 0.0ms | Allocations: 11645)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:00:24 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 71.6ms | Allocations: 10405)
+Completed 200 OK in 631ms (Views: 72.6ms | ActiveRecord: 0.0ms | Allocations: 11663)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:01:23 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 64.3ms | Allocations: 10396)
+Completed 200 OK in 644ms (Views: 65.6ms | ActiveRecord: 0.0ms | Allocations: 11662)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:01:37 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 10392)
+Completed 200 OK in 645ms (Views: 68.3ms | ActiveRecord: 0.0ms | Allocations: 11648)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:03:52 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1255)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1345)
+Completed 500 Internal Server Error in 707ms (ActiveRecord: 0.0ms | Allocations: 3190)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"courses", :id=>nil}, missing required keys: [:id]):
+    2: <div class="list">
+    3:   <% @resources["results"].each do |result| %>
+    4:     <div class="list__item">
+    5:       <%= link_to_if result["id"], result["title"], course_path(result["id"]) %>
+    6:     </div>
+    7:   <% end %>
+    8: </div>
+  
+app/views/courses/index.html.erb:5
+app/views/courses/index.html.erb:3:in `each'
+app/views/courses/index.html.erb:3
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:04:07 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1272)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1362)
+Completed 500 Internal Server Error in 568ms (ActiveRecord: 0.0ms | Allocations: 3203)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"courses", :id=>nil}, missing required keys: [:id]):
+    2: <div class="list">
+    3:   <% @resources["results"].each do |result| %>
+    4:     <div class="list__item">
+    5:       <%= link_to_if result["id"] != nil, result["title"], course_path(result["id"]) %>
+    6:     </div>
+    7:   <% end %>
+    8: </div>
+  
+app/views/courses/index.html.erb:5
+app/views/courses/index.html.erb:3:in `each'
+app/views/courses/index.html.erb:3
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:04:14 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1269)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1359)
+Completed 500 Internal Server Error in 564ms (ActiveRecord: 0.0ms | Allocations: 3199)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"courses", :id=>nil}, missing required keys: [:id]):
+    2: <div class="list">
+    3:   <% @resources["results"].each do |result| %>
+    4:     <div class="list__item">
+    5:       <%= link_to result["title"], course_path(result["id"]) %>
+    6:     </div>
+    7:   <% end %>
+    8: </div>
+  
+app/views/courses/index.html.erb:5
+app/views/courses/index.html.erb:3:in `each'
+app/views/courses/index.html.erb:3
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:05:12 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1342)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1432)
+Completed 500 Internal Server Error in 562ms (ActiveRecord: 0.0ms | Allocations: 3275)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"courses", :id=>nil}, missing required keys: [:id]):
+    3:   <%= @resources %>
+    4:   <% @resources["results"].each do |result| %>
+    5:     <div class="list__item">
+    6:       <%= link_to result["title"], course_path(result["id"]) %>
+    7:     </div>
+    8:   <% end %>
+    9: </div>
+  
+app/views/courses/index.html.erb:6
+app/views/courses/index.html.erb:4:in `each'
+app/views/courses/index.html.erb:4
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:05:22 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1398)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1488)
+Completed 500 Internal Server Error in 564ms (ActiveRecord: 0.0ms | Allocations: 3332)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"courses", :id=>nil}, missing required keys: [:id]):
+    3:   <%= @resources %>
+    4:   <% @resources["results"].each do |result| %>
+    5:     <div class="list__item">
+    6:       <!--<%= link_to result["title"], course_path(result["id"]) %>-->
+    7:     </div>
+    8:   <% end %>
+    9: </div>
+  
+app/views/courses/index.html.erb:6
+app/views/courses/index.html.erb:4:in `each'
+app/views/courses/index.html.erb:4
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:05:27 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 291)
+  Rendered layout layouts/application.html.erb (Duration: 50.1ms | Allocations: 16348)
+Completed 200 OK in 645ms (Views: 54.1ms | ActiveRecord: 0.0ms | Allocations: 18206)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:37:48 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 757)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 16801)
+Completed 200 OK in 599ms (Views: 47.4ms | ActiveRecord: 0.0ms | Allocations: 18664)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:38:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 627)
+  Rendered layout layouts/application.html.erb (Duration: 69.1ms | Allocations: 16665)
+Completed 200 OK in 634ms (Views: 74.9ms | ActiveRecord: 0.0ms | Allocations: 18526)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:40:25 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 166.5ms | Allocations: 631)
+  Rendered layout layouts/application.html.erb (Duration: 199.8ms | Allocations: 16660)
+Completed 200 OK in 932ms (Views: 208.5ms | ActiveRecord: 0.0ms | Allocations: 18525)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:40:36 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 23.2ms | Allocations: 624)
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 16491)
+Completed 200 OK in 629ms (Views: 73.8ms | ActiveRecord: 0.0ms | Allocations: 18337)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:40:51 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 160.2ms | Allocations: 628)
+  Rendered layout layouts/application.html.erb (Duration: 193.8ms | Allocations: 16669)
+Completed 200 OK in 971ms (Views: 197.3ms | ActiveRecord: 0.0ms | Allocations: 18534)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:41:13 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 101.4ms | Allocations: 686)
+  Rendered layout layouts/application.html.erb (Duration: 130.9ms | Allocations: 16734)
+Completed 200 OK in 711ms (Views: 133.6ms | ActiveRecord: 0.0ms | Allocations: 18599)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:43:44 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 27.4ms | Allocations: 868)
+  Rendered layout layouts/application.html.erb (Duration: 71.3ms | Allocations: 16903)
+Completed 200 OK in 635ms (Views: 74.0ms | ActiveRecord: 0.0ms | Allocations: 18766)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:43:59 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 67.8ms | Allocations: 775)
+  Rendered layout layouts/application.html.erb (Duration: 103.5ms | Allocations: 16822)
+Completed 200 OK in 728ms (Views: 112.5ms | ActiveRecord: 0.0ms | Allocations: 18684)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:54:26 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 108.2ms | Allocations: 25275)
+Completed 200 OK in 696ms (Views: 111.6ms | ActiveRecord: 0.0ms | Allocations: 27142)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:54:36 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 772)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 16884)
+Completed 200 OK in 609ms (Views: 43.6ms | ActiveRecord: 0.0ms | Allocations: 18745)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:54:40 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 767)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 16857)
+Completed 200 OK in 582ms (Views: 38.5ms | ActiveRecord: 0.0ms | Allocations: 18722)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:54:48 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 765)
+  Rendered layout layouts/application.html.erb (Duration: 39.9ms | Allocations: 16706)
+Completed 200 OK in 628ms (Views: 43.3ms | ActiveRecord: 0.0ms | Allocations: 18569)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:55:12 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 770)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 16879)
+Completed 200 OK in 597ms (Views: 37.3ms | ActiveRecord: 0.0ms | Allocations: 18744)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:58:43 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 126.2ms | Allocations: 25537)
+Completed 200 OK in 704ms (Views: 130.5ms | ActiveRecord: 0.0ms | Allocations: 27398)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:59:36 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 95.1ms | Allocations: 25816)
+Completed 200 OK in 668ms (Views: 97.8ms | ActiveRecord: 0.0ms | Allocations: 27678)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:59:42 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 773)
+  Rendered layout layouts/application.html.erb (Duration: 72.0ms | Allocations: 16863)
+Completed 200 OK in 672ms (Views: 77.8ms | ActiveRecord: 0.0ms | Allocations: 18728)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 20:59:51 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 769)
+  Rendered layout layouts/application.html.erb (Duration: 128.5ms | Allocations: 26108)
+Completed 200 OK in 724ms (Views: 138.2ms | ActiveRecord: 0.0ms | Allocations: 27970)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:01:32 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 769)
+  Rendered layout layouts/application.html.erb (Duration: 102.1ms | Allocations: 26112)
+Completed 200 OK in 687ms (Views: 104.6ms | ActiveRecord: 0.0ms | Allocations: 27974)
+
+
+Started GET "/courses?term=test" for 127.0.0.1 at 2024-04-15 21:02:06 +0200
+Processing by CoursesController#index as HTML
+  Parameters: {"term"=>"test"}
+  Rendering layout layouts/application.html.erb
+  Rendering courses/index.html.erb within layouts/application
+  Rendered courses/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 548)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 2552)
+Completed 200 OK in 580ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 3812)
+
+

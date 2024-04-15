@@ -5,8 +5,11 @@ class ApplicationController < ActionController::Base
 
   URI_BASE = "https://tiss.tuwien.ac.at/api/"
 
+  layout "application"
+
   def initialize
     @endpoint_base = ""
+    super
   end
 
   def base

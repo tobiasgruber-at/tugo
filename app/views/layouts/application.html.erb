@@ -1,16 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>TuGo</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<html lang="en,de">
+<head>
+  <title>TuGo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_importmap_tags %>
+</head>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
-  </head>
-
-  <body>
-    <%= yield %>
-  </body>
+<body>
+<nav>
+  <div class="nav__start"></div>
+  <div class="nav__end"></div>
+</nav>
+<div class="container">
+  <%= yield %>
+</div>
+</body>
 </html>

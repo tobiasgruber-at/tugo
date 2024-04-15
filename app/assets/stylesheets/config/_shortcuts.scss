@@ -1,0 +1,67 @@
+.border {
+  border: var(--border);
+
+  &--rounded {
+    border-radius: var(--border-radius);
+  }
+}
+
+.muted {
+  color: var(--color-text-muted);
+}
+
+.flex {
+  &-display {
+    display: flex;
+  }
+
+  &-column {
+    flex-direction: column;
+  }
+
+  &-gap {
+    &--xxxs {
+      gap: var(--space-xxxs)
+    }
+
+    &--xxs {
+      gap: var(--space-xxs)
+    }
+
+    &--xs {
+      gap: var(--space-xs)
+    }
+
+    &--s {
+      gap: var(--space-s)
+    }
+
+    &--m {
+      gap: var(--space-m)
+    }
+
+    &--l {
+      gap: var(--space-l)
+    }
+
+    &--xl {
+      gap: var(--space-xl)
+    }
+
+    &--xxl {
+      gap: var(--space-xxl)
+    }
+
+    &--xxxl {
+      gap: var(--space-xxxl)
+    }
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: bold;
+}
