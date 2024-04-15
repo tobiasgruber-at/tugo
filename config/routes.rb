@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  get 'people/show/:id' => 'people#show'
-  get 'people/search/:term' => 'people#index'
+  resources :people
+  resources :courses
+  resources :theses
+  resources :projects
 end

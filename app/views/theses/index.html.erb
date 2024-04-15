@@ -3,7 +3,9 @@
 <ul>
   <% @resources["results"].each do |result| %>
     <li>
-      <%= link_to full_name(result), result["tiss_id"].to_s %>
+      <a href="<%= thesis_path(result) %>">
+        <%= result["short"] %>
+      </a>
     </li>
   <% end %>
 </ul>

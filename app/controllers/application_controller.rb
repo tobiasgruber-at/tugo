@@ -2,26 +2,28 @@ require 'net/http'
 require 'json'
 
 class ApplicationController < ActionController::Base
-  TISS_API_BASE = "https://tiss.tuwien.ac.at/api/"
 
-  def index(endpoint)
-    uri = URI(concat_uri(endpoint))
+  URI_BASE = "https://tiss.tuwien.ac.at/api/"
+
+  def initialize
+    @endpoint_base = ""
+  end
+
+  def base
+    URI_BASE + @endpoint_base
+  end
+
+  def index(endpoint = "")
+    @term = params["term"]
+    uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     @resources = JSON.parse(response)
   end
 
-  def show(endpoint)
-    id = params[:id]
-    uri = URI(concat_uri(endpoint, id))
+  def show(endpoint = "")
+    uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     @resource = JSON.parse(response)
   end
-
-  private
-
-  def concat_uri(endpoint = "", id = "")
-    TISS_API_BASE + @endpoint_base + endpoint + id
-  end
-
 
 end
