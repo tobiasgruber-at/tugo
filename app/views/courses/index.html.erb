@@ -1,17 +1,21 @@
-<h1>Results for <span class="term"><%= @term %></span>:</h1>
-<div class="list">
-  <% @resources["results"].each do |result| %>
-    <div class="list__item">
-      <div class="flex-display flex-column">
-        <div class="flex-display flex-gap--xs">
-          <span class="muted"><%= course_number(result) %></span>
+<% if @error %>
+ <h1>Error: <%= @error %></h1>
+<% else %>
+  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <div class="list">
+    <% @resources["results"].each do |result| %>
+      <div class="list__item">
+        <div class="flex-display flex-column">
+          <div class="flex-display flex-gap--xs">
+            <span class="muted"><%= course_number(result) %></span>
+          </div>
+          <div class="flex-display flex-gap--m">
+            <span class="italic"><%= course_type(result) %></span>
+            <span class="bold"><%= course_name(result) %></span>
+          </div>
         </div>
-        <div class="flex-display flex-gap--m">
-          <span class="italic"><%= course_type(result) %></span>
-          <span class="bold"><%= course_name(result) %></span>
-        </div>
-      </div>
 
-    </div>
-  <% end %>
-</div>
+      </div>
+    <% end %>
+  </div>
+<% end %>
