@@ -1,3 +1,5 @@
+@import "mixins/fs";
+
 .box {
   display: block;
   border-radius: var(--border-radius);
@@ -7,6 +9,7 @@
   &__title {
     display: block;
     font-weight: bold;
+    @extend .fs--xxl;
   }
 
   &--lighter {

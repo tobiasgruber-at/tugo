@@ -1,0 +1,24 @@
+<% if courses.nil? or courses == [] %>
+  <div class="box box--light">
+    <div class="box__title">Sorry we could not find what you are looking for</div>
+    try a different search term
+  </div>
+  <% else %>
+  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <div class="list">
+    <% @resources["results"].each do |result| %>
+      <a class="list__item btn btn--block" href="">
+        <div class="flex-display flex-column">
+          <div class="flex-display flex-gap--xs">
+            <span class="muted fs--xs"><%= course_number(result) %></span>
+          </div>
+          <div class="flex-display flex-gap--m">
+            <span class="italic"><%= course_type(result) %></span>
+            <span><%= course_name(result) %></span>
+          </div>
+        </div>
+      </a>
+    <% end %>
+  </div>
+
+<% end %>
