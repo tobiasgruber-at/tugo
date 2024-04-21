@@ -5,3 +5,4 @@
 | 15.04.2024 | 18:30 - 21:00 | 2:30h    | t    | add validation, xml parsing and error-handling                             |
 | 15.04.2024 | 18:30 - 23:00 | 4:30h    | s    | implement more styles for courses and people                               |
 | 15.04.2024 | 23:00 - 00:30 | 1:30h    | s    | #6 add styling to courses, people, projects and theses                     |
+| 21.04.2024 | 12:00 - 15:30 | 3:30h    | s    | #6 update ui, refactor tiss api controller, implement search for courses   |
