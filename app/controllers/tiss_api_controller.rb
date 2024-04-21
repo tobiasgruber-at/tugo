@@ -13,27 +13,55 @@ class TissApiController < ApplicationController
     URI_BASE + @endpoint_base
   end
 
-  def index(endpoint = "")
-    @term = params["term"]
-    term_model = SearchTerm.new(query: @term)
-    unless term_model.valid?
-      @error = "Term #{term_model.errors.messages[:query][0]}"
-      return
+  def index(term, endpoint = "", parser = -> (val) {JSON.parse(val)})
+    @term = term
+    begin
+      self.validate_term
+      @resources = self.search(endpoint, parser)
+    rescue RuntimeError => e
+      @error = e.message
+      @resources = nil
     end
-    uri = URI(base + endpoint)
-    response = Net::HTTP.get(uri)
-    @resources = JSON.parse(response)
-    if @resources['error_message']
-      @error = @resources['error_message']
-    end
-    puts @resources
   end
 
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
+    @resource = self.get(endpoint, parser)
+    puts @resource
+  end
+
+  private
+
+  def validate_term
+    term_model = SearchTerm.new(query: @term)
+    unless term_model.valid?
+      # TODO: add custom error
+      raise RuntimeError.new("Term #{term_model.errors.messages[:query][0]}")
+    end
+  end
+
+  def search(endpoint, parser)
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
-    @resource = parser.call(response)
-    puts @resource
+    resources = parser.call(response)
+    if has_error?(resources)
+      # TODO: add custom error
+      raise RuntimeError.new(resources['error_message'])
+    end
+    resources
+  end
+
+  def get(endpoint, parser)
+    uri = URI(base + endpoint)
+    response = Net::HTTP.get(uri)
+    parser.call(response)
+  end
+
+  def has_error?(resources)
+    not get_error_msg(resources).nil?
+  end
+
+  def get_error_msg(resources)
+    resources['error_message']
   end
 
 end
