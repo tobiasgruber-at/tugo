@@ -7,10 +7,8 @@
   <h1>Results for <span class="term"><%= @term %></span>:</h1>
   <div class="list">
     <% @resources["results"].each do |result| %>
-      <a class="btn btn--block" href="<%= thesis_path(result["id"]) %>">
-        <div class="list__item">
-          <%= result["title"] || result["id"] %>
-        </div>
+      <a class="list__item btn btn--block" href="<%= thesis_path(result["id"]) %>">
+        <%= result["title"] || result["id"] %>
       </a>
     <% end %>
   </div>

@@ -1,0 +1,17 @@
+@import "config/variables";
+
+@mixin flex-gap($name, $size) {
+  .flex-gap--#{$name} {
+    gap: $size
+  }
+}
+
+@include flex-gap(xxxl, var(--space-xxxl));
+@include flex-gap(xxl, var(--space-xxl));
+@include flex-gap(xl, var(--space-xl));
+@include flex-gap(l, var(--space-l));
+@include flex-gap(m, var(--space-m));
+@include flex-gap(s, var(--space-s));
+@include flex-gap(xs, var(--space-xs));
+@include flex-gap(xxs, var(--space-xxs));
+@include flex-gap(xxxs, var(--space-xxxs));

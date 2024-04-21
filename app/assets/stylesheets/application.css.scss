@@ -14,13 +14,17 @@
  *= require_self
  */
 
-// Mixins
-@import "mixins/media";
-
 // Configuration
 @import "config/variables";
 @import "config/reset";
 @import "config/shortcuts";
+
+// Mixins
+@import "mixins/media";
+@import "mixins/box-shadow";
+@import "mixins/padding";
+@import "mixins/fs";
+@import "mixins/flex";
 
 // Components
 @import "components/box";

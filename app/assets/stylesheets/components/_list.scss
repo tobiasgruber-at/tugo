@@ -1,3 +1,5 @@
+@import "mixins/padding";
+
 .list {
   display: flex;
   flex-direction: column;
@@ -9,7 +11,23 @@
 
   &__item {
     display: block;
-    padding: var(--space-s) var(--space-xs);
-    border-bottom: var(--border);
+    position: relative;
+    z-index: 1;
+    border-radius: var(--border-radius);
+    @extend .p-t--s;
+    @extend .p-b--s;
+    @extend .p-l--xs;
+    @extend .p-r--xs;
+  }
+
+  &__item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: calc(var(--border-width) * -1/2);
+    left: var(--space-s);
+    right: var(--space-s);
+    height: var(--border-width);
+    background: var(--color-light);
   }
 }

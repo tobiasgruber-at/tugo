@@ -1,4 +1,10 @@
+@import "mixins/box-shadow";
+
 nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 10;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -6,12 +12,11 @@ nav {
   align-items: center;
   align-content: center;
   padding: var(--space-s);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
   background-color: var(--color-primary);
   color: var(--color-primary-bg);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  box-shadow: var(--shadow-huge);
+  @extend .shadow-box--huge;
 
   .nav__start {
     justify-content: flex-start;

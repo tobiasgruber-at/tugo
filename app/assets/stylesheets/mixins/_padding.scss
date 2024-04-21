@@ -1,0 +1,79 @@
+@import "config/variables";
+
+@mixin padding($direction, $name, $size) {
+  @if $direction == a {
+    .p--#{$name} {
+      padding: $size;
+    }
+  }
+  @else if $direction == t {
+    .p-#{$direction}--#{$name} {
+      padding-top: $size;
+    }
+  }
+  @else if $direction == r {
+    .p-#{$direction}--#{$name} {
+      padding-right: $size;
+    }
+  }
+  @else if $direction == b {
+    .p-#{$direction}--#{$name} {
+      padding-bottom: $size;
+    }
+  }
+  @else if $direction == l {
+    .p-#{$direction}--#{$name} {
+      padding-left: $size;
+    }
+  }
+}
+
+@include padding(a, xxxl, var(--space-xxxl));
+@include padding(a, xxl, var(--space-xxl));
+@include padding(a, xl, var(--space-xl));
+@include padding(a, l, var(--space-l));
+@include padding(a, m, var(--space-m));
+@include padding(a, s, var(--space-s));
+@include padding(a, xs, var(--space-xs));
+@include padding(a, xxs, var(--space-xxs));
+@include padding(a, xxxs, var(--space-xxxs));
+
+@include padding(t, xxxl, var(--space-xxxl));
+@include padding(t, xxl, var(--space-xxl));
+@include padding(t, xl, var(--space-xl));
+@include padding(t, l, var(--space-l));
+@include padding(t, m, var(--space-m));
+@include padding(t, s, var(--space-s));
+@include padding(t, xs, var(--space-xs));
+@include padding(t, xxs, var(--space-xxs));
+@include padding(t, xxxs, var(--space-xxxs));
+
+@include padding(r, xxxl, var(--space-xxxl));
+@include padding(r, xxl, var(--space-xxl));
+@include padding(r, xl, var(--space-xl));
+@include padding(r, l, var(--space-l));
+@include padding(r, m, var(--space-m));
+@include padding(r, s, var(--space-s));
+@include padding(r, xs, var(--space-xs));
+@include padding(r, xxs, var(--space-xxs));
+@include padding(r, xxxs, var(--space-xxxs));
+
+@include padding(b, xxxl, var(--space-xxxl));
+@include padding(b, xxl, var(--space-xxl));
+@include padding(b, xl, var(--space-xl));
+@include padding(b, l, var(--space-l));
+@include padding(b, m, var(--space-m));
+@include padding(b, s, var(--space-s));
+@include padding(b, xs, var(--space-xs));
+@include padding(b, xxs, var(--space-xxs));
+@include padding(b, xxxs, var(--space-xxxs));
+
+@include padding(l, xxxl, var(--space-xxxl));
+@include padding(l, xxl, var(--space-xxl));
+@include padding(l, xl, var(--space-xl));
+@include padding(l, l, var(--space-l));
+@include padding(l, m, var(--space-m));
+@include padding(l, s, var(--space-s));
+@include padding(l, xs, var(--space-xs));
+@include padding(l, xxs, var(--space-xxs));
+@include padding(l, xxxs, var(--space-xxxs));

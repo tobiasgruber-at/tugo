@@ -1,0 +1,11 @@
+@import "config/variables";
+
+@mixin box-shadow($name, $shadow-shape) {
+    .shadow-box--#{$name} {
+      box-shadow: $shadow-shape;
+    }
+}
+
+@include box-shadow(huge, var(--shadow-huge));
+@include box-shadow(large, var(--shadow-large));
+@include box-shadow(small, var(--shadow-small));
