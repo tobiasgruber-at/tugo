@@ -1,27 +1,13 @@
+<%= form_with(url: courses_path, method: :get, data: {turbo_frame: "courses"}) do |form| %>
+  <%= form.label :term, "Search for courses" %>
+  <%= form.text_field :term %>
+  <%= form.submit "Search", name: nil %>
+<% end %>
+
 <% if @error %>
-  <div class="box--error">
-    <div class="box__title">
-      <h1>Error</h1>
-    </div>
-    <%= @error %>
-  </div>
-<% else %>
-  <h1>Results for <span class="term"><%= @term %></span>:</h1>
-  <div class="list">
-    <% @resources["results"].each do |result| %>
-      <a class="btn btn--block" href="">
-        <div class="list__item">
-          <div class="flex-display flex-column">
-            <div class="flex-display flex-gap--xs">
-              <span class="muted fs--xs"><%= course_number(result) %></span>
-            </div>
-            <div class="flex-display flex-gap--m">
-              <span class="italic"><%= course_type(result) %></span>
-              <span><%= course_name(result) %></span>
-            </div>
-          </div>
-        </div>
-      </a>
-    <% end %>
-  </div>
+  <%= render "components/error", error: @error %>
+<% end %>
+
+<%= turbo_frame_tag "courses" do %>
+  <%= render "courses", courses: @resources %>
 <% end %>

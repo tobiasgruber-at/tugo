@@ -31,7 +31,6 @@
   --space-xxxxl: 4rem; // 64px
 
   // Application colors
-
   --hue-primary: 350;
   --hue-secondary: 100;
   --hue-tertiary: 50;
@@ -72,7 +71,9 @@
   --color-success-darker: hsl(var(--hue-success), 70%, 60%);
 
   --color-white: hsl(0, 0%, 100%);
-  --color-background: hsl(30, 50%, 98%);
+  --color-background: hsl(var(--hue-primary), 15%, 95%);
+
+  --color-hover: hsla(0, 0%, 0%, 0.01);
 
   --color-lighter: hsl(0, 0%, 95%);
   --color-lighter-rotate: hsl(20, 0%, 95%);
@@ -94,14 +95,12 @@
   --color-text-muted: hsl(0, 0%, 45%);
   --color-text-light: var(--color-light);
 
-  // Border radius
   --border-radius: 0.375rem;
+  --border-width: 2px;
 
-  // Border
-  --border-shape: solid 2px;
+  --border-shape: solid var(--border-width);
   --border: var(--border-shape) var(--color-light);
 
-  // Shadows
   --shadow-huge: 0 20px 30px rgba(0, 0, 0, 0.2);
   --shadow-large: 0 10px 30px 5px rgba(80, 80, 80, 0.2);
   --shadow-small: 0 2px 8px 0 rgba(100, 100, 111, 0.2);

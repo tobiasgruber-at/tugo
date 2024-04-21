@@ -1,0 +1,17 @@
+@import "config/variables";
+
+@mixin fs($name, $size) {
+  .fs--#{$name} {
+    font-size: $size;
+  }
+}
+
+@include fs(xxxl, var(--font-size-xxxl));
+@include fs(xxl, var(--font-size-xxl));
+@include fs(xl, var(--font-size-xl));
+@include fs(l, var(--font-size-l));
+@include fs(m, var(--font-size-m));
+@include fs(s, var(--font-size-s));
+@include fs(xs, var(--font-size-xs));
+@include fs(xxs, var(--font-size-xxs));
+@include fs(xxxs, var(--font-size-xxxs));

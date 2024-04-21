@@ -1,10 +1,12 @@
 class ThesesController < TissApiController
 
   def index
-    super("search/thesis/v1.0/quickSearch?searchterm=#{params["term"]}")
+    term = params["term"]
+    super(term,"search/thesis/v1.0/quickSearch?searchterm=#{term}")
   end
 
   def show
-    super("thesis/#{params["id"]}", -> (val) { Nokogiri::XML(val) })
+    id = params["id"]
+    super("thesis/#{id}", -> (val) { Nokogiri::XML(val) })
   end
 end

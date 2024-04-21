@@ -1,19 +1,15 @@
 <% if @error %>
   <div class="box box--error">
-    <div class="box__title">
-      <h1>Error</h1>
-    </div>
+    <div class="box__title fs--xxl">Error</div>
     <%= @error %>
   </div>
 <% else %>
   <h1>Results for <span class="term"><%= @term %></span>:</h1>
   <div class="list">
     <% @resources["results"].each do |result| %>
-      <a class="btn btn--block" href="<%= project_path(result["id"]) %>">
-        <div class="list__item">
+      <a class="list__item btn btn--block" href="<%= project_path(result["id"]) %>">
           <!-- TODO: maybe get the title from the detail_url_rest url -->
           <%= result["title"] || result["id"] %>
-        </div>
       </a>
     <% end %>
   </div>

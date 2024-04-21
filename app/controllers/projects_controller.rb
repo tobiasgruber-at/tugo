@@ -1,11 +1,13 @@
 class ProjectsController < TissApiController
 
   def index
-    super("search/projectFullSearch/v1.0/projects?searchterm=#{params["term"]}")
+    term = params["term"]
+    super(term, "search/projectFullSearch/v1.0/projects?searchterm=#{}")
     # TODO: capture result and parse course number and semester
   end
 
   def show
-    super("pdb/rest/project/v3/#{params["id"]}", -> (val) { Nokogiri::XML(val) })
+    id = params["id"]
+    super("pdb/rest/project/v3/#{id}", -> (val) { Nokogiri::XML(val) })
   end
 end
