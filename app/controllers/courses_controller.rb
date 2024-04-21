@@ -1,4 +1,4 @@
-class CoursesController < ApplicationController
+class CoursesController < TissApiController
 
   def index
     term = params["term"]

@@ -1,4 +1,4 @@
-class ThesesController < ApplicationController
+class ThesesController < TissApiController
 
   def index
     super("search/thesis/v1.0/quickSearch?searchterm=#{params["term"]}")
