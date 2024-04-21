@@ -2,6 +2,8 @@ require 'net/http'
 require 'json'
 
 class TissApiController < ApplicationController
+  before_action :redirect_if_logged_in
+
   URI_BASE = "https://tiss.tuwien.ac.at/api/"
 
   def initialize

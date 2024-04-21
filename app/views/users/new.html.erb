@@ -1,0 +1,21 @@
+<h1>Register</h1>
+<%= form_with model: @user do |f| %>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+  <% @user.errors.full_messages_for(:email).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
+  <%= f.label :password %>
+  <%= f.password_field :password %>
+   <% @user.errors.full_messages_for(:password).each do |message| %>
+    <div><%= message %></div>
+  <% end %>
+  <%= f.submit "Register" %>
+<% end %>
+<%= @res %>
+<span>
+  Already have an account?
+  <a class="btn" href="/login">
+    Login
+  </a>
+</span>

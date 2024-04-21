@@ -21,7 +21,14 @@
       TUgo
     </a>
   </div>
-  <div class="nav__end"></div>
+  <div class="nav__end">
+    <% if logged_in? %>
+      <a href="/logout">Logout</a>
+    <% else logged_in? %>
+      <a href="/login">Login</a>
+      <a href="/register">Register</a>
+    <% end %>
+  </div>
 </nav>
 
 <div class="container p-t--l">
