@@ -27,8 +27,7 @@ class TissApiController < ApplicationController
   end
 
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
-    @resource = self.get(endpoint, parser)
-    puts @resource
+    @resource = self.find(endpoint, parser)
   end
 
   private
@@ -52,7 +51,7 @@ class TissApiController < ApplicationController
     resources
   end
 
-  def get(endpoint, parser)
+  def find(endpoint, parser)
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     parser.call(response)

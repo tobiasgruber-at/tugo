@@ -1,0 +1,13 @@
+<% if resources.nil? or resources == [] %>
+  <div class="box box--light">
+    <div class="box__title">Sorry we could not find what you are looking for</div>
+    try a different search term
+  </div>
+<% else %>
+  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <div class="list">
+    <% resources.each do |resource| %>
+      <%= yield resource %>
+    <% end %>
+  </div>
+<% end %>

@@ -1,4 +1,4 @@
-<%= form_with(url: courses_path, method: :get, data: {turbo_frame: "courses"}) do |form| %>
+<%= form_with(url: courses_path, method: :get) do |form| %>
   <%= form.label :term, "Search for courses" %>
   <%= form.text_field :term %>
   <%= form.submit "Search", name: nil %>
@@ -8,6 +8,16 @@
   <%= render "components/error", error: @error %>
 <% end %>
 
-<%= turbo_frame_tag "courses" do %>
-  <%= render "courses", courses: @resources %>
+<%= render :layout => "layouts/resources", :locals => {resources: courses(@resources)} do |resource| %>
+  <a class="list__item btn btn--block" href="">
+    <div class="flex-display flex-column">
+      <div class="flex-display flex-gap--xs">
+        <span class="muted fs--xs"><%= course_number(resource) %></span>
+      </div>
+      <div class="flex-display flex-gap--xxs">
+        <span class="italic"><%= course_type(resource) %></span>
+        <span><%= course_name(resource) %></span>
+      </div>
+    </div>
+  </a>
 <% end %>

@@ -1,15 +1,15 @@
+<%= form_with(url: people_path, method: :get) do |form| %>
+  <%= form.label :term, "Search for people" %>
+  <%= form.text_field :term %>
+  <%= form.submit "Search", name: nil %>
+<% end %>
+
 <% if @error %>
-  <div class="box box--error">
-    <div class="box__title fs--xxl">Error</div>
-    <%= @error %>
-  </div>
-<% else %>
-  <h1>Results for <span class="term"><%= @term %></span>:</h1>
-  <div class="list">
-    <% @resources["results"].each do |result| %>
-      <a class="list__item btn btn--block" href="<%= person_path(result["tiss_id"]) %>">
-          <%= full_name(result) %>
-      </a>
-    <% end %>
-  </div>
+  <%= render "components/error", error: @error %>
+<% end %>
+
+<%= render :layout => "layouts/resources", :locals => {resources: people(@resources)} do |resource| %>
+<a class="list__item btn btn--block" href="<%= person_path(resource["tiss_id"]) %>">
+  <%= full_name(resource) %>
+</a>
 <% end %>

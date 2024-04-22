@@ -1,24 +1,33 @@
 module CoursesHelper
-  def course_number(result)
-    course_field(result, 0)
+
+  def courses(resources)
+    if resources.nil? || resources.empty?
+      []
+    else
+      resources["results"]
+    end
   end
 
-  def course_type(result)
-    course_field(result, 1)
+  def course_number(course)
+    course_field(course, 0)
   end
 
-  def course_name(result)
-    course_field(result, 2)
+  def course_type(course)
+    course_field(course, 1)
   end
 
-  def course_semester(result)
-    course_field(result, 3)
+  def course_name(course)
+    course_field(course, 2)
+  end
+
+  def course_semester(course)
+    course_field(course, 3)
   end
 
   private
 
-  def course_field(result, index)
-    title = result["title"].to_s
+  def course_field(course, index)
+    title = course["title"].to_s
     fields = parse_course_title(title)
     fields[index]
   end
