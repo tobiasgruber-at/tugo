@@ -1,6 +1,8 @@
 <%= form_with(url: people_path, method: :get) do |form| %>
-  <%= form.label :term, "Search for people" %>
-  <%= form.text_field :term %>
+  <div class="form-element">
+      <%= form.label :term, "Search for people" %>
+      <%= form.text_field :term %>
+  </div>
   <%= form.submit "Search", name: nil %>
 <% end %>
 

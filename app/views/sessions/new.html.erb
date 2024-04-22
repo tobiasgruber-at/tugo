@@ -1,15 +1,19 @@
 <h1>Login</h1>
 <%= form_with model: @session, url: "/login" do |f| %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <% @session.errors.full_messages_for(:email).each do |message| %>
-    <div><%= message %></div>
-  <% end %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <% @session.errors.full_messages_for(:password).each do |message| %>
-    <div><%= message %></div>
-  <% end %>
+  <div class="form-element">
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <% @session.errors.full_messages_for(:email).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
+  <div class="form-element">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <% @session.errors.full_messages_for(:password).each do |message| %>
+      <div><%= message %></div>
+    <% end %>
+  </div>
   <%= f.submit "Log in" %>
 <% end %>
 <span>

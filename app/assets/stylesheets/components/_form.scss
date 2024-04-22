@@ -1,0 +1,40 @@
+@import "mixins/padding";
+@import "mixins/flex";
+@import "mixins/fs";
+@import "config/shortcuts";
+@import "btn";
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  @extend .flex-gap--xs;
+
+  input[type=submit] {
+    @extend .btn--primary--3d;
+  }
+
+  input {
+    @extend .p--xxs;
+    background-color: var(--color-white);
+  }
+}
+
+.form {
+  &-element {
+    @extend .flex-display;
+    @extend .flex-column;
+    flex-wrap: nowrap;
+    @extend .flex-gap--xxs;
+  }
+
+  &-element label {
+    @extend .fs--s;
+    @extend .muted;
+  }
+
+  &-element input {
+    border: none;
+    @extend .border--rounded;
+  }
+}

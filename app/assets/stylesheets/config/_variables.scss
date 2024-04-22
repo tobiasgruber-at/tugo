@@ -37,11 +37,11 @@
   --hue-error: 0;
   --hue-success: 120;
 
-  --hue-primary-rotate: (var(--hue-primary) + 20) % 360;
-  --hue-secondary-rotate: (var(--hue-secondary) + 20) % 360;
-  --hue-tertiary-rotate: (var(--hue-tertiary) + 20) % 360;
-  --hue-error-rotate: (var(--hue-error) + 20) % 360;
-  --hue-success-rotate: (var(--hue-success) + 20) % 360;
+  --hue-primary-rotate: mod(calc(var(--hue-primary) + 20), 360);
+  --hue-secondary-rotate: mod(calc(var(--hue-secondary) + 20), 360);
+  --hue-tertiary-rotate: mod(calc(var(--hue-tertiary) + 20), 360);
+  --hue-error-rotate: mod(calc(var(--hue-error) + 20), 360);
+  --hue-success-rotate: mod(calc(var(--hue-success) + 20), 360);
 
   --bg-luminosity: 96%;
 
@@ -85,7 +85,8 @@
   --color-light-bg: hsl(0, 0%, var(--bg-luminosity));
   --color-light-darker: hsl(0, 0%, 80%);
 
-  --color-dark: hsl(0, 0%, 15%);
+  --color-dark-raw: 0, 0%, 15%;
+  --color-dark: hsl(var(--color-dark-raw));
   --color-dark-rotate: hsl(20, 0%, 10%);
   --color-dark-bg: hsl(0, 0%, var(--bg-luminosity));
   --color-dark-darker: hsl(0, 0%, 5%);
