@@ -3,23 +3,21 @@
   <div class="form-element">
     <%= f.label :email %>
     <%= f.text_field :email %>
-    <% @user.errors.full_messages_for(:email).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
+    <%= render "components/form-errors", messages: @user.errors.full_messages_for(:email) %>
   </div>
   <div class="form-element">
     <%= f.label :password %>
     <%= f.password_field :password %>
-     <% @user.errors.full_messages_for(:password).each do |message| %>
-      <div><%= message %></div>
-    <% end %>
+    <%= render "components/form-errors", messages: @user.errors.full_messages_for(:password) %>
   </div>
-  <%= f.submit "Register" %>
+  <%= f.submit "Register", class: "btn--3d" %>
 <% end %>
 <%= @res %>
-<span>
-  Already have an account?
-  <a class="btn" href="/login">
-    Login
-  </a>
-</span>
+<div class="flex-center p--l">
+  <span>
+    Already have an account?
+    <a class="link" href="/login">
+      Login
+    </a>
+  </span>
+</div>

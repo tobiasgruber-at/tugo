@@ -1,5 +1,3 @@
-@import "mixins/padding";
-
 .list {
   display: flex;
   flex-direction: column;
@@ -14,10 +12,10 @@
     position: relative;
     z-index: 1;
     border-radius: var(--border-radius);
-    @extend .p-t--s;
-    @extend .p-b--s;
-    @extend .p-l--xs;
-    @extend .p-r--xs;
+    @extend .p-t--s !optional;
+    @extend .p-b--s !optional;
+    @extend .p-l--xs !optional;
+    @extend .p-r--xs !optional;
   }
 
   &__item:not(:last-child)::after {

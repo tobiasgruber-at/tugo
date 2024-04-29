@@ -1,40 +1,113 @@
-@import "mixins/padding";
-@import "mixins/flex";
-@import "mixins/fs";
-@import "config/shortcuts";
-@import "btn";
-
 form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  @extend .flex-gap--xs;
-
-  input[type=submit] {
-    @extend .btn--primary--3d;
-  }
+  @extend .flex-gap--xs !optional;
 
   input {
-    @extend .p--xxs;
     background-color: var(--color-white);
+    transition: box-shadow 300ms;
+    @extend .p--s !optional;
+    @extend .p-t--xs !optional;
+    @extend .fs--m !optional;
+    @extend .box-shadow--tiny !optional;
+  }
+
+  input:hover {
+    @extend .box-shadow--small !optional;
+  }
+
+  input:active,
+  input:focus {
+    outline: var(--border-shape);
+    outline-color: var(--color-primary);
+  }
+
+  input[type=button]:active,
+  input[type=submit]:active,
+  input[type=button]:focus,
+  input[type=submit]:focus {
+    outline: none;
+  }
+
+  input[type=text] {
+    @extend .p-l--s !optional;
+  }
+
+  input[type=submit] {
+    @extend .btn !optional;
+    @extend .btn--primary !optional;
+  }
+
+  input[type=button] {
+    @extend .btn !optional;
+    @extend .btn--secondary !optional;
   }
 }
 
 .form {
   &-element {
-    @extend .flex-display;
-    @extend .flex-column;
+    @extend .flex-display !optional;
+    @extend .flex-column !optional;
     flex-wrap: nowrap;
-    @extend .flex-gap--xxs;
+    @extend .flex-gap--xxs !optional;
+
+    label {
+      width: 100%;
+      @extend .fs--m !optional;
+      @extend .muted !optional;
+    }
+
+    .field_with_errors label {
+      color: var(--color-error);
+    }
+
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      @extend .border--rounded !optional;
+    }
+
+    .field_with_errors input {
+      outline: var(--border-shape) var(--color-error);
+    }
   }
 
-  &-element label {
-    @extend .fs--s;
-    @extend .muted;
+  &-error-messages {
+    display: flex;
+    flex-direction: column;
   }
 
-  &-element input {
-    border: none;
-    @extend .border--rounded;
+  &-error-message {
+    @extend .fs--xs !optional;
+    color: var(--color-error);
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &-input-group {
+    align-items: stretch;
+  }
+
+  &-input-group__small {
+    @extend .p-l--m !optional;
+    @extend .p-r--m !optional;
+    flex-basis: content;
+  }
+
+  &-input-group :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-input-group :last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

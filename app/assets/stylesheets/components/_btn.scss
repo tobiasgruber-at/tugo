@@ -1,135 +1,96 @@
-@import "mixins/fs";
-
 .btn {
   display: inline-block;
+  @extend .p--xxs !optional;
+  border-radius: var(--border-radius);
   cursor: pointer;
   outline: none;
-  transition: background-color 200ms;
+  border: none;
+  transition: background 200ms;
   user-select: none;
-  -webkit-user-drag: none;
   touch-action: manipulation;
 
   &:hover,
   &:focus,
   &:focus-within,
   &:active {
-    background-color: var(--color-hover);
+    filter: brightness(var(--hover-brightness));
+    backdrop-filter: brightness(var(--hover-brightness));
   }
 
   &--lighter {
+    color: var(--color-text-body);
     background-color: var(--color-lighter);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-lighter-darker);
-    }
   }
 
   &--light {
+    color: var(--color-text-body);
     background-color: var(--color-light);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-light-darker);
-    }
   }
 
   &--dark {
     background-color: var(--color-dark);
     color: var(--color-text-light);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-dark-darker);
-    }
   }
 
   &--primary {
-    background-color: var(--color-primary);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-primary-darker);
-    }
-
-    &--3d {
-      position: relative;
-      padding: var(--space-xxs) var(--space-xs);
-      margin: 0 0 var(--space-s) 0;
-      color: var(--color-white);
-      background-color: var(--color-primary);
-      box-shadow: 1px 1px 0 0 var(--color-dark),
-                  2px 2px 0 0 var(--color-dark),
-                  3px 3px 0 0 var(--color-dark),
-                  4px 4px 0 0 var(--color-dark),
-                  2px 5px 6px 1px hsla(0, 0, 5%, 0.3);
-      border: var(--border-shape) var(--color-dark);
-      border-radius: var(--border-radius);
-      @extend .fs--l;
-    }
-
-    &--3d:active {
-      box-shadow: inset 1px 1px 1px 0px hsla(0, 0, 5%, 0.2);
-      top: var(--space-xxxs);
-      left: var(--space-xxxs);
-    }
-
+    color: var(--color-text-light);
+    background: var(--background-primary);
   }
 
   &--secondary {
-    background-color: var(--color-secondary);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-secondary-darker);
-    }
+    color: var(--color-text-body);
+    background: var(--background-secondary);
   }
 
   &--tertiary {
-    background-color: var(--color-tertiary);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-tertiary-darker);
-    }
+    color: var(--color-text-body);
+    background: var(--background-tertiary);
   }
 
   &--error {
-    background-color: var(--color-error);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-error-darker);
-    }
+    color: var(--color-text-light);
+    background: var(--background-error);
   }
 
   &--success {
-    background-color: var(--color-success);
-
-    &:hover,
-    &:focus,
-    &:focus-within,
-    &:active {
-      background-color: var(--color-success-darker);
-    }
+    color: var(--color-text-light);
+    background: var(--background-success);
   }
-
 
   &--block {
     display: block;
+  }
+
+  &--3d {
+    position: relative;
+    @extend .m-b--s !optional;
+    @extend .p-t--xxs !optional;
+    @extend .p-b--xxs !optional;
+    @extend .p-l--xs !optional;
+    @extend .p-r--xs !optional;
+    color: var(--color-white);
+    border: var(--border-shape) var(--color-dark) !important;
+    border-radius: var(--border-radius);
+    box-shadow: 1px 1px 0 0 var(--color-dark),
+    2px 2px 0 0 var(--color-dark),
+    3px 3px 0 0 var(--color-dark),
+    4px 4px 0 0 var(--color-dark),
+    2px 5px 6px 1px hsla(0, 0, 5%, 0.3);
+    @extend .fs--l !optional;
+  }
+
+  &--3d:hover {
+    backdrop-filter: brightness(var(--hover-brightness));
+    box-shadow: 1px 1px 0 0 var(--color-dark),
+    2px 2px 0 0 var(--color-dark),
+    3px 3px 0 0 var(--color-dark),
+    4px 4px 0 0 var(--color-dark),
+    2px 5px 6px 1px hsla(0, 0, 5%, 0.3);
+  }
+
+  &--3d:active {
+    box-shadow: inset 1px 1px 1px 0 hsla(0, 0, 5%, 0.2);
+    top: var(--space-xxxs);
+    left: var(--space-xxxs);
   }
 }

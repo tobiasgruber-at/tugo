@@ -1,9 +1,12 @@
+<h1>People</h1>
 <%= form_with(url: people_path, method: :get) do |form| %>
   <div class="form-element">
-      <%= form.label :term, "Search for people" %>
+    <%= form.label :term, "Search for people" %>
+    <div class="form-row form-input-group">
       <%= form.text_field :term %>
+      <%= form.submit "Search", name: nil, class: "form-input-group__small" %>
+    </div>
   </div>
-  <%= form.submit "Search", name: nil %>
 <% end %>
 
 <% if @error %>

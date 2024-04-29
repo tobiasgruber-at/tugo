@@ -1,5 +1,3 @@
-@import "config/variables";
-
 @mixin padding($direction, $name, $size) {
   @if $direction == a {
     .p--#{$name} {
@@ -28,6 +26,7 @@
   }
 }
 
+@include padding(a, xxxxl, var(--space-xxxxl));
 @include padding(a, xxxl, var(--space-xxxl));
 @include padding(a, xxl, var(--space-xxl));
 @include padding(a, xl, var(--space-xl));
@@ -38,6 +37,7 @@
 @include padding(a, xxs, var(--space-xxs));
 @include padding(a, xxxs, var(--space-xxxs));
 
+@include padding(t, xxxxl, var(--space-xxxxl));
 @include padding(t, xxxl, var(--space-xxxl));
 @include padding(t, xxl, var(--space-xxl));
 @include padding(t, xl, var(--space-xl));
@@ -48,6 +48,7 @@
 @include padding(t, xxs, var(--space-xxs));
 @include padding(t, xxxs, var(--space-xxxs));
 
+@include padding(r, xxxxl, var(--space-xxxxl));
 @include padding(r, xxxl, var(--space-xxxl));
 @include padding(r, xxl, var(--space-xxl));
 @include padding(r, xl, var(--space-xl));
@@ -58,6 +59,7 @@
 @include padding(r, xxs, var(--space-xxs));
 @include padding(r, xxxs, var(--space-xxxs));
 
+@include padding(b, xxxxl, var(--space-xxxxl));
 @include padding(b, xxxl, var(--space-xxxl));
 @include padding(b, xxl, var(--space-xxl));
 @include padding(b, xl, var(--space-xl));
@@ -68,6 +70,7 @@
 @include padding(b, xxs, var(--space-xxs));
 @include padding(b, xxxs, var(--space-xxxs));
 
+@include padding(l, xxxxl, var(--space-xxxxl));
 @include padding(l, xxxl, var(--space-xxxl));
 @include padding(l, xxl, var(--space-xxl));
 @include padding(l, xl, var(--space-xl));

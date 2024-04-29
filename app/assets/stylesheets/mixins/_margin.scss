@@ -1,0 +1,102 @@
+@mixin margin($direction, $name, $size) {
+  @if $direction == a {
+    .m--#{$name} {
+      margin: $size;
+    }
+  }
+  @else if $direction == t {
+    .m-#{$direction}--#{$name} {
+      margin-top: $size;
+    }
+  }
+  @else if $direction == r {
+    .m-#{$direction}--#{$name} {
+      margin-right: $size;
+    }
+  }
+  @else if $direction == b {
+    .m-#{$direction}--#{$name} {
+      margin-bottom: $size;
+    }
+  }
+  @else if $direction == l {
+    .m-#{$direction}--#{$name} {
+      margin-left: $size;
+    }
+  }
+}
+
+@include margin(a, xxxxl, var(--space-xxxxl));
+@include margin(a, xxxl, var(--space-xxxl));
+@include margin(a, xxl, var(--space-xxl));
+@include margin(a, xl, var(--space-xl));
+@include margin(a, l, var(--space-l));
+@include margin(a, m, var(--space-m));
+@include margin(a, s, var(--space-s));
+@include margin(a, xs, var(--space-xs));
+@include margin(a, xxs, var(--space-xxs));
+@include margin(a, xxxs, var(--space-xxxs));
+
+@include margin(t, xxxxl, var(--space-xxxxl));
+@include margin(t, xxxl, var(--space-xxxl));
+@include margin(t, xxl, var(--space-xxl));
+@include margin(t, xl, var(--space-xl));
+@include margin(t, l, var(--space-l));
+@include margin(t, m, var(--space-m));
+@include margin(t, s, var(--space-s));
+@include margin(t, xs, var(--space-xs));
+@include margin(t, xxs, var(--space-xxs));
+@include margin(t, xxxs, var(--space-xxxs));
+
+@include margin(r, xxxxl, var(--space-xxxxl));
+@include margin(r, xxxl, var(--space-xxxl));
+@include margin(r, xxl, var(--space-xxl));
+@include margin(r, xl, var(--space-xl));
+@include margin(r, l, var(--space-l));
+@include margin(r, m, var(--space-m));
+@include margin(r, s, var(--space-s));
+@include margin(r, xs, var(--space-xs));
+@include margin(r, xxs, var(--space-xxs));
+@include margin(r, xxxs, var(--space-xxxs));
+
+@include margin(b, xxxxl, var(--space-xxxxl));
+@include margin(b, xxxl, var(--space-xxxl));
+@include margin(b, xxl, var(--space-xxl));
+@include margin(b, xl, var(--space-xl));
+@include margin(b, l, var(--space-l));
+@include margin(b, m, var(--space-m));
+@include margin(b, s, var(--space-s));
+@include margin(b, xs, var(--space-xs));
+@include margin(b, xxs, var(--space-xxs));
+@include margin(b, xxxs, var(--space-xxxs));
+
+@include margin(l, xxxxl, var(--space-xxxxl));
+@include margin(l, xxxl, var(--space-xxxl));
+@include margin(l, xxl, var(--space-xxl));
+@include margin(l, xl, var(--space-xl));
+@include margin(l, l, var(--space-l));
+@include margin(l, m, var(--space-m));
+@include margin(l, s, var(--space-s));
+@include margin(l, xs, var(--space-xs));
+@include margin(l, xxs, var(--space-xxs));
+@include margin(l, xxxs, var(--space-xxxs));
+
+.m--a {
+  margin: auto;
+}
+
+.m-t--a {
+  margin-top: auto;
+}
+
+.m-r--a {
+  margin-right: auto;
+}
+
+.m-b--a {
+  margin-bottom: auto;
+}
+
+.m-l--a {
+  margin-left: auto;
+}

@@ -1,13 +1,13 @@
 .link {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-thickness: 3px;
-  text-decoration-skip-ink: none;
-  transition: color 200ms;
+  transition: color 100ms;
 
   &:hover,
-  &:focus,
-  &:active {
+  &:focus {
     color: var(--color-primary-rotate);
+  }
+
+  &:active {
+    color: var(--color-primary-darker);
   }
 }

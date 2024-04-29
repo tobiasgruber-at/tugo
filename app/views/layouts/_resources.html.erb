@@ -1,5 +1,5 @@
 <% unless search_result %>
-  <h1><%= title %></h1>
+  <h2><%= title %></h2>
 <% end %>
 <% if resources.nil? or resources == [] %>
   <div class="box box--light">
@@ -12,7 +12,7 @@
   </div>
 <% else %>
   <% if search_result %>
-    <h1>Results for <span class="term"><%= @term %></span>:</h1>
+    <h2>Results for <span class="term"><%= @term %></span>:</h2>
   <% end %>
   <div class="list">
     <% resources.each do |resource| %>
