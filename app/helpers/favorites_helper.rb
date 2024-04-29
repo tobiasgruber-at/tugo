@@ -1,20 +1,22 @@
 module FavoritesHelper
-  def favorite(resources)
+  def map_favorites(resources, path_selector_fn)
     if resources.nil? || resources.empty?
       []
     else
-      resources.map do |res|
-        id = res["id"] || ""
-        Resource.new(
-          id,
-          res["preview"],
-          nil,
-          nil,
-          favorite_path(id),
-          true,
-          nil
-        )
-      end
+      resources.map { |res| map_favorite(res, path_selector_fn) }
     end
+  end
+
+  def map_favorite(res, path_selector_fn)
+    id = res["id"] || ""
+    Resource.new(
+      id,
+      res["preview"],
+      nil,
+      nil,
+      path_selector_fn.call(id),
+      true,
+      nil
+    )
   end
 end

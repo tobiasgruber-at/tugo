@@ -13,4 +13,4 @@
   <%= render "components/error", error: @error %>
 <% end %>
 
-<%= render :partial => "layouts/resources", :locals => {resources: people(@resources, @favorites), title: nil, search_result: false} %>
+<%= render :partial => "layouts/resources", :locals => { resources: map_people(@resources, @favorites), title: nil, search_result: false} %>

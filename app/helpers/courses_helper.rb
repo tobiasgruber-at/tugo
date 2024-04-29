@@ -1,21 +1,23 @@
 module CoursesHelper
-  def courses(resources, favorites)
+  def map_courses(resources, favorites)
     if resources.nil? || resources.empty?
       []
     else
-      resources["results"].map do |res|
-        id = res["id"] || " "
-        Resource.new(
-          id,
-          course_name(res),
-          course_type(res),
-          course_number(res),
-          course_path(id),
-          favorites.any? { |fav| fav.item_id == String(id) },
-          Favorite.favorite_types["course"]
-        )
-      end
+      resources["results"].map { |res| map_course(res, favorites) }
     end
+  end
+
+  def map_course(res, favorites = nil)
+    id = res["id"] || " "
+    Resource.new(
+      id,
+      course_name(res),
+      course_type(res),
+      course_number(res),
+      course_path(id),
+      favorites.nil? ? false : (favorites.any? { |fav| fav.item_id == String(id) }),
+      Favorite.favorite_types["course"]
+    )
   end
 
   def course_number(course)
