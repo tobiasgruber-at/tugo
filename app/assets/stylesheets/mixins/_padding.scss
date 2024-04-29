@@ -1,5 +1,3 @@
-@import "config/variables";
-
 @mixin padding($direction, $name, $size) {
   @if $direction == a {
     .p--#{$name} {

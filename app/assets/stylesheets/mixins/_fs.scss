@@ -1,5 +1,3 @@
-@import "config/variables";
-
 @mixin fs($name, $size) {
   .fs--#{$name} {
     font-size: $size;

@@ -14,6 +14,12 @@
   &-column {
     flex-direction: column;
   }
+
+  &-center {
+    @extend .flex-display;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
 }
 
 .muted {

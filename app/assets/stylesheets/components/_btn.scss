@@ -1,12 +1,10 @@
-@import "mixins/fs";
-
 .btn {
   display: inline-block;
+  border-radius: var(--border-radius);
   cursor: pointer;
   outline: none;
   transition: background-color 200ms;
   user-select: none;
-  -webkit-user-drag: none;
   touch-action: manipulation;
 
   &:hover,
@@ -16,7 +14,26 @@
     background-color: var(--color-hover);
   }
 
+  &-hover--dark {
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-hover-dark);
+    }
+  }
+
+  &-hover--darker {
+    &:hover,
+    &:focus,
+    &:focus-within,
+    &:active {
+      background-color: var(--color-hover-darker);
+    }
+  }
+
   &--lighter {
+    color: var(--color-text-body);
     background-color: var(--color-lighter);
 
     &:hover,
@@ -28,6 +45,7 @@
   }
 
   &--light {
+    color: var(--color-text-body);
     background-color: var(--color-light);
 
     &:hover,
@@ -51,6 +69,7 @@
   }
 
   &--primary {
+    color: var(--color-text-light);
     background-color: var(--color-primary);
 
     &:hover,
@@ -59,32 +78,10 @@
     &:active {
       background-color: var(--color-primary-darker);
     }
-
-    &--3d {
-      position: relative;
-      padding: var(--space-xxs) var(--space-xs);
-      margin: 0 0 var(--space-s) 0;
-      color: var(--color-white);
-      background-color: var(--color-primary);
-      box-shadow: 1px 1px 0 0 var(--color-dark),
-                  2px 2px 0 0 var(--color-dark),
-                  3px 3px 0 0 var(--color-dark),
-                  4px 4px 0 0 var(--color-dark),
-                  2px 5px 6px 1px hsla(0, 0, 5%, 0.3);
-      border: var(--border-shape) var(--color-dark);
-      border-radius: var(--border-radius);
-      @extend .fs--l;
-    }
-
-    &--3d:active {
-      box-shadow: inset 1px 1px 1px 0px hsla(0, 0, 5%, 0.2);
-      top: var(--space-xxxs);
-      left: var(--space-xxxs);
-    }
-
   }
 
   &--secondary {
+    color: var(--color-text-body);
     background-color: var(--color-secondary);
 
     &:hover,
@@ -96,6 +93,7 @@
   }
 
   &--tertiary {
+    color: var(--color-text-body);
     background-color: var(--color-tertiary);
 
     &:hover,
@@ -107,6 +105,7 @@
   }
 
   &--error {
+    color: var(--color-text-light);
     background-color: var(--color-error);
 
     &:hover,
@@ -118,6 +117,7 @@
   }
 
   &--success {
+    color: var(--color-text-light);
     background-color: var(--color-success);
 
     &:hover,
@@ -128,8 +128,28 @@
     }
   }
 
-
   &--block {
     display: block;
+  }
+
+  &--3d {
+    position: relative;
+    padding: var(--space-xxs) var(--space-xs);
+    margin: 0 0 var(--space-s) 0;
+    color: var(--color-white);
+    box-shadow: 1px 1px 0 0 var(--color-dark),
+    2px 2px 0 0 var(--color-dark),
+    3px 3px 0 0 var(--color-dark),
+    4px 4px 0 0 var(--color-dark),
+    2px 5px 6px 1px hsla(0, 0, 5%, 0.3);
+    border: var(--border-shape) var(--color-dark);
+    border-radius: var(--border-radius);
+    @extend .fs--l !optional;
+  }
+
+  &--3d:active {
+    box-shadow: inset 1px 1px 1px 0px hsla(0, 0, 5%, 0.2);
+    top: var(--space-xxxs);
+    left: var(--space-xxxs);
   }
 }

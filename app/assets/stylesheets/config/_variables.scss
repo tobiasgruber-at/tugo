@@ -9,6 +9,8 @@
   --line-height-body: 1.5;
 
   // Classical and robust font sizes system
+  --font-size-xxxs: 0.5rem; // 8px
+  --font-size-xxs: 0.625rem; // 10px
   --font-size-xs: 0.75rem; // 12px
   --font-size-s: 0.875rem; // 14px
   --font-size-m: 1rem; // 16px
@@ -73,7 +75,8 @@
   --color-white: hsl(0, 0%, 100%);
   --color-background: hsl(var(--hue-primary), 15%, 95%);
 
-  --color-hover: hsla(0, 0%, 0%, 0.01);
+  --color-hover: hsla(0, 0%, 0%, 0.015);
+  --color-hover-dark: hsla(0, 0%, 0%, 0.1);
 
   --color-lighter: hsl(0, 0%, 95%);
   --color-lighter-rotate: hsl(20, 0%, 95%);

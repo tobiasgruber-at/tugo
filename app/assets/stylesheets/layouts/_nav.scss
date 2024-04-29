@@ -1,4 +1,4 @@
-@import "mixins/box-shadow";
+@import "mixins/media";
 
 nav {
   position: sticky;
@@ -7,26 +7,43 @@ nav {
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: var(--space-s);
+  @extend .flex-gap--s !optional;
+  padding: var(--space-m);
   border-bottom-right-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
   background-color: var(--color-primary);
   color: var(--color-primary-bg);
-  @extend .shadow-box--huge;
+  @extend .shadow-box--huge !optional;
 
-  .nav__start {
-    justify-content: flex-start;
-    gap: var(--space-s);
-    align-items: center;
+  @include media(tabletAndUp) {
+    flex-direction: row;
+    justify-content: space-between;
   }
+}
 
-  .nav__end {
-    justify-content: flex-end;
-    gap: var(--space-s);
-    align-items: center;
-  }
+.nav__start {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: var(--space-m);
+  align-items: center;
+}
+
+.nav__end {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  gap: var(--space-xxs);
+  align-items: center;
+}
+
+.nav-btn {
+  @extend .p--s !optional;
+  @extend .btn !optional;
+  @extend .btn-hover--dark !optional;
 }

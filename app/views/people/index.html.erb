@@ -1,9 +1,11 @@
 <%= form_with(url: people_path, method: :get) do |form| %>
   <div class="form-element">
-      <%= form.label :term, "Search for people" %>
-      <%= form.text_field :term %>
+    <%= form.label :term, "Search for people" %>
+    <%= form.text_field :term %>
   </div>
-  <%= form.submit "Search", name: nil %>
+  <div class="form-element">
+    <%= form.submit "Search", name: nil %>
+  </div>
 <% end %>
 
 <% if @error %>
@@ -11,7 +13,7 @@
 <% end %>
 
 <%= render :layout => "layouts/resources", :locals => {resources: people(@resources)} do |resource| %>
-<a class="list__item btn btn--block" href="<%= person_path(resource["tiss_id"]) %>">
-  <%= full_name(resource) %>
-</a>
+  <a class="list__item btn btn--block" href="<%= person_path(resource["tiss_id"]) %>">
+    <%= full_name(resource) %>
+  </a>
 <% end %>

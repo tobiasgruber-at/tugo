@@ -1,5 +1,3 @@
-@import "config/variables";
-
 @mixin box-shadow($name, $shadow-shape) {
     .shadow-box--#{$name} {
       box-shadow: $shadow-shape;

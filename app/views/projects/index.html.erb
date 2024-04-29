@@ -1,7 +1,11 @@
 <%= form_with(url: projects_path, method: :get) do |form| %>
-  <%= form.label :term, "Search for projects" %>
-  <%= form.text_field :term %>
-  <%= form.submit "Search", name: nil %>
+  <div class="form-element">
+    <%= form.label :term, "Search for projects" %>
+    <%= form.text_field :term %>
+  </div>
+  <div class="form-element">
+    <%= form.submit "Search", name: nil %>
+  </div>
 <% end %>
 
 <% if @error %>

@@ -10,7 +10,6 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
@@ -29,11 +28,11 @@
 // Components
 @import "components/box";
 @import "components/btn";
+@import "components/form";
 @import "components/link";
 @import "components/list";
 @import "components/logo";
 @import "components/term";
-@import "components/form";
 
 // Layouts
 @import "layouts/container";
