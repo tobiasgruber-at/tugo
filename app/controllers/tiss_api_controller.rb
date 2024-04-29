@@ -41,7 +41,7 @@ class TissApiController < ApplicationController
     end
   end
 
-  def search(endpoint, parser)
+  def search(endpoint, parser = -> (val) {JSON.parse(val)})
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     resources = parser.call(response)

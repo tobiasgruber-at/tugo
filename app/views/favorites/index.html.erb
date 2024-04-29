@@ -2,4 +2,7 @@
   <%= render "components/error", error: @error %>
 <% end %>
 
-<h1>Favorite People</h1>
+<%= render :partial => "layouts/resources", :locals => {resources: favorite(@favorite_courses), title: "Favorite Courses", search_result: false} %>
+<%= render :partial => "layouts/resources", :locals => {resources: favorite(@favorite_people), title: "Favorite People", search_result: false} %>
+<%= render :partial => "layouts/resources", :locals => {resources: favorite(@favorite_theses), title: "Favorite Theses", search_result: false} %>
+<%= render :partial => "layouts/resources", :locals => {resources: favorite(@favorite_projects), title: "Favorite Projects", search_result: false} %>

@@ -1,24 +1,45 @@
+<% unless search_result %>
+  <h1><%= title %></h1>
+<% end %>
 <% if resources.nil? or resources == [] %>
   <div class="box box--light">
-    <div class="box__title">Sorry we could not find what you are looking for</div>
-    try a different search term
+    <% if search_result %>
+      <div class="box__title">Sorry we could not find what you are looking for</div>
+      Try a different search term
+    <% else %>
+      <div class="box__title">No items found</div>
+    <% end %>
   </div>
 <% else %>
-  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <% if search_result %>
+    <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <% end %>
   <div class="list">
     <% resources.each do |resource| %>
-      <%= yield resource %>
-      <% if @favorites.any? { |fav| false && fav.item_id == String(resource["tiss_id"]) } %>
+      <a class="list__item btn btn--block" href="<%= resource.path %>">
+        <div class="flex-display flex-column">
+          <% unless resource.addition.nil? %>
+            <div class="flex-display flex-gap--xs">
+              <span class="muted fs--xs"><%= resource.addition %></span>
+            </div>
+          <% end %>
+          <div class="flex-display flex-gap--xxs">
+            <% unless resource._prefix.nil? %>
+              <span class="italic"><%= resource._prefix %></span>
+            <% end %>
+            <span><%= resource.title %></span>
+          </div>
+        </div>
+      </a>
+      <% if resource.is_favorite %>
         <%= form_with model: Favorite.new, method: "delete" do |f| %>
-              <%= f.hidden_field :item_id, :value => resource["tiss_id"] %>
-              <%= f.hidden_field :favorite_type, :value => Favorite.favorite_types["person"] %>
-              <%= f.hidden_field :note, :value => "" %>
+            <%= f.hidden_field :item_id, :value => resource.id %>
             <%= f.submit "Remove favorite" %>
           <% end %>
       <% else %>
         <%= form_with model: Favorite.new do |f| %>
-            <%= f.hidden_field :item_id, :value => resource["tiss_id"] %>
-            <%= f.hidden_field :favorite_type, :value => Favorite.favorite_types["person"] %>
+            <%= f.hidden_field :item_id, :value => resource.id %>
+            <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
             <%= f.hidden_field :note, :value => "" %>
           <%= f.submit "Add favorite" %>
         <% end %>

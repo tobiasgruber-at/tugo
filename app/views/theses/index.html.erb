@@ -8,8 +8,4 @@
   <%= render "components/error", error: @error %>
 <% end %>
 
-<%= render :layout => "layouts/resources", :locals => {resources: courses(@resources)} do |resource| %>
-  <a class="list__item btn btn--block" href="<%= thesis_path(resource["id"]) %>">
-    <%= resource["title"] or resource["id"] %>
-  </a>
-<% end %>
+<%= render :partial => "layouts/resources", :locals => {resources: theses(@resources, @favorites), title: nil, search_result: false} %>

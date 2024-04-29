@@ -10,8 +10,4 @@
   <%= render "components/error", error: @error %>
 <% end %>
 
-<%= render :layout => "layouts/resources", :locals => {resources: people(@resources)} do |resource| %>
-<a class="list__item btn btn--block" href="<%= person_path(resource["tiss_id"]) %>">
-  <%= full_name(resource) %>
-</a>
-<% end %>
+<%= render :partial => "layouts/resources", :locals => {resources: people(@resources, @favorites), title: nil, search_result: false} %>

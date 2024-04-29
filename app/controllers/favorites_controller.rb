@@ -1,9 +1,11 @@
-class FavoritesController < ApplicationController
+class FavoritesController < TissApiController
   def index
-    @favorite_courses = Favorite.where(user_id: session[:user_id], favorite_type: Favorite.favorite_types["course"])
-    @favorite_people = Favorite.where(user_id: session[:user_id], favorite_type: Favorite.favorite_types["person"])
-    @favorite_theses = Favorite.where(user_id: session[:user_id], favorite_type: Favorite.favorite_types["thesis"])
-    @favorite_projects = Favorite.where(user_id: session[:user_id], favorite_type: Favorite.favorite_types["project"])
+    @favorites = Favorite.where(user_id: session[:user_id])
+    empty = @favorites.nil? || @favorites.empty?
+    @favorite_courses = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "course" }
+    @favorite_people = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "person" }
+    @favorite_theses = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "thesis" }
+    @favorite_projects = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "project" }
   end
 
   def create
@@ -11,6 +13,8 @@ class FavoritesController < ApplicationController
     @favorite = Favorite.new(
       :user_id => session[:user_id],
       :item_id => favorite_params["item_id"],
+      # TODO: add real text
+      :preview => "Yet another favorite item",
       :favorite_type => Integer(favorite_params["favorite_type"])
     )
     begin

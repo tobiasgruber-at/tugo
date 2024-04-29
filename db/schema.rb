@@ -13,9 +13,10 @@
 ActiveRecord::Schema[7.1].define(version: 2024_04_29_160953) do
   create_table "favorites", force: :cascade do |t|
     t.string "item_id"
-    t.integer "favorite_type"
-    t.string "note"
     t.integer "user_id", null: false
+    t.integer "favorite_type", null: false
+    t.string "preview", null: false
+    t.string "note"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id", "item_id"], name: "index_favorites_on_user_id", unique: true
