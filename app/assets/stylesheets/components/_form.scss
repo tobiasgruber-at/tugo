@@ -6,9 +6,28 @@ form {
 
   input {
     background-color: var(--color-white);
-    @extend .p--xs !optional;
-    @extend .p-t--xxs !optional;
+    transition: box-shadow 300ms;
+    @extend .p--s !optional;
+    @extend .p-t--xs !optional;
+    @extend .fs--m !optional;
     @extend .box-shadow--tiny !optional;
+  }
+
+  input:hover {
+    @extend .box-shadow--small !optional;
+  }
+
+  input:active,
+  input:focus {
+    outline: var(--border-shape);
+    outline-color: var(--color-primary);
+  }
+
+  input[type=button]:active,
+  input[type=submit]:active,
+  input[type=button]:focus,
+  input[type=submit]:focus {
+    outline: none;
   }
 
   input[type=text] {
@@ -19,6 +38,11 @@ form {
     @extend .btn !optional;
     @extend .btn--primary !optional;
   }
+
+  input[type=button] {
+    @extend .btn !optional;
+    @extend .btn--secondary !optional;
+  }
 }
 
 .form {
@@ -27,33 +51,27 @@ form {
     @extend .flex-column !optional;
     flex-wrap: nowrap;
     @extend .flex-gap--xxs !optional;
-  }
 
-  &-element label {
-    width: 100%;
-    @extend .fs--m !optional;
-    @extend .muted !optional;
-  }
+    label {
+      width: 100%;
+      @extend .fs--m !optional;
+      @extend .muted !optional;
+    }
 
-  &-element .field_with_errors label {
-    color: var(--color-error);
-  }
+    .field_with_errors label {
+      color: var(--color-error);
+    }
 
-  &-element input {
-    width: 100%;
-    border: none;
-    outline: none;
-    @extend .border--rounded !optional;
-  }
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      @extend .border--rounded !optional;
+    }
 
-  &-element .field_with_errors input {
-    outline: var(--border-shape) var(--color-error);
-  }
-
-  &-element input:active, &-element input:focus {
-    outline: var(--border-shape);
-    outline-color: var(--color-primary);
-    box-shadow: inset 0 0 5px hsla(0, 0, 0, 0.1);
+    .field_with_errors input {
+      outline: var(--border-shape) var(--color-error);
+    }
   }
 
   &-error-messages {
@@ -71,6 +89,10 @@ form {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+  }
+
+  &-input-group {
+    align-items: stretch;
   }
 
   &-input-group__small {

@@ -52,27 +52,27 @@ h6 {
 }
 
 h1 {
-  font-size: var(--font-size-xxxl);
-  padding-top: var(--space-l);
-  padding-bottom: var(--space-s);
+  @extend .fs--xxxl !optional;
+  @extend .p-t--l !optional;
+  @extend .p-b--s !optional;
 }
 
 h2 {
-  font-size: var(--font-size-xxl);
-  padding-top: var(--space-l);
-  padding-bottom: var(--space-s);
+  @extend .fs--xxl !optional;
+  @extend .p-t--l !optional;
+  @extend .p-b--s !optional;
 }
 
 h3 {
-  font-size: var(--font-size-xl);
-  padding-top: var(--space-m);
-  padding-bottom: var(--space-xs);
+  @extend .fs--xl !optional;
+  @extend .p-t--m !optional;
+  @extend .p-b--xs !optional;
 }
 
 h4 {
-  font-size: var(--font-size-l);
-  padding-top: var(--space-s);
-  padding-bottom: var(--space-xxs);
+  @extend .fs--l !optional;
+  @extend .p-t--s !optional;
+  @extend .p-b--xxs !optional;
 }
 
 a {

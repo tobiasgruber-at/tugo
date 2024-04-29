@@ -1,13 +1,19 @@
+@import "mixins/media";
+
 .logo {
   font-family: "Orbitron", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  transition: 500ms;
-  font-size: var(--font-size-xxxl);
+  color: var(--color-text-light);
+  @extend .fs--xxl !optional;
+  transition: text-shadow 500ms;
+
+  @include media(tabletAndUp) {
+    font-size: var(--font-size-xxxl);
+  }
 
   &:hover {
-    color: var(--color-text-light);
     text-shadow: var(--text-shadow-glow);
   }
 }

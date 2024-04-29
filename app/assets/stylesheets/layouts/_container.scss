@@ -2,10 +2,10 @@
 
 .container {
   width: 100%;
-  padding-left: var(--space-xs);
-  padding-right: var(--space-xs);
-  margin-left: auto;
-  margin-right: auto;
+  @extend .p-l--xs !optional;
+  @extend .p-r--xs !optional;
+  @extend .m-l--a !optional;
+  @extend .m-r--a !optional;
 
   @include media(tabletAndUp) {
     padding-right: var(--space-m);

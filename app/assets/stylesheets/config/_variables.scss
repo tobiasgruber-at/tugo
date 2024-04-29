@@ -46,37 +46,35 @@
   --hue-success-rotate: mod(calc(var(--hue-success) + 20), 360);
 
   --bg-luminosity: 96%;
+  --hover-brightness: 92%;
 
   --color-primary: hsl(var(--hue-primary), 69%, 50%);
   --color-primary-rotate: hsl(var(--hue-primary-rotate), 69%, 50%);
   --color-primary-bg: hsl(var(--hue-primary), 69%, var(--bg-luminosity));
   --color-primary-darker: hsl(var(--hue-primary), 69%, 40%);
 
-  --color-secondary: hsl(var(--hue-secondary), 45%, 55%);
-  --color-secondary-rotate: hsl(var(--hue-secondary-rotate), 45%, 55%);
-  --color-secondary-bg: hsl(var(--hue-secondary), 45%, var(--bg-luminosity));
-  --color-secondary-darker: hsl(var(--hue-secondary), 45%, 45%);
+  --color-secondary: hsl(var(--hue-secondary), 70%, 55%);
+  --color-secondary-rotate: hsl(var(--hue-secondary-rotate), 70%, 55%);
+  --color-secondary-bg: hsl(var(--hue-secondary), 70%, var(--bg-luminosity));
+  --color-secondary-darker: hsl(var(--hue-secondary), 70%, 45%);
 
   --color-tertiary: hsl(var(--hue-tertiary), 90%, 65%);
   --color-tertiary-rotate: hsl(var(--hue-tertiary-rotate), 90%, 65%);
   --color-tertiary-bg: hsl(var(--hue-tertiary), 90%, var(--bg-luminosity));
   --color-tertiary-darker: hsl(var(--hue-tertiary), 90%, 55%);
 
-  --color-error: hsl(var(--hue-error), 70%, 70%);
-  --color-error-rotate: hsl(var(--hue-error-rotate), 70%, 70%);
-  --color-error-bg: hsl(var(--hue-error), 70%, var(--bg-luminosity));
-  --color-error-darker: hsl(var(--hue-error), 70%, 60%);
+  --color-error: hsl(var(--hue-error), 95%, 50%);
+  --color-error-rotate: hsl(var(--hue-error-rotate), 95%, 50%);
+  --color-error-bg: hsl(var(--hue-error), 95%, var(--bg-luminosity));
+  --color-error-darker: hsl(var(--hue-error), 95%, 40%);
 
-  --color-success: hsl(var(--hue-success), 70%, 70%);
-  --color-success-rotate: hsl(var(--hue-success-rotate), 70%, 70%);
-  --color-success-bg: hsl(var(--hue-success), 70%, var(--bg-luminosity));
-  --color-success-darker: hsl(var(--hue-success), 70%, 60%);
+  --color-success: hsl(var(--hue-success), 95%, 45%);
+  --color-success-rotate: hsl(var(--hue-success-rotate), 95%, 45%);
+  --color-success-bg: hsl(var(--hue-success), 95%, var(--bg-luminosity));
+  --color-success-darker: hsl(var(--hue-success), 95%, 35%);
 
   --color-white: hsl(0, 0%, 100%);
   --color-background: hsl(var(--hue-primary), 15%, 95%);
-
-  --color-hover: hsla(0, 0%, 0%, 0.015);
-  --color-hover-dark: hsla(0, 0%, 0%, 0.1);
 
   --color-lighter: hsl(0, 0%, 95%);
   --color-lighter-rotate: hsl(20, 0%, 95%);
@@ -98,6 +96,13 @@
   --color-text-body: hsl(0, 5%, 25%);
   --color-text-muted: hsl(0, 0%, 45%);
   --color-text-light: var(--color-light);
+
+  --background-gradient-deg: 45deg;
+  --background-primary: var(--color-primary) linear-gradient(var(--background-gradient-deg), var(--color-primary) 0%, var(--color-primary-rotate) 100%);
+  --background-secondary: var(--color-secondary) linear-gradient(var(--background-gradient-deg), var(--color-secondary) 0%, var(--color-secondary-rotate) 100%);
+  --background-tertiary: var(--color-tertiary) linear-gradient(var(--background-gradient-deg), var(--color-tertiary) 0%, var(--color-tertiary-rotate) 100%);
+  --background-error: var(--color-error) linear-gradient(var(--background-gradient-deg), var(--color-error) 0%, var(--color-error-rotate) 100%);
+  --background-success: var(--color-success) linear-gradient(var(--background-gradient-deg), var(--color-success) 0%, var(--color-success-rotate) 100%);
 
   --border-radius: 0.375rem;
   --border-width: 2px;

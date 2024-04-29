@@ -4,6 +4,7 @@
   }
 }
 
+@include fs(xxxxl, var(--font-size-xxxxl));
 @include fs(xxxl, var(--font-size-xxxl));
 @include fs(xxl, var(--font-size-xxl));
 @include fs(xl, var(--font-size-xl));

@@ -15,8 +15,8 @@ nav {
   padding: var(--space-m);
   border-bottom-right-radius: var(--border-radius);
   border-bottom-left-radius: var(--border-radius);
-  background-color: var(--color-primary);
   color: var(--color-primary-bg);
+  background: var(--background-primary);
   @extend .box-shadow--huge !optional;
 
   @include media(tabletAndUp) {
@@ -45,5 +45,4 @@ nav {
 .nav-btn {
   @extend .p--s !optional;
   @extend .btn !optional;
-  @extend .btn-hover--dark !optional;
 }
