@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :favorites
+
   PASSWORD_MIN_LENGTH = 6
 
   validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }

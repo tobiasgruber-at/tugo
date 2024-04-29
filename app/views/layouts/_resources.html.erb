@@ -8,6 +8,21 @@
   <div class="list">
     <% resources.each do |resource| %>
       <%= yield resource %>
+      <% if @favorites.any? { |fav| false && fav.item_id == String(resource["tiss_id"]) } %>
+        <%= form_with model: Favorite.new, method: "delete" do |f| %>
+              <%= f.hidden_field :item_id, :value => resource["tiss_id"] %>
+              <%= f.hidden_field :favorite_type, :value => Favorite.favorite_types["person"] %>
+              <%= f.hidden_field :note, :value => "" %>
+            <%= f.submit "Remove favorite" %>
+          <% end %>
+      <% else %>
+        <%= form_with model: Favorite.new do |f| %>
+            <%= f.hidden_field :item_id, :value => resource["tiss_id"] %>
+            <%= f.hidden_field :favorite_type, :value => Favorite.favorite_types["person"] %>
+            <%= f.hidden_field :note, :value => "" %>
+          <%= f.submit "Add favorite" %>
+        <% end %>
+      <% end %>
     <% end %>
   </div>
 <% end %>

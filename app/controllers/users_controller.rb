@@ -9,6 +9,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.valid? && @user.save
+      session[:user_id] = @user.id
       session[:user_email] = @user.email
       # TODO: redirect to homepage
       redirect_to projects_path

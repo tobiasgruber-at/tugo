@@ -15,6 +15,7 @@ class SessionsController < ApplicationController
         @session.errors.add(:email, "not found")
       end
       return render :new, status: :unprocessable_entity if @session.errors.any?
+      session[:user_id] = user.id
       session[:user_email] = user.email
       # TODO: redirect to homepage
       redirect_to projects_path

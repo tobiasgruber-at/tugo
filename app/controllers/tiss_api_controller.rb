@@ -20,7 +20,8 @@ class TissApiController < ApplicationController
     begin
       self.validate_term
       @resources = self.search(endpoint, parser)
-    rescue RuntimeError => e
+      @favorites = Favorite.where(user_id: session[:user_id])
+    rescue StandardError => e
       @error = e.message
       @resources = nil
     end
