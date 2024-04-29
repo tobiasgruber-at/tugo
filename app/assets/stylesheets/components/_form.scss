@@ -4,16 +4,20 @@ form {
   flex-wrap: nowrap;
   @extend .flex-gap--xs !optional;
 
-  input[type=submit] {
-    margin-top: var(--space-s);
-    @extend .btn !optional;
-    @extend .btn--primary !optional;
-    @extend .btn--3d !optional;
+  input {
+    background-color: var(--color-white);
+    @extend .p--xs !optional;
+    @extend .p-t--xxs !optional;
+    @extend .box-shadow--tiny !optional;
   }
 
-  input {
-    @extend .p--xxs !optional;
-    background-color: var(--color-white);
+  input[type=text] {
+    @extend .p-l--s !optional;
+  }
+
+  input[type=submit] {
+    @extend .btn !optional;
+    @extend .btn--primary !optional;
   }
 }
 
@@ -60,5 +64,28 @@ form {
   &-error-message {
     @extend .fs--xs !optional;
     color: var(--color-error);
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &-input-group__small {
+    @extend .p-l--m !optional;
+    @extend .p-r--m !optional;
+    flex-basis: content;
+  }
+
+  &-input-group :first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  &-input-group :last-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }

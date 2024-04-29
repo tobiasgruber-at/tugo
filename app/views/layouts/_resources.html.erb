@@ -4,7 +4,7 @@
     try a different search term
   </div>
 <% else %>
-  <h1>Results for <span class="term"><%= @term %></span>:</h1>
+  <h2>Results for <span class="term"><%= @term %></span>:</h2>
   <div class="list">
     <% resources.each do |resource| %>
       <%= yield resource %>

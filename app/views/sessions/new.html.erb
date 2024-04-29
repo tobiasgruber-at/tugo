@@ -10,7 +10,9 @@
     <%= f.password_field :password %>
     <%= render "components/form-errors", messages: @session.errors.full_messages_for(:password) %>
   </div>
-  <%= f.submit "Log in" %>
+  <div class="form-element">
+    <%= f.submit "Log in", class: ".btn--3d"%>
+  </div>
 <% end %>
 <div class="flex-center p--l">
   <span>

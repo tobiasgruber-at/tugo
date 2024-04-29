@@ -19,11 +19,11 @@
 @import "config/shortcuts";
 
 // Mixins
-@import "mixins/media";
 @import "mixins/box-shadow";
-@import "mixins/padding";
-@import "mixins/fs";
 @import "mixins/flex";
+@import "mixins/fs";
+@import "mixins/media";
+@import "mixins/padding";
 
 // Components
 @import "components/box";

@@ -2,7 +2,7 @@ class ProjectsController < TissApiController
 
   def index
     term = params["term"]
-    super(term, "search/projectFullSearch/v1.0/projects?searchterm=#{}")
+    super(term, "search/projectFullSearch/v1.0/projects?searchterm=#{term}")
     # TODO: capture result and parse course number and semester
   end
 
