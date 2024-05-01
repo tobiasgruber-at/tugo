@@ -16,34 +16,44 @@
   <% end %>
   <div class="list">
     <% resources.each do |resource| %>
-      <a class="list__item btn btn--block" href="<%= resource.path %>">
-        <div class="flex-display flex-column">
-          <% unless resource.addition.nil? %>
-            <div class="flex-display flex-gap--xs">
-              <span class="muted fs--xs"><%= resource.addition %></span>
+      <div class="list__item btn btn--block ">
+        <div class="flex-display flex-gap--xs jc-space-between position-relative">
+          <a class="position-relative" href="<%= resource.path %>">
+            <div class="flex-display flex-column">
+              <% unless resource.addition.nil? %>
+                <div class="flex-display flex-gap--xs">
+                  <span class="muted fs--xs"><%= resource.addition %></span>
+                </div>
+              <% end %>
+              <div class="flex-display flex-gap--xxs">
+                <% unless resource._prefix.nil? %>
+                  <span class="italic"><%= resource._prefix %></span>
+                <% end %>
+                <span><%= resource.title %></span>
+              </div>
             </div>
-          <% end %>
-          <div class="flex-display flex-gap--xxs">
-            <% unless resource._prefix.nil? %>
-              <span class="italic"><%= resource._prefix %></span>
+          </a>
+          <div class="favorite-button">
+            <% if resource.is_favorite %>
+              <%= form_with model: Favorite.new, method: "delete" do |f| %>
+                <%= f.hidden_field :item_id, :value => resource.id %>
+                <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
+                  <i class="fa-solid fa-heart"></i>
+                <% end %>
+              <% end %>
+            <% else %>
+              <%= form_with model: Favorite.new do |f| %>
+                <%= f.hidden_field :item_id, :value => resource.id %>
+                <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
+                <%= f.hidden_field :note, :value => "" %>
+                <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
+                  <i class="fa-regular fa-heart"></i>
+                <% end %>
+              <% end %>
             <% end %>
-            <span><%= resource.title %></span>
           </div>
         </div>
-      </a>
-      <% if resource.is_favorite %>
-        <%= form_with model: Favorite.new, method: "delete" do |f| %>
-            <%= f.hidden_field :item_id, :value => resource.id %>
-            <%= f.submit "Remove favorite" %>
-          <% end %>
-      <% else %>
-        <%= form_with model: Favorite.new do |f| %>
-            <%= f.hidden_field :item_id, :value => resource.id %>
-            <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
-            <%= f.hidden_field :note, :value => "" %>
-          <%= f.submit "Add favorite" %>
-        <% end %>
-      <% end %>
+      </div>
     <% end %>
   </div>
 <% end %>

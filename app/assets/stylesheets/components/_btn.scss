@@ -93,4 +93,14 @@
     top: var(--space-xxxs);
     left: var(--space-xxxs);
   }
+
+  &--icon {
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    color: var(--color-text-body);
+    border-radius: 50%;
+    width: var(--space-xl);
+    height: var(--space-xl);
+  }
 }

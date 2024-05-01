@@ -1,6 +1,16 @@
 // https://www.hotrails.dev/turbo-rails/css-ruby-on-rails
 
 @mixin media($query) {
+  @if $query == tinyPhoneAndUp {
+    @media (min-width: 20rem) {
+      @content;
+    }
+  }
+  @if $query == phoneAndUp {
+    @media (min-width: 30rem) {
+      @content;
+    }
+  }
   @if $query == tabletAndUp {
     @media (min-width: 50rem) {
       @content;

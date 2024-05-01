@@ -29,6 +29,7 @@
 // Components
 @import "components/box";
 @import "components/btn";
+@import "components/favorite-button";
 @import "components/form";
 @import "components/link";
 @import "components/list";
@@ -38,3 +39,6 @@
 // Layouts
 @import "layouts/container";
 @import "layouts/nav";
+
+// Icons
+@import "font-awesome";
