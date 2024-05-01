@@ -1,0 +1,16 @@
+<%= form_with(url: resource_path, method: :get) do |f| %>
+  <div class="form-element">
+    <%= f.label :term, "Search for #{resource_name}" %>
+    <div class="form-row form-input-group">
+      <%= f.text_field :term %>
+      <%= f.button nil, name: nil, type: "submit", class: "btn btn--primary form-input-group__small" do %>
+        <div class="flex-display flex-row flex-gap--xs ai-center">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>
+            Search
+          </span>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

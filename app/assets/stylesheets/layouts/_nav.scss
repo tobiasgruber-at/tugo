@@ -22,6 +22,7 @@ nav {
   @include media(tabletAndUp) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: str;
   }
 }
 

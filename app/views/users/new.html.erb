@@ -10,7 +10,7 @@
     <%= f.password_field :password %>
     <%= render "components/form-errors", messages: @user.errors.full_messages_for(:password) %>
   </div>
-  <%= f.submit "Register", class: "btn--3d" %>
+  <%= f.submit "Register", class: "btn btn--primary btn--3d" %>
 <% end %>
 <%= @res %>
 <div class="flex-center p--l">

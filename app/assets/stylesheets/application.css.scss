@@ -34,7 +34,12 @@
 @import "components/list";
 @import "components/logo";
 @import "components/term";
+@import "components/favorite-button";
+@import "components/back-button";
 
 // Layouts
 @import "layouts/container";
 @import "layouts/nav";
+
+// Icons
+@import "font-awesome";

@@ -36,6 +36,7 @@
 @include padding(a, xs, var(--space-xs));
 @include padding(a, xxs, var(--space-xxs));
 @include padding(a, xxxs, var(--space-xxxs));
+@include padding(a, 0, 0);
 
 @include padding(t, xxxxl, var(--space-xxxxl));
 @include padding(t, xxxl, var(--space-xxxl));
@@ -47,6 +48,7 @@
 @include padding(t, xs, var(--space-xs));
 @include padding(t, xxs, var(--space-xxs));
 @include padding(t, xxxs, var(--space-xxxs));
+@include padding(t, 0, 0);
 
 @include padding(r, xxxxl, var(--space-xxxxl));
 @include padding(r, xxxl, var(--space-xxxl));
@@ -58,6 +60,7 @@
 @include padding(r, xs, var(--space-xs));
 @include padding(r, xxs, var(--space-xxs));
 @include padding(r, xxxs, var(--space-xxxs));
+@include padding(r, 0, 0);
 
 @include padding(b, xxxxl, var(--space-xxxxl));
 @include padding(b, xxxl, var(--space-xxxl));
@@ -69,6 +72,7 @@
 @include padding(b, xs, var(--space-xs));
 @include padding(b, xxs, var(--space-xxs));
 @include padding(b, xxxs, var(--space-xxxs));
+@include padding(b, 0, 0);
 
 @include padding(l, xxxxl, var(--space-xxxxl));
 @include padding(l, xxxl, var(--space-xxxl));
@@ -80,3 +84,4 @@
 @include padding(l, xs, var(--space-xs));
 @include padding(l, xxs, var(--space-xxs));
 @include padding(l, xxxs, var(--space-xxxs));
+@include padding(l, 0, 0);

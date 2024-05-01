@@ -1,16 +1,6 @@
 <h1>Theses</h1>
-<%= form_with(url: theses_path, method: :get) do |form| %>
-  <div class="form-element">
-    <%= form.label :term, "Search for theses" %>
-    <div class="form-row form-input-group">
-      <%= form.text_field :term %>
-      <%= form.submit "Search", name: nil, class: "form-input-group__small" %>
-    </div>
-  </div>
-<% end %>
-
+<%= render partial: "components/search", locals: { resource_path: (theses_path), resource_name: "theses" } %>
 <% if @error %>
-  <%= render "components/error", error: @error %>
+  <%= render partial: "components/error", locals: { error: @error } %>
 <% end %>
-
-<%= render :partial => "layouts/resources", :locals => { resources: map_theses(@resources, @favorites), title: nil, search_result: false} %>
+<%= render partial: "layouts/resources", locals: { resources: map_theses(@resources, @favorites), title: nil, search_result: false} %>

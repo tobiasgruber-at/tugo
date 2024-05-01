@@ -1,0 +1,16 @@
+@import "mixins/media";
+
+.favorite-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: var(--color-background);
+  box-shadow: var(--shadow-small);
+
+  @include media(tinyPhoneAndUp) {
+    position: unset;
+    background-color: unset;
+    box-shadow: unset;
+  }
+}

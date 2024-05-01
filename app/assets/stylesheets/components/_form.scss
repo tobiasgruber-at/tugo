@@ -4,7 +4,7 @@ form {
   flex-wrap: nowrap;
   @extend .flex-gap--xs !optional;
 
-  input {
+  input, button, textarea {
     background-color: var(--color-white);
     transition: box-shadow 300ms;
     @extend .p--s !optional;
@@ -13,12 +13,14 @@ form {
     @extend .box-shadow--tiny !optional;
   }
 
-  input:hover {
+  input:hover, button:hover, textarea:hover {
     @extend .box-shadow--small !optional;
   }
 
   input:active,
-  input:focus {
+  input:focus,
+  textarea:active,
+  textarea:focus {
     outline: var(--border-shape);
     outline-color: var(--color-primary);
   }
@@ -30,18 +32,8 @@ form {
     outline: none;
   }
 
-  input[type=text] {
+  input[type=text], textarea {
     @extend .p-l--s !optional;
-  }
-
-  input[type=submit] {
-    @extend .btn !optional;
-    @extend .btn--primary !optional;
-  }
-
-  input[type=button] {
-    @extend .btn !optional;
-    @extend .btn--secondary !optional;
   }
 }
 
@@ -62,14 +54,15 @@ form {
       color: var(--color-error);
     }
 
-    input {
+    input, button {
       width: 100%;
       border: none;
       outline: none;
       @extend .border--rounded !optional;
     }
 
-    .field_with_errors input {
+    .field_with_errors input,
+    .field_with_errors textarea {
       outline: var(--border-shape) var(--color-error);
     }
   }
