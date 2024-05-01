@@ -12,3 +12,4 @@
 | 29.04.2024    | 17:30 - 19:30 | 2:00h    | s    | add margin mixins; add new background; fix 3d button                                                             |
 | 29.04.2024    | 12:30 - 21:30 | 9:00h    | s    | add favorites logic, models and ui; refactor whole resources template                                            |
 | 01.05.2024    | 22:00 - 01:00 | 3:00h    | s    | style favorites button; add back button                                                                          |
+| 01.05.2024    | 23:30 - 01:00 | 1:30h    | s    | add basic home page; add mapper for single resources                                                             |
