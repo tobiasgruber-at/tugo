@@ -22,8 +22,7 @@ class ApplicationController < ActionController::Base
 
   def redirect_if_not_logged_in
     if logged_in?
-      # TODO: redirect to homepage
-      redirect_to projects_path
+      redirect_to root_path
     end
   end
 end

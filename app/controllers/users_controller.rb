@@ -11,8 +11,7 @@ class UsersController < ApplicationController
     if @user.valid? && @user.save
       session[:user_id] = @user.id
       session[:user_email] = @user.email
-      # TODO: redirect to homepage
-      redirect_to projects_path
+      redirect_to root_path
     else
       render :new, status: :unprocessable_entity
     end

@@ -1,0 +1,11 @@
+<h1>Home page</h1>
+<% if logged_in? %>
+  <ul>
+    <li><a href="<%= courses_path %>">Search for courses</a></li>
+    <li><a href="<%= people_path %>">Search for people</a></li>
+    <li><a href="<%= theses_path %>">Search for theses</a></li>
+    <li><a href="<%= projects_path %>">Search for projects</a></li>
+  </ul>
+<% else %>
+  Please <a class="link" href="/login">login</a> or <a class="link" href="/register">register</a>.
+<% end %>
