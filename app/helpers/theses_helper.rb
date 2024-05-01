@@ -7,11 +7,17 @@ module ThesesHelper
     end
   end
 
-  def map_thesis(res, favorites = nil)
-    id = res["id"] || ""
+  def map_thesis(res, favorites = nil, is_json = true)
+    if is_json
+      id = res["id"] || ""
+      title = res["title"]
+    else
+      id = @id
+      title = res.css("title *:last-of-type").text
+    end
     Resource.new(
       id,
-      res["title"],
+      title,
       nil,
       nil,
       thesis_path(id),

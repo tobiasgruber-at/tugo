@@ -1,1 +1,1 @@
-<h1><%= map_person(@resource).title %></h1>
+<%= render :partial => "layouts/resource", :locals => { resource: map_person(@resource) } %>

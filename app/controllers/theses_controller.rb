@@ -6,7 +6,7 @@ class ThesesController < TissApiController
   end
 
   def show
-    id = params["id"]
-    super("thesis/#{id}", -> (val) { Nokogiri::XML(val) })
+    @id = params["id"]
+    super("thesis/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 end

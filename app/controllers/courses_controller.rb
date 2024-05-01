@@ -6,8 +6,7 @@ class CoursesController < TissApiController
   end
 
   def show
-    course_number = params["course_number"]
-    semester = params["semester"]
-    super("course/#{course_number}-#{semester}")
+    @id = params["id"]
+    super("course/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 end

@@ -7,33 +7,29 @@ module CoursesHelper
     end
   end
 
-  def map_course(res, favorites = nil)
-    id = res["id"] || " "
+  def map_course(res, favorites = nil, is_json = true)
+    if is_json
+      course_nr = res["detail_url"].match(/courseNr=(\d+)/)[1]
+      semester = res["detail_url"].match(/semester=(\d+\w)/)[1]
+      id = "#{course_nr}-#{semester}"
+      title = course_field(res, 2)
+      prefix = course_field(res, 1)
+      addition = course_field(res, 0)
+    else
+      id = @id
+      title = @resource.css("title *:last-of-type").text
+      prefix = @resource.css("courseType").text
+      addition = @resource.css("courseNumber").text
+    end
     Resource.new(
       id,
-      course_name(res),
-      course_type(res),
-      course_number(res),
+      title,
+      prefix,
+      addition,
       course_path(id),
       favorites.nil? ? false : (favorites.any? { |fav| fav.item_id == String(id) }),
       Favorite.favorite_types["course"]
     )
-  end
-
-  def course_number(course)
-    course_field(course, 0)
-  end
-
-  def course_type(course)
-    course_field(course, 1)
-  end
-
-  def course_name(course)
-    course_field(course, 2)
-  end
-
-  def course_semester(course)
-    course_field(course, 3)
   end
 
   private

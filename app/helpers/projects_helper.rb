@@ -7,11 +7,17 @@ module ProjectsHelper
     end
   end
 
-  def map_project(res, favorites = nil)
-    id = res["id"] || ""
+  def map_project(res, favorites = nil, is_json = true)
+    if is_json
+      id = res["id"] || ""
+      title = res["title"]
+    else
+      id = @id
+      title = res.css("title en").text
+    end
     Resource.new(
       id,
-      res["title"],
+      title,
       nil,
       nil,
       project_path(id),
