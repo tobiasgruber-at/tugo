@@ -1,8 +1,8 @@
 class ThesesController < TissApiController
 
   def index
-    term = params["term"]
-    super(term,"search/thesis/v1.0/quickSearch?searchterm=#{term}")
+    @search_term = SearchTerm.new(search_params)
+    super("search/thesis/v1.0/quickSearch?searchterm=#{@search_term.query}")
   end
 
   def show

@@ -23,18 +23,23 @@ class TissApiController < ApplicationController
     end
   end
 
-  def index(term, endpoint = "", parser = -> (val) {JSON.parse(val)})
-    @term = term
-    begin
-      @resources = self.search(endpoint, parser)
-      if has_error?(@resources)
+  def index(endpoint = "", parser = -> (val) {JSON.parse(val)})
+    if @search_term.valid?
+      begin
+        @resources = self.search(endpoint, parser)
+        if has_error?(@resources)
+          @resources = nil
+        end
+        @favorites = Favorite.where(user_id: session[:user_id])
+      rescue StandardError => e
         @resources = nil
+        flash.now[:alert] = "An error occurred. Please try again later."
       end
-      @favorites = Favorite.where(user_id: session[:user_id])
-    rescue StandardError => e
-      @resources = nil
-      flash.now[:alert] = "An error occurred. Please try again later."
     end
+  end
+
+  def search_params
+    params.require(:search_term).permit(:query) if params[:search_term]
   end
 
   private

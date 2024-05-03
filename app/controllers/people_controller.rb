@@ -6,8 +6,8 @@ class PeopleController < TissApiController
   end
 
   def index
-    term = params["term"]
-    super(term,"psuche?q=#{term}&max_treffer=100")
+    @search_term = SearchTerm.new(search_params)
+    super("psuche?q=#{@search_term.query}&max_treffer=100")
   end
 
   def show
