@@ -18,8 +18,8 @@
   <div class="list">
     <% resources.each do |resource| %>
       <div class="list__item btn btn--block ">
-        <div class="flex-display flex-gap--xs jc-space-between position-relative">
-          <a class="position-relative" href="<%= resource.path %>">
+        <div class="flex-display flex-gap--xxs jc-space-between position-relative">
+          <a class="position-relative flex-grow--1 ac-center" href="<%= resource.path %>">
             <div class="flex-display flex-column">
               <% unless resource.addition.nil? %>
                 <div class="flex-display flex-gap--xs">

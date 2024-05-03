@@ -31,6 +31,14 @@
     }
   }
 
+  &-grow--1 {
+    flex-grow: 1;
+  }
+
+  &-shrink-1 {
+    flex-shrink: 1;
+  }
+
   &-center {
     @extend .flex-display;
     flex-wrap: nowrap;

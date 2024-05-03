@@ -102,5 +102,6 @@
     border-radius: 50%;
     width: var(--space-xl);
     height: var(--space-xl);
+    @extend .p--0 !optional;
   }
 }
