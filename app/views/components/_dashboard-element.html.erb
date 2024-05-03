@@ -1,0 +1,20 @@
+<% # default values for unassigned locals
+   icon_class = nil if local_assigns[:icon_class].nil?
+%>
+<a class="dashboard__element" href="<%= path %>">
+  <div class="position-relative">
+    <div class="flex-display flex-row flex-gap--xs ai-center">
+      <div>
+        <%= yield %>
+      </div>
+      <div>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+    <% unless icon_class.nil? %>
+      <div class="position-absolute top-0 right-0 muted">
+        <i class="<%= icon_class %>"></i>
+      </div>
+    <% end %>
+  </div>
+</a>
