@@ -1,6 +1,5 @@
 <h1>Theses</h1>
 <%= render partial: "components/search", locals: { resource_path: (theses_path), resource_name: "theses" } %>
-<% if @error %>
-  <%= render partial: "components/error", locals: { error: @error } %>
+<% unless @resources.nil? %>
+  <%= render partial: "layouts/resources", locals: { resources: map_theses(@resources, @favorites), title: nil, search_result: true} %>
 <% end %>
-<%= render partial: "layouts/resources", locals: { resources: map_theses(@resources, @favorites), title: nil, search_result: false} %>

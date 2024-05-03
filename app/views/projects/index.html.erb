@@ -3,4 +3,6 @@
 <% if @error %>
   <%= render partial: "components/error", locals: { error: @error } %>
 <% end %>
-<%= render partial: "layouts/resources", locals: { resources: map_projects(@resources, @favorites), title: nil, search_result: false} %>
+<% unless @resources.nil? %>
+  <%= render partial: "layouts/resources", locals: { resources: map_projects(@resources, @favorites), title: nil, search_result: true} %>
+<% end %>

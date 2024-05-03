@@ -15,41 +15,34 @@ class TissApiController < ApplicationController
     URI_BASE + @endpoint_base
   end
 
-  def index(term, endpoint = "", parser = -> (val) {JSON.parse(val)})
-    @term = term
+  def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
-      self.validate_term
-      @resources = self.search(endpoint, parser)
-      @favorites = Favorite.where(user_id: session[:user_id])
+      @resource = self.find(endpoint, parser)
     rescue StandardError => e
-      @error = e.message
-      @resources = nil
+      flash.now[:alert] = "An error occurred. Please try again later."
     end
   end
 
-  def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
-    @resource = self.find(endpoint, parser)
+  def index(term, endpoint = "", parser = -> (val) {JSON.parse(val)})
+    @term = term
+    begin
+      @resources = self.search(endpoint, parser)
+      if has_error?(@resources)
+        @resources = nil
+      end
+      @favorites = Favorite.where(user_id: session[:user_id])
+    rescue StandardError => e
+      @resources = nil
+      flash.now[:alert] = "An error occurred. Please try again later."
+    end
   end
 
   private
 
-  def validate_term
-    term_model = SearchTerm.new(query: @term)
-    unless term_model.valid?
-      # TODO: add custom error
-      raise RuntimeError.new("Term #{term_model.errors.messages[:query][0]}")
-    end
-  end
-
   def search(endpoint, parser = -> (val) {JSON.parse(val)})
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
-    resources = parser.call(response)
-    if has_error?(resources)
-      # TODO: add custom error
-      raise RuntimeError.new(resources['error_message'])
-    end
-    resources
+    parser.call(response)
   end
 
   def find(endpoint, parser)

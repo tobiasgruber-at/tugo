@@ -6,19 +6,25 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @session = Session.new(session_params)
-    if @session.valid?
-      user = User.find_by(email: session_params[:email])
-      if user
-        @session.errors.add(:password, "is incorrect") unless user.authenticate(session_params[:password])
+    begin
+      @session = Session.new(session_params)
+      if @session.valid?
+        user = User.find_by(email: session_params[:email])
+        if user
+          @session.errors.add(:password, "is incorrect") unless user.authenticate(session_params[:password])
+        else
+          @session.errors.add(:email, "not found")
+        end
+        return render :new, status: :unprocessable_entity if @session.errors.any?
+        session[:user_id] = user.id
+        session[:user_email] = user.email
+        redirect_to root_path
       else
-        @session.errors.add(:email, "not found")
+        render :new, status: :unprocessable_entity
       end
-      return render :new, status: :unprocessable_entity if @session.errors.any?
-      session[:user_id] = user.id
-      session[:user_email] = user.email
-      redirect_to root_path
-    else
+    rescue StandardError => e
+      @session = Session.new
+      flash.now[:alert] = "An error occurred. Please try again later."
       render :new, status: :unprocessable_entity
     end
   end
