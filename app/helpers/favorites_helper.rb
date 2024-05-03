@@ -14,7 +14,7 @@ module FavoritesHelper
       res["preview"],
       nil,
       nil,
-      path_selector_fn.call(id),
+      path_selector_fn.call(res["item_id"]),
       true,
       nil
     )
