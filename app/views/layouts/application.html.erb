@@ -28,6 +28,7 @@
   </div>
   <div class="nav__end">
     <% if logged_in? %>
+      <a class="nav-btn" href="<%= favorites_path %>">Favorites</a>
       <a class="nav-btn" href="/logout">Logout</a>
     <% else logged_in? %>
       <a class="nav-btn" href="/login">Login</a>

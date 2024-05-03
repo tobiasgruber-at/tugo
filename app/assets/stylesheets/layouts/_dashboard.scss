@@ -1,0 +1,19 @@
+@import "mixins/media";
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: var(--space-m);
+  grid-row-gap: var(--space-m);
+
+  @include media(tabletAndUp) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__element {
+    @extend .btn !optional;
+    @extend .btn--light !optional;
+    @extend .box-shadow--tiny !optional;
+    padding: var(--space-m);
+  }
+}
