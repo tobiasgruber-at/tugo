@@ -114,6 +114,26 @@
   align-content: space-around;
 }
 
+.as-center {
+  align-self: center;
+}
+
+.as-flex-start {
+  align-self: flex-start;
+}
+
+.as-flex-end {
+  align-self: flex-end;
+}
+
+.as-center {
+  align-self: center;
+}
+
+.as-stretch {
+  align-self: stretch;
+}
+
 .muted {
   color: var(--color-text-muted);
 }

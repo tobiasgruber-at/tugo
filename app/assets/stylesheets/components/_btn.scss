@@ -95,13 +95,13 @@
   }
 
   &--icon {
+    display: flex;
+    flex-basis: content;
     background: none;
     box-shadow: none;
     text-shadow: none;
     color: var(--color-text-body);
     border-radius: 50%;
-    width: var(--space-xl);
-    height: var(--space-xl);
-    @extend .p--0 !optional;
+    @extend .p--s !optional;
   }
 }
