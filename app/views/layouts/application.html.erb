@@ -38,6 +38,12 @@
 </nav>
 
 <div class="container p-t--l">
+  <% if alert %>
+    <%= render partial: "components/error", locals: { error: alert } %>
+  <% end %>
+  <% if notice %>
+    <%= render partial: "components/notice" %>
+  <% end %>
   <%= yield %>
 </div>
 </body>

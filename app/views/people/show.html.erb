@@ -1,1 +1,3 @@
-<%= render :partial => "layouts/resource", :locals => { resource: map_person(@resource) } %>
+<% unless @resource.nil? %>
+  <%= render :partial => "layouts/resource", :locals => { resource: map_person(@resource) } %>
+<% end %>
