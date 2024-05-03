@@ -1,8 +1,8 @@
-<%= form_with(url: resource_path, method: :get) do |f| %>
+<%= form_with model: @search_term, url: resource_path, method: :get do |f| %>
   <div class="form-element">
-    <%= f.label :term, "Search for #{resource_name}" %>
+    <%= f.label :query, "Search for #{resource_name}" %>
     <div class="form-row form-input-group">
-      <%= f.text_field :term %>
+      <%= f.text_field :query, value: @search_term.query %>
       <%= f.button nil, name: nil, type: "submit", class: "btn btn--primary form-input-group__small" do %>
         <div class="flex-display flex-row flex-gap--xs ai-center">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -12,5 +12,6 @@
         </div>
       <% end %>
     </div>
+    <%= render "components/form-errors", messages: @search_term.errors.full_messages_for(:query) %>
   </div>
 <% end %>

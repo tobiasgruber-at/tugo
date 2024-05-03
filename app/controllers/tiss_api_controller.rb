@@ -15,15 +15,15 @@ class TissApiController < ApplicationController
     URI_BASE + @endpoint_base
   end
 
-  def index(term, endpoint = "", parser = -> (val) {JSON.parse(val)})
-    @term = term
-    begin
-      self.validate_term
-      @resources = self.search(endpoint, parser)
-      @favorites = Favorite.where(user_id: session[:user_id])
-    rescue StandardError => e
-      @error = e.message
-      @resources = nil
+  def index(endpoint = "", parser = -> (val) {JSON.parse(val)})
+    if @search_term.valid?
+      begin
+        @resources = self.search(endpoint, parser)
+        @favorites = Favorite.where(user_id: session[:user_id])
+      rescue StandardError => e
+        @error = e.message
+        @resources = nil
+      end
     end
   end
 
@@ -32,14 +32,6 @@ class TissApiController < ApplicationController
   end
 
   private
-
-  def validate_term
-    term_model = SearchTerm.new(query: @term)
-    unless term_model.valid?
-      # TODO: add custom error
-      raise RuntimeError.new("Term #{term_model.errors.messages[:query][0]}")
-    end
-  end
 
   def search(endpoint, parser = -> (val) {JSON.parse(val)})
     uri = URI(base + endpoint)

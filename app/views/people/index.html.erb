@@ -1,6 +1,4 @@
 <h1>People</h1>
 <%= render partial: "components/search", locals: { resource_path: (people_path), resource_name: "people" } %>
-<% if @error %>
-  <%= render partial: "components/error", locals: { error: @error } %>
-<% end %>
+<%= render partial: "components/error", locals: {error: @error} %>
 <%= render partial: "layouts/resources", locals: { resources: map_people(@resources, @favorites), title: nil, search_result: false} %>

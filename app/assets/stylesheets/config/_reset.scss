@@ -84,3 +84,8 @@ a {
   background-color: var(--color-tertiary);
   box-shadow: 0 0 20px 5px var(--color-tertiary);
 }
+
+.field_with_errors {
+  display: block;
+  width: 100%;
+}

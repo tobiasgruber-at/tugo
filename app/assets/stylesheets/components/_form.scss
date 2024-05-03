@@ -1,10 +1,14 @@
+@import "mixins/animations";
+
 form {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   @extend .flex-gap--xs !optional;
 
-  input, button, textarea {
+  input,
+  button,
+  textarea {
     background-color: var(--color-white);
     transition: box-shadow 300ms;
     @extend .p--s !optional;
@@ -13,7 +17,9 @@ form {
     @extend .box-shadow--tiny !optional;
   }
 
-  input:hover, button:hover, textarea:hover {
+  input:hover,
+  button:hover,
+  textarea:hover {
     @extend .box-shadow--small !optional;
   }
 
@@ -54,7 +60,9 @@ form {
       color: var(--color-error);
     }
 
-    input, button {
+    input,
+    button,
+    textarea {
       width: 100%;
       border: none;
       outline: none;
@@ -70,6 +78,7 @@ form {
   &-error-messages {
     display: flex;
     flex-direction: column;
+    @include animate(fade-in, 500ms);
   }
 
   &-error-message {
@@ -94,13 +103,21 @@ form {
     flex-basis: content;
   }
 
-  &-input-group :first-child {
+  &-input-group input:first-child,
+  &-input-group button:first-child,
+  &-input-group textarea:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
-  &-input-group :last-child {
+  &-input-group input:last-child,
+  &-input-group button:last-child,
+  &-input-group textarea:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+  }
+
+  &-input-group * {
+    border-radius: inherit;
   }
 }
