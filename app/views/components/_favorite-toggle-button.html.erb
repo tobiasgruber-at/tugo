@@ -1,11 +1,5 @@
 <% unless resource.nil? %>
-  <% if resource.is_favorite %>
-    <%= form_with url: "#{favorite_path(resource.id)}", method: "delete" do |f| %>
-      <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
-        <i class="fa-solid fa-heart"></i>
-      <% end %>
-    <% end %>
-  <% else %>
+  <% if resource.favorite_id.nil? %>
     <%= form_with model: Favorite.new do |f| %>
       <%= f.hidden_field :item_id, :value => resource.id %>
       <%= f.hidden_field :preview, :value => resource.title %>
@@ -13,6 +7,12 @@
       <%= f.hidden_field :note, :value => "" %>
       <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
         <i class="fa-regular fa-heart"></i>
+      <% end %>
+    <% end %>
+  <% else %>
+    <%= form_with url: "#{favorite_path(resource.favorite_id)}", method: "delete" do |f| %>
+      <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
+        <i class="fa-solid fa-heart"></i>
       <% end %>
     <% end %>
   <% end %>

@@ -21,7 +21,7 @@ module ProjectsHelper
       nil,
       nil,
       project_path(id),
-      favorites.nil? ? false : (favorites.any? { |fav| fav.item_id == String(id) }),
+      favorites.nil? ? nil : favorites.find { |fav| fav.item_id == String(id) },
       Favorite.favorite_types["project"]
     )
   end

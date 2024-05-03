@@ -18,7 +18,9 @@ class TissApiController < ApplicationController
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
       @resource = self.find(endpoint, parser)
+      @favorites = Favorite.where(user_id: session[:user_id])
     rescue StandardError => e
+      puts e.message
       flash.now[:alert] = "An error occurred. Please try again later."
     end
   end
@@ -32,6 +34,7 @@ class TissApiController < ApplicationController
         end
         @favorites = Favorite.where(user_id: session[:user_id])
       rescue StandardError => e
+        puts e.message
         @resources = nil
         flash.now[:alert] = "An error occurred. Please try again later."
       end

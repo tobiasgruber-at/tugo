@@ -8,6 +8,7 @@ class FavoritesController < TissApiController
       @favorite_theses = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "thesis" }
       @favorite_projects = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "project" }
     rescue StandardError => e
+      puts e.message
       @favorites = nil
       flash.now[:alert] = "An error occurred. Please try again later."
     end
@@ -26,6 +27,7 @@ class FavoritesController < TissApiController
         is_error = true
       end
     rescue StandardError => e
+      puts e.message
       is_error = true
     end
     if is_error
@@ -40,6 +42,7 @@ class FavoritesController < TissApiController
       Favorite.destroy(params[:id])
       redirect_back fallback_location: favorites_path
     rescue StandardError => e
+      puts e.message
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     end
   end

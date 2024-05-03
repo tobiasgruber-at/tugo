@@ -15,7 +15,7 @@ module FavoritesHelper
       nil,
       nil,
       path_selector_fn.call(res["item_id"]),
-      true,
+      id,
       nil
     )
   end

@@ -17,6 +17,7 @@ class UsersController < ApplicationController
         render :new, status: :unprocessable_entity
       end
     rescue StandardError => e
+      puts e.message
       @user = User.new
       flash.now[:alert] = "An error occurred. Please try again later."
       render :new, status: :unprocessable_entity
