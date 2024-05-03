@@ -14,7 +14,7 @@ class FavoritesController < TissApiController
       :user_id => session[:user_id],
       :item_id => favorite_params["item_id"],
       # TODO: add real text
-      :preview => "Yet another favorite item",
+      :preview => favorite_params["preview"],
       :favorite_type => Integer(favorite_params["favorite_type"])
     )
     begin
@@ -27,7 +27,7 @@ class FavoritesController < TissApiController
       @error = e.message
     end
     @error = "this is an error"
-    redirect_to favorites_path
+    redirect_back fallback_location: favorites_path
   end
 
   def update
@@ -35,11 +35,12 @@ class FavoritesController < TissApiController
   end
 
   def destroy
-    # destroy
+    Favorite.destroy(params[:id])
+    redirect_to favorites_path
   end
 
   def favorite_params
-    params.require(:favorite).permit(:item_id, :favorite_type, :note)
+    params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)
   end
 
 end

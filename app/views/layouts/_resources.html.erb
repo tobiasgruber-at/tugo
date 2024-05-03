@@ -1,3 +1,4 @@
+
 <% unless search_result %>
   <h2><%= title %></h2>
 <% end %>
@@ -35,8 +36,7 @@
           </a>
           <div class="favorite-button">
             <% if resource.is_favorite %>
-              <%= form_with model: Favorite.new, method: "delete" do |f| %>
-                <%= f.hidden_field :item_id, :value => resource.id %>
+              <%= form_with url: "#{favorite_path(resource.id)}", method: "delete" do |f| %>
                 <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
                   <i class="fa-solid fa-heart"></i>
                 <% end %>
@@ -44,6 +44,7 @@
             <% else %>
               <%= form_with model: Favorite.new do |f| %>
                 <%= f.hidden_field :item_id, :value => resource.id %>
+                <%= f.hidden_field :preview, :value => resource.title %>
                 <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
                 <%= f.hidden_field :note, :value => "" %>
                 <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
