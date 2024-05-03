@@ -97,27 +97,35 @@ form {
     align-items: stretch;
   }
 
+  &-input-group input,
+  &-input-group button,
+  &-input-group textarea {
+    border-radius: 0;
+  }
+
   &-input-group__small {
     @extend .p-l--m !optional;
     @extend .p-r--m !optional;
     flex-basis: content;
   }
 
-  &-input-group input:first-child,
-  &-input-group button:first-child,
-  &-input-group textarea:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+  &-input-group > input:first-child,
+  &-input-group > button:first-child,
+  &-input-group > text:first-child,
+  &-input-group > *:first-child input,
+  &-input-group > *:first-child button,
+  &-input-group > *:first-child textarea {
+    border-top-left-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
   }
 
-  &-input-group input:last-child,
-  &-input-group button:last-child,
-  &-input-group textarea:last-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  &-input-group * {
-    border-radius: inherit;
+  &-input-group > input:last-child,
+  &-input-group > button:last-child,
+  &-input-group > textarea:last-child,
+  &-input-group > *:last-child input,
+  &-input-group > *:last-child button,
+  &-input-group > *:last-child textarea {
+    border-top-right-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
   }
 }
