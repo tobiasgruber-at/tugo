@@ -24,7 +24,7 @@ class TissApiController < ApplicationController
   end
 
   def index(endpoint = "", parser = -> (val) {JSON.parse(val)})
-    if @search_term.valid?
+    if not @search_term.query.nil? and @search_term.valid?
       begin
         @resources = self.search(endpoint, parser)
         if has_error?(@resources)
