@@ -114,3 +114,5 @@ fabric.properties
 
 .idea/discord.xml
 .idea/.gitignore
+
+.yardoc/
