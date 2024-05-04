@@ -69,3 +69,5 @@ end
 gem "sass-rails", "~> 6.0"
 
 gem "font-awesome-sass", "~> 6.5"
+
+gem "yard", "~> 0.9.36"

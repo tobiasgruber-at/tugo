@@ -1,10 +1,19 @@
+# This is the controller for users.
+# @!attribute [rw] user
+#   @return [User]
 class UsersController < ApplicationController
   before_action :redirect_if_not_logged_in
 
+  # Creates a new user
+  #
+  # After a call to this method, the {#user} instance variable will be set.
+  #
+  # @return [void]
   def new
     @user = User.new
   end
 
+  # TODO Yard doc
   def create
     begin
       @user = User.new(user_params)
