@@ -1,5 +1,16 @@
 # README
 
+## Student data
+
+- Tobias Gruber (11912367)
+- Simon Josef Kreuzpointner (12021358)
+
+## Timetracking
+
+See [Timetracker.md](./Timetracker.md).
+
+## Description
+
 **_TUgo_** is a tool to quickly query people, projects, courses or theses provided by
 the [TISS](https://tiss.tuwien.ac.at/)
 API.
