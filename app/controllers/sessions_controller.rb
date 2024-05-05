@@ -1,10 +1,20 @@
 class SessionsController < ApplicationController
   before_action :redirect_if_logged_in, only: [:new, :create]
 
+  # Renders a form to log in.
+  #
+  # After a call to this method, the {#session} instance variable will be set.
+  #
+  # @return [void]
   def new
     @session = Session.new
   end
 
+  # Creates a new session.
+  #
+  # After a call to this method, the {#session} instance variable will be set.
+  #
+  # @return [void]
   def create
     begin
       @session = Session.new(session_params)
@@ -30,6 +40,9 @@ class SessionsController < ApplicationController
     end
   end
 
+  # Destroys the current session.
+  #
+  # @return [void]
   def destroy
     reset_session
     redirect_to login_path

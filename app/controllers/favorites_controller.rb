@@ -1,4 +1,9 @@
 class FavoritesController < TissApiController
+  # Shows a list of all favorites.
+  #
+  # After a call to this method, the {#favorites} instance variable will be set.
+  #
+  # @return [void]
   def index
     begin
       @favorites = Favorite.where(user_id: session[:user_id])
@@ -14,6 +19,11 @@ class FavoritesController < TissApiController
     end
   end
 
+  # Adds a new favorite.
+  #
+  # After a call to this method, the {#favorite} instance variable will be set.
+  #
+  # @return [void]
   def create
     is_error = false
     begin
@@ -37,6 +47,9 @@ class FavoritesController < TissApiController
     end
   end
 
+  # Removes a favorite.
+  #
+  # @return [void]
   def destroy
     begin
       Favorite.destroy(params[:id])
@@ -46,6 +59,8 @@ class FavoritesController < TissApiController
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     end
   end
+
+  private
 
   def favorite_params
     params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)

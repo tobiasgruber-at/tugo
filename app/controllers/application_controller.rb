@@ -25,7 +25,7 @@ class ApplicationController < ActionController::Base
     !!session[:user_email]
   end
 
-  # TODO YARD doc
+  # Redirects the user to the login page if not logged in.
   # @private
   def redirect_if_not_logged_in
     unless logged_in?
@@ -33,7 +33,7 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  # TODO YARD doc
+  # Redirects the user to the home page if logged in.
   # @private
   def redirect_if_logged_in
     if logged_in?

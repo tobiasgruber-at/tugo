@@ -4,7 +4,7 @@
 class UsersController < ApplicationController
   before_action :redirect_if_logged_in
 
-  # Creates a new user
+  # Renders a form to create a new user.
   #
   # After a call to this method, the {#user} instance variable will be set.
   #
@@ -13,7 +13,11 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
-  # TODO Yard doc
+  # Creates a new user.
+  #
+  # After a call to this method, the {#user} instance variable will be set.
+  #
+  # @return [void]
   def create
     begin
       @user = User.new(user_params)

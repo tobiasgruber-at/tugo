@@ -1,7 +1,7 @@
 require 'net/http'
 require 'json'
 
-# This class provides functionality to operate on the {https://tiss.tuwien.ac.at TISS} API. Specifically for searching
+# This controller provides functionality to operate on the {https://tiss.tuwien.ac.at TISS} API. Specifically for searching
 # for resources by a query term and getting a single resource.
 #
 # The subclassed implementation might override the {endpoint_base} instance variable to provide a common URI base for
@@ -42,8 +42,9 @@ class TissApiController < ApplicationController
     URI_BASE + @endpoint_base
   end
 
-  # Performs an call to the provided endpoint and parses the result with the given parser.
+  # Shows the details of a single resource.
   #
+  # Performs an call to the provided endpoint and parses the result with the given parser.
   # After a call to this function, the member `@resource` and `@favorites` will be set.
   #
   # @param [String] endpoint the endpoint that should be called
@@ -59,11 +60,12 @@ class TissApiController < ApplicationController
     end
   end
 
+  # Shows the list of all resources filtered by a search term.
+  #
   # Performs an call to the provided endpoint and parses the result with the given parser.
   # Before this function can be called the member variable @search_term has to be set. This can be done with the
   # function {#search_params}. If the query is `nil`, no search will be performed.
-  #
-  # After the call to this function,
+  # After the call to this function, the members `@resources` and `@favorites` will be set.
   #
   # @see #search_params
   # @param [String] endpoint the endpoint that should be called
