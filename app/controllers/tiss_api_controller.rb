@@ -19,7 +19,7 @@ require 'json'
 class TissApiController < ApplicationController
 
   # TODO: add YARD doc
-  before_action :redirect_if_logged_in
+  before_action :redirect_if_not_logged_in
 
   # All API calls have this common base URI
   URI_BASE = "https://tiss.tuwien.ac.at/api/"
