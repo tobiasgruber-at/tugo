@@ -23,6 +23,7 @@
 | 01.05.2024 | 22:00 - 01:00 | 3:00h    | s    | style favorites button; add back button                                                                          |
 | 01.05.2024 | 23:30 - 01:00 | 1:30h    | t    | add basic home page; add mapper for single resources                                                             |
 | 03.05.2024 | 12:00 - 15:30 | 3:30h    | s    | style home page; refactor search with tobi; add favorite button to details view                                  |
-| 03.04.2024 | 11:00 - 14:00 | 3:00h    | t    | add general error handling for internal errors; add remove-favorite feature.                                     |
-| 03.04.2024 | 16:00 - 16:30 | 0:30h    | t    | fix remove favorite logic to work on all pages                                                                   |
-| 05.04.2024 | 16:30 - 17:00 | 0:30h    | t    | fix xml parsing (sometimes there were namespaces prefixes and sometimes not); fix migrations                     |
+| 03.05.2024 | 11:00 - 14:00 | 3:00h    | t    | add general error handling for internal errors; add remove-favorite feature.                                     |
+| 03.05.2024 | 16:00 - 16:30 | 0:30h    | t    | fix remove favorite logic to work on all pages                                                                   |
+| 05.05.2024 | 16:30 - 17:00 | 0:30h    | t    | fix xml parsing (sometimes there were namespaces prefixes and sometimes not); fix migrations                     |
+| 05.05.2024 | 18:00 - 19:00 | 1:00h    | s    | add doc; add readme; fix yardoc generation                                                                       |      
