@@ -1,3 +1,7 @@
+# @!attribute [r] favorites
+#   @return [Favorite[]] a list of favorites
+# @!attribute [r] favorite
+#   @return [Favorite] the newly created favorite model (see {#create})
 class FavoritesController < TissApiController
   # Shows a list of all favorites.
   #
