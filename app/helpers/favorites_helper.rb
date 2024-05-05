@@ -1,4 +1,5 @@
 module FavoritesHelper
+  # Maps many favorites to resource objects.
   def map_favorites(resources, path_selector_fn)
     if resources.nil? || resources.empty?
       []
@@ -7,6 +8,7 @@ module FavoritesHelper
     end
   end
 
+  # Maps a favorite to a resource object.
   def map_favorite(res, path_selector_fn)
     id = res["id"] || ""
     Resource.new(

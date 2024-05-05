@@ -1,4 +1,5 @@
 module ProjectsHelper
+  # Maps many projects to resource objects.
   def map_projects(resources, favorites)
     if resources.nil? || resources.empty?
       []
@@ -7,6 +8,7 @@ module ProjectsHelper
     end
   end
 
+  # Maps a project to a resource object.
   def map_project(res, favorites = nil, is_json = true)
     if is_json
       id = res["id"] || ""

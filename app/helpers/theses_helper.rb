@@ -1,4 +1,5 @@
 module ThesesHelper
+  # Maps many theses to resource objects.
   def map_theses(resources, favorites)
     if resources.nil? || resources.empty?
       []
@@ -7,6 +8,7 @@ module ThesesHelper
     end
   end
 
+  # Maps a thesis to a resource object.
   def map_thesis(res, favorites = nil, is_json = true)
     if is_json
       id = res["id"] || ""

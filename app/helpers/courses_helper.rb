@@ -1,4 +1,5 @@
 module CoursesHelper
+  # Maps many courses to resource objects.
   def map_courses(resources, favorites)
     if resources.nil? || resources.empty?
       []
@@ -7,6 +8,7 @@ module CoursesHelper
     end
   end
 
+  # Maps a course to a resource object.
   def map_course(res, favorites = nil, is_json = true)
     if is_json
       course_nr = res["detail_url"].match(/courseNr=(\d+)/)[1]

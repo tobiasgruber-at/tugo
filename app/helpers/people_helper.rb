@@ -1,4 +1,5 @@
 module PeopleHelper
+  # Maps many people to resource objects.
   def map_people(resources, favorites)
     if resources.nil? || resources.empty?
       []
@@ -7,6 +8,7 @@ module PeopleHelper
     end
   end
 
+  # Maps a person to a resource object.
   def map_person(res, favorites = nil)
     id = res["tiss_id"] || " "
     Resource.new(
