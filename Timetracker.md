@@ -1,3 +1,12 @@
+# Time Tracker
+
+## Users
+
+- `t` refers to Tobias Gruber (11912367)
+- `s` refers to Simon Josef Kreuzpointner (12021358)
+
+## Protocol
+
 | Date       | Timespan      | Duration | User | Description                                                                                                      |
 |------------|---------------|----------|------|------------------------------------------------------------------------------------------------------------------|
 | 15.04.2024 | 12:00 - 15:00 | 3h       | s, t | Project Setup; Git Repo Setup; implement PeopleController                                                        |

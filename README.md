@@ -1,24 +1,39 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**_TUgo_** is a tool to quickly query people, projects, courses or theses provided by
+the [TISS](https://tiss.tuwien.ac.at/)
+API.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+This project requires [Ruby](https://www.ruby-lang.org) with version `3.3.0`, [Rails](https://rubyonrails.org/) with
+version `7.1.2` and [SQLite3](https://www.sqlite.org/) with version `1.4`.
 
-* System dependencies
+## Getting Started
 
-* Configuration
+To initialize this project, run the bundler to install the needed gems:
 
-* Database creation
+```shell
+bundle install
+```
 
-* Database initialization
+To initialize the database, we use this command:
 
-* How to run the test suite
+```shell
+bin/rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+After that, the server can be started via
 
-* Deployment instructions
+```shell
+bin/rails server
+```
 
-* ...
+## Documentation
+
+_TUgo_ also provides extensive [YARD](https://yardoc.org/) documentation, which can be generated if needed. Simply run
+the following command:
+
+```shell
+yardoc
+```
