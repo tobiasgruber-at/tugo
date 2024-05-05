@@ -115,7 +115,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Maps many people to resource objects.</p>
+</div></span>
   
 </li>
 
@@ -137,7 +139,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Maps a person to a resource object.</p>
+</div></span>
   
 </li>
 
@@ -160,22 +164,33 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Maps many people to resource objects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-2
 3
 4
 5
 6
 7
-8</pre>
+8
+9</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/helpers/people_helper.rb', line 2</span>
+      <pre class="code"><span class="info file"># File 'app/helpers/people_helper.rb', line 3</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_map_people'>map_people</span><span class='lparen'>(</span><span class='id identifier rubyid_resources'>resources</span><span class='comma'>,</span> <span class='id identifier rubyid_favorites'>favorites</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_resources'>resources</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='op'>||</span> <span class='id identifier rubyid_resources'>resources</span><span class='period'>.</span><span class='id identifier rubyid_empty?'>empty?</span>
@@ -198,14 +213,23 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Maps a person to a resource object.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-10
-11
 12
 13
 14
@@ -215,10 +239,12 @@
 18
 19
 20
-21</pre>
+21
+22
+23</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/helpers/people_helper.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'app/helpers/people_helper.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_map_person'>map_person</span><span class='lparen'>(</span><span class='id identifier rubyid_res'>res</span><span class='comma'>,</span> <span class='id identifier rubyid_favorites'>favorites</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_id'>id</span> <span class='op'>=</span> <span class='id identifier rubyid_res'>res</span><span class='lbracket'>[</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>tiss_id</span><span class='tstring_end'>&quot;</span></span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'> </span><span class='tstring_end'>&quot;</span></span>
@@ -242,7 +268,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun May  5 00:48:19 2024 by
+  Generated on Sun May  5 18:33:40 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

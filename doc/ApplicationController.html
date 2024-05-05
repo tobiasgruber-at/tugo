@@ -283,17 +283,17 @@
     <span class='op'>!</span><span class='op'>!</span><span class='id identifier rubyid_session'>session</span><span class='lbracket'>[</span><span class='symbol'>:user_email</span><span class='rbracket'>]</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># TODO YARD doc
+  <span class='comment'># Redirects the user to the login page if not logged in.
 </span>  <span class='comment'># @private
-</span>  <span class='kw'>def</span> <span class='id identifier rubyid_redirect_if_logged_in'>redirect_if_logged_in</span>
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_redirect_if_not_logged_in'>redirect_if_not_logged_in</span>
     <span class='kw'>unless</span> <span class='id identifier rubyid_logged_in?'>logged_in?</span>
       <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_login_path'>login_path</span>
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># TODO YARD doc
+  <span class='comment'># Redirects the user to the home page if logged in.
 </span>  <span class='comment'># @private
-</span>  <span class='kw'>def</span> <span class='id identifier rubyid_redirect_if_not_logged_in'>redirect_if_not_logged_in</span>
+</span>  <span class='kw'>def</span> <span class='id identifier rubyid_redirect_if_logged_in'>redirect_if_logged_in</span>
     <span class='kw'>if</span> <span class='id identifier rubyid_logged_in?'>logged_in?</span>
       <span class='id identifier rubyid_redirect_to'>redirect_to</span> <span class='id identifier rubyid_root_path'>root_path</span>
     <span class='kw'>end</span>
@@ -375,7 +375,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun May  5 00:48:19 2024 by
+  Generated on Sun May  5 18:33:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

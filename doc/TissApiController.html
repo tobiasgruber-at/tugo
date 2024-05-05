@@ -110,7 +110,7 @@
   <div class='inline'></div>
 </div>
 
-<p>This class provides functionality to operate on the <a href="https://tiss.tuwien.ac.at" target="_parent" title="TISS">TISS</a> API. Specifically for searching for resources by a query term and getting a single resource.</p>
+<p>This controller provides functionality to operate on the <a href="https://tiss.tuwien.ac.at" target="_parent" title="TISS">TISS</a> API. Specifically for searching for resources by a query term and getting a single resource.</p>
 
 <p>The subclassed implementation might override the <span class='object_link'><a href="#endpoint_base-instance_method" title="TissApiController#endpoint_base (method)">#endpoint_base</a></span> instance variable to provide a common URI base for all calls from that implementation. Similarly, the base URI for the <a href="https://tiss.tuwien.ac.at" target="_parent" title="TISS">TISS</a> API is already specified in this implementation and must be omitted.</p>
 
@@ -301,7 +301,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Performs an call to the provided endpoint and parses the result with the given parser.</p>
+<p>Shows the list of all resources filtered by a search term.</p>
 </div></span>
   
 </li>
@@ -375,7 +375,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Performs an call to the provided endpoint and parses the result with the given parser.</p>
+<p>Shows the details of a single resource.</p>
 </div></span>
   
 </li>
@@ -593,7 +593,9 @@
 114
 115
 116
-117</pre>
+117
+118
+119</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 19</span>
@@ -601,7 +603,7 @@
 <span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="TissApiController (class)">TissApiController</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
 
   <span class='comment'># TODO: add YARD doc
-</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_logged_in</span>
+</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_not_logged_in</span>
 
   <span class='comment'># All API calls have this common base URI
 </span>  <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://tiss.tuwien.ac.at/api/</span><span class='tstring_end'>&quot;</span></span>
@@ -624,8 +626,9 @@
     <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>+</span> <span class='ivar'>@endpoint_base</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the details of a single resource.
 </span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># After a call to this function, the member `@resource` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -641,11 +644,12 @@
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the list of all resources filtered by a search term.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># Before this function can be called the member variable @search_term has to be set. This can be done with the
 </span>  <span class='comment'># function {#search_params}. If the query is `nil`, no search will be performed.
-</span>  <span class='comment'>#
-</span>  <span class='comment'># After the call to this function,
+</span>  <span class='comment'># After the call to this function, the members `@resources` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @see #search_params
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -846,7 +850,9 @@
 114
 115
 116
-117</pre>
+117
+118
+119</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 19</span>
@@ -854,7 +860,7 @@
 <span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="TissApiController (class)">TissApiController</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
 
   <span class='comment'># TODO: add YARD doc
-</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_logged_in</span>
+</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_not_logged_in</span>
 
   <span class='comment'># All API calls have this common base URI
 </span>  <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://tiss.tuwien.ac.at/api/</span><span class='tstring_end'>&quot;</span></span>
@@ -877,8 +883,9 @@
     <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>+</span> <span class='ivar'>@endpoint_base</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the details of a single resource.
 </span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># After a call to this function, the member `@resource` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -894,11 +901,12 @@
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the list of all resources filtered by a search term.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># Before this function can be called the member variable @search_term has to be set. This can be done with the
 </span>  <span class='comment'># function {#search_params}. If the query is `nil`, no search will be performed.
-</span>  <span class='comment'>#
-</span>  <span class='comment'># After the call to this function,
+</span>  <span class='comment'># After the call to this function, the members `@resources` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @see #search_params
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -1099,7 +1107,9 @@
 114
 115
 116
-117</pre>
+117
+118
+119</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 19</span>
@@ -1107,7 +1117,7 @@
 <span class='kw'>class</span> <span class='const'><span class='object_link'><a href="" title="TissApiController (class)">TissApiController</a></span></span> <span class='op'>&lt;</span> <span class='const'><span class='object_link'><a href="ApplicationController.html" title="ApplicationController (class)">ApplicationController</a></span></span>
 
   <span class='comment'># TODO: add YARD doc
-</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_logged_in</span>
+</span>  <span class='id identifier rubyid_before_action'>before_action</span> <span class='symbol'>:redirect_if_not_logged_in</span>
 
   <span class='comment'># All API calls have this common base URI
 </span>  <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>https://tiss.tuwien.ac.at/api/</span><span class='tstring_end'>&quot;</span></span>
@@ -1130,8 +1140,9 @@
     <span class='const'><span class='object_link'><a href="#URI_BASE-constant" title="TissApiController::URI_BASE (constant)">URI_BASE</a></span></span> <span class='op'>+</span> <span class='ivar'>@endpoint_base</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the details of a single resource.
 </span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># After a call to this function, the member `@resource` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -1147,11 +1158,12 @@
     <span class='kw'>end</span>
   <span class='kw'>end</span>
 
-  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
+  <span class='comment'># Shows the list of all resources filtered by a search term.
+</span>  <span class='comment'>#
+</span>  <span class='comment'># Performs an call to the provided endpoint and parses the result with the given parser.
 </span>  <span class='comment'># Before this function can be called the member variable @search_term has to be set. This can be done with the
 </span>  <span class='comment'># function {#search_params}. If the query is `nil`, no search will be performed.
-</span>  <span class='comment'>#
-</span>  <span class='comment'># After the call to this function,
+</span>  <span class='comment'># After the call to this function, the members `@resources` and `@favorites` will be set.
 </span>  <span class='comment'>#
 </span>  <span class='comment'># @see #search_params
 </span>  <span class='comment'># @param [String] endpoint the endpoint that should be called
@@ -1288,9 +1300,9 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p class="note returns_void">This method returns an undefined value.</p>
-<p>Performs an call to the provided endpoint and parses the result with the given parser. Before this function can be called the member variable @search_term has to be set. This can be done with the function <span class='object_link'><a href="#search_params-instance_method" title="TissApiController#search_params (method)">#search_params</a></span>. If the query is ‘nil`, no search will be performed.</p>
+<p>Shows the list of all resources filtered by a search term.</p>
 
-<p>After the call to this function,</p>
+<p>Performs an call to the provided endpoint and parses the result with the given parser. Before this function can be called the member variable @search_term has to be set. This can be done with the function <span class='object_link'><a href="#search_params-instance_method" title="TissApiController#search_params (method)">#search_params</a></span>. If the query is ‘nil`, no search will be performed. After the call to this function, the members `@resources` and `@favorites` will be set.</p>
 
 
   </div>
@@ -1351,8 +1363,6 @@
       <pre class="lines">
 
 
-72
-73
 74
 75
 76
@@ -1365,10 +1375,12 @@
 83
 84
 85
-86</pre>
+86
+87
+88</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 72</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 74</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_index'>index</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint'>endpoint</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parser'>parser</span> <span class='op'>=</span> <span class='tlambda'>-&gt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span> <span class='tlambeg'>{</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='kw'>not</span> <span class='ivar'>@search_term</span><span class='period'>.</span><span class='id identifier rubyid_query'>query</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>and</span> <span class='ivar'>@search_term</span><span class='period'>.</span><span class='id identifier rubyid_valid?'>valid?</span>
@@ -1434,12 +1446,12 @@
       <pre class="lines">
 
 
-91
-92
-93</pre>
+93
+94
+95</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 91</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_search_params'>search_params</span>
   <span class='id identifier rubyid_params'>params</span><span class='period'>.</span><span class='id identifier rubyid_require'>require</span><span class='lparen'>(</span><span class='symbol'>:search_term</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_permit'>permit</span><span class='lparen'>(</span><span class='symbol'>:query</span><span class='rparen'>)</span> <span class='kw'>if</span> <span class='id identifier rubyid_params'>params</span><span class='lbracket'>[</span><span class='symbol'>:search_term</span><span class='rbracket'>]</span>
@@ -1461,9 +1473,9 @@
 </h3><div class="docstring">
   <div class="discussion">
     <p class="note returns_void">This method returns an undefined value.</p>
-<p>Performs an call to the provided endpoint and parses the result with the given parser.</p>
+<p>Shows the details of a single resource.</p>
 
-<p>After a call to this function, the member ‘@resource` and `@favorites` will be set.</p>
+<p>Performs an call to the provided endpoint and parses the result with the given parser. After a call to this function, the member ‘@resource` and `@favorites` will be set.</p>
 
 
   </div>
@@ -1517,7 +1529,6 @@
       <pre class="lines">
 
 
-52
 53
 54
 55
@@ -1525,10 +1536,11 @@
 57
 58
 59
-60</pre>
+60
+61</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 52</span>
+      <pre class="code"><span class="info file"># File 'app/controllers/tiss_api_controller.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_show'>show</span><span class='lparen'>(</span><span class='id identifier rubyid_endpoint'>endpoint</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parser'>parser</span> <span class='op'>=</span> <span class='tlambda'>-&gt;</span> <span class='lparen'>(</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span> <span class='tlambeg'>{</span> <span class='const'>JSON</span><span class='period'>.</span><span class='id identifier rubyid_parse'>parse</span><span class='lparen'>(</span><span class='id identifier rubyid_val'>val</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='rparen'>)</span>
   <span class='kw'>begin</span>
@@ -1549,7 +1561,7 @@
 </div>
 
       <div id="footer">
-  Generated on Sun May  5 00:48:19 2024 by
+  Generated on Sun May  5 18:33:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>
