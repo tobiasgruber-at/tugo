@@ -14,6 +14,7 @@ module ProjectsHelper
       id = res["id"] || ""
       title = res["title"]
     else
+      @resource.remove_namespaces!
       id = @id
       title = res.css("title en").text
     end

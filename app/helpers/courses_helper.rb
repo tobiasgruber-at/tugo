@@ -18,6 +18,7 @@ module CoursesHelper
       prefix = course_field(res, 1)
       addition = course_field(res, 0)
     else
+      @resource.remove_namespaces!
       id = @id
       title = @resource.css("title *:last-of-type").text
       prefix = @resource.css("courseType").text

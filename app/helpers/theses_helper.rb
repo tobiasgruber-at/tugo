@@ -14,6 +14,7 @@ module ThesesHelper
       id = res["id"] || ""
       title = res["title"]
     else
+      @resource.remove_namespaces!
       id = @id
       title = res.css("title *:last-of-type").text
     end
