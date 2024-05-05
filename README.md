@@ -14,7 +14,7 @@ version `7.1.2` and [SQLite3](https://www.sqlite.org/) with version `1.4`.
 To initialize this project, run the bundler to install the needed gems:
 
 ```shell
-bundle install
+bin/bundle install
 ```
 
 To initialize the database, we use this command:
