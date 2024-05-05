@@ -117,4 +117,4 @@ fabric.properties
 
 .yardoc/
 
-.doc/*
+doc/

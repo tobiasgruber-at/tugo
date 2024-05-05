@@ -60,32 +60,39 @@
       <div id="content"><div id='filecontents'>
 <h1 id="label-README">README</h1>
 
-<p>This README would normally document whatever steps are necessary to get the application up and running.</p>
+<p><strong><em>TUgo</em></strong> is a tool to quickly query people, projects, courses or theses provided by the <a href="https://tiss.tuwien.ac.at/">TISS</a> API.</p>
 
-<p>Things you may want to cover:</p>
-<ul><li>
-<p>Ruby version</p>
-</li><li>
-<p>System dependencies</p>
-</li><li>
-<p>Configuration</p>
-</li><li>
-<p>Database creation</p>
-</li><li>
-<p>Database initialization</p>
-</li><li>
-<p>How to run the test suite</p>
-</li><li>
-<p>Services (job queues, cache servers, search engines, etc.)</p>
-</li><li>
-<p>Deployment instructions</p>
-</li><li>
-<p>...</p>
-</li></ul>
+<h2 id="label-Requirements">Requirements</h2>
+
+<p>This project requires <a href="https://www.ruby-lang.org">Ruby</a> with version <code>3.3.0</code>, <a href="https://rubyonrails.org/">Rails</a> with version <code>7.1.2</code> and <a href="https://www.sqlite.org/">SQLite3</a> with version <code>1.4</code>.</p>
+
+<h2 id="label-Getting+Started">Getting Started</h2>
+
+<p>To initialize this project, run the bundler to install the needed gems:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_bundle'>bundle</span> <span class='id identifier rubyid_install'>install</span>
+</code></pre>
+
+<p>To initialize the database, we use this command:</p>
+
+<pre class="code ruby"><code class="ruby">bin/rails db:migrate
+</code></pre>
+
+<p>After that, the server can be started via</p>
+
+<pre class="code ruby"><code class="ruby">bin/rails server
+</code></pre>
+
+<h2 id="label-Documentation">Documentation</h2>
+
+<p><em>TUgo</em> also provides extensive <a href="https://yardoc.org/">YARD</a> documentation, which can be generated if needed. Simply run the following command:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_yardoc'>yardoc</span>
+</code></pre>
 </div></div>
 
       <div id="footer">
-  Generated on Sun May  5 00:48:19 2024 by
+  Generated on Sun May  5 18:38:00 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>
