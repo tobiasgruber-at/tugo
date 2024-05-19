@@ -2,7 +2,7 @@ class ThesesController < TissApiController
 
   def index
     @search_term = SearchTerm.new(search_params)
-    super("search/thesis/v1.0/quickSearch?searchterm=#{@search_term.query}")
+    super(Favorite.favorite_types["thesis"], "search/thesis/v1.0/quickSearch?searchterm=#{@search_term.query}")
   end
 
   def show
@@ -23,7 +23,7 @@ class ThesesController < TissApiController
     end
   end
 
-  def map_resource(res, favorite, is_single)
+  def map_resource(res, favorite, is_single, keywords = nil)
     if is_single
       res.remove_namespaces!
       id = @id
@@ -39,7 +39,8 @@ class ThesesController < TissApiController
       nil,
       thesis_path(id),
       favorite,
-      Favorite.favorite_types["thesis"]
+      Favorite.favorite_types["thesis"],
+      keywords
     )
   end
 end

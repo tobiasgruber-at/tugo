@@ -26,4 +26,23 @@
     </div>
     <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
   <% end %>
+  <h2>Keywords</h2>
+  <% if (not @resource.keywords.nil?) and @resource.keywords.any? %>
+    <ul>
+      <% @resource.keywords.each do |keyword| %>
+        <li>
+          <%= keyword.title %>
+          <%= form_with url: "#{keyword_path(keyword.id)}", method: "delete" do |f| %>
+            <%= f.submit "Remove", class: "btn" %>
+          <% end %>
+        </li>
+      <% end %>
+    </ul>
+    <br>
+  <% end %>
+  <%= form_with model: Keyword.new do |f| %>
+    <%= f.hidden_field :favorite_id, :value => @resource.favorite_id %>
+    <%= f.text_field :title %>
+    <%= f.submit "Add keyword", class: "btn btn--primary" %>
+  <% end %>
 </div>

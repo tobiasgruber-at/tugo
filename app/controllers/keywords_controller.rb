@@ -16,12 +16,18 @@ class KeywordsController < ApplicationController
     if is_error
       redirect_back fallback_location: root_path, alert: "An error occurred. Please try again later."
     else
-      redirect_back fallback_location: root_path, notice: "Added new keyword."
+      redirect_back fallback_location: root_path
     end
   end
 
   def destroy
-    # TODO: delete keyword
+    begin
+      Keyword.destroy(params[:id])
+      redirect_back fallback_location: root_path
+    rescue StandardError => e
+      puts e.message
+      redirect_back fallback_location: root_path, alert: "An error occurred. Please try again later."
+    end
   end
 
   def keyword_params

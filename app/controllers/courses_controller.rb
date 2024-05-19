@@ -4,7 +4,7 @@ class CoursesController < TissApiController
   # @see TissApiController#index
   def index
     @search_term = SearchTerm.new(search_params)
-    super("search/course/v1.0/quickSearch?searchterm=#{@search_term.query}")
+    super(Favorite.favorite_types["course"], "search/course/v1.0/quickSearch?searchterm=#{@search_term.query}")
   end
 
   # @see TissApiController#see
@@ -26,7 +26,7 @@ class CoursesController < TissApiController
     end
   end
 
-  def map_resource(res, favorite, is_single)
+  def map_resource(res, favorite, is_single, keywords = nil)
     if is_single
       res.remove_namespaces!
       id = @id
@@ -46,7 +46,8 @@ class CoursesController < TissApiController
       addition,
       course_path(id),
       favorite,
-      Favorite.favorite_types["course"]
+      Favorite.favorite_types["course"],
+      keywords
     )
   end
 
