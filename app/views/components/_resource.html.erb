@@ -1,0 +1,5 @@
+<div class="resource-title">
+  <h1><%= resource.title %></h1>
+  <%= render partial: "components/favorite-toggle-button", locals: { resource: resource, type: :large } %>
+</div>
+<%= render :partial => "components/favorite-additions", :locals => { resource: resource } %>

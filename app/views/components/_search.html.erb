@@ -4,12 +4,7 @@
     <div class="form-row form-input-group">
       <%= f.text_field :query, value: @search_term.query %>
       <%= f.button nil, name: nil, type: "submit", class: "btn btn--primary form-input-group__small" do %>
-        <div class="flex-display flex-row flex-gap--xs ai-center">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <span>
-            Search
-          </span>
-        </div>
+        <%= render :partial => "components/icon-button", :locals => { icon: "fa-solid fa-magnifying-glass", text: "Search" } %>
       <% end %>
     </div>
     <%= render "components/form-errors", messages: @search_term.errors.full_messages_for(:query) %>

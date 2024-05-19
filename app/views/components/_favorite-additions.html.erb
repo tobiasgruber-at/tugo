@@ -1,0 +1,29 @@
+<div class="flex-display flex-column overlay-parent">
+  <% unless resource.is_favorite? %>
+    <div class="overlay flex-display flex-column flex-center flex-gap--xs">
+      <div>
+        <em class="highlight fs--l">Notes</em> and <em class="highlight fs--l">keywords</em> are only available for
+        favorites.
+      </div>
+      <div>
+        <%= form_with model: Favorite.new do |f| %>
+          <%= f.hidden_field :item_id, :value => resource.id %>
+          <%= f.hidden_field :preview, :value => resource.title %>
+          <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
+          <%= f.hidden_field :note, :value => "" %>
+          <%= f.button nil, type: "submit", class: "btn btn--primary" do %>
+            <%= render :partial => "components/icon-button", :locals => { icon: "fa-solid fa-plus", text: "Add to Favorites" } %>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+  <h2>Notes</h2>
+  <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite_id) : nil, method: :patch do |f| %>
+    <div class="form-element">
+      <%= f.label :note, disabled: (not resource.is_favorite?) %>
+      <%= f.text_area :note, disabled: (not resource.is_favorite?) %>
+    </div>
+    <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
+  <% end %>
+</div>
