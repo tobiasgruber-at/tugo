@@ -4,12 +4,19 @@
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
-  align-items: flex-start;
   @extend .p-b--m !optional;
   @include media(tabletAndUp) {
     flex-direction: row;
     gap: var(--space-s);
     justify-content: space-between;
     align-items: center;
+  }
+
+  &__button {
+    align-self: end;
+
+    @include media(tabletAndUp) {
+      align-self: unset;
+    }
   }
 }
