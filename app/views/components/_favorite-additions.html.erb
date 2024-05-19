@@ -28,21 +28,32 @@
   <% end %>
   <h2>Keywords</h2>
   <% if (not @resource.keywords.nil?) and @resource.keywords.any? %>
-    <ul>
+    <!-- TODO maybe use a turbo frame? -->
+    <div class="flex-display flex-row flex-gap--xs p-t--l p-b--l">
       <% @resource.keywords.each do |keyword| %>
-        <li>
-          <%= keyword.title %>
-          <%= form_with url: "#{keyword_path(keyword.id)}", method: "delete" do |f| %>
-            <%= f.submit "Remove", class: "btn" %>
-          <% end %>
-        </li>
+        <div class="pill pill--secondary">
+          <span><%= keyword.title %></span>
+          <div class="pill__cancel">
+            <%= form_with url: keyword_path(keyword.id), method: :delete do |f| %>
+              <%= f.button nil, type: "submit", class: "btn btn--pill p--0 jc-center" do %>
+                <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-xmark" } %>
+              <% end %>
+            <% end %>
+          </div>
+        </div>
       <% end %>
-    </ul>
-    <br>
+    </div>
   <% end %>
   <%= form_with model: Keyword.new do |f| %>
     <%= f.hidden_field :favorite_id, :value => @resource.favorite_id %>
-    <%= f.text_field :title %>
-    <%= f.submit "Add keyword", class: "btn btn--primary" %>
+    <div class="form-element">
+      <div class="form-row form-input-group">
+        <%= f.text_field :title %>
+        <%= f.button nil, method: :submit, class: "btn btn--primary form-input-group__small" do %>
+          <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add Keyword" } %>
+        <% end %>
+      </div>
+      <%= render "components/form-errors", messages: Keyword.new.errors.full_messages_for(:title) %> <!-- TODO set messages -->
+    </div>
   <% end %>
 </div>

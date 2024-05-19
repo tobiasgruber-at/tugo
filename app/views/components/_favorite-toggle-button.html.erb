@@ -8,7 +8,7 @@
       <%= f.hidden_field :note, :value => "" %>
       <% if type == :icon %>
         <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
-          <i class="fa-regular fa-heart"></i>
+          <%= render partial: "components/icon-button", locals: { icon: "fa-regular fa-heart" } %>
         <% end %>
       <% elsif type == :large %>
         <%= f.button nil, type: "submit", class: "btn btn--primary btn--3d fs--m m-b--0" do %>

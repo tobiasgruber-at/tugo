@@ -118,6 +118,7 @@ form {
   &-input-group__small {
     @extend .p-l--m !optional;
     @extend .p-r--m !optional;
+    min-width: fit-content !important;
     flex-basis: content;
   }
 

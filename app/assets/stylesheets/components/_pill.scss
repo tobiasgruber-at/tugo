@@ -1,15 +1,32 @@
 .pill {
-  border-radius: 45%;
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  gap: var(--space-xxs);
   flex-wrap: nowrap;
   align-items: center;
-  gap: var(--space-xs);
-  border: var(--border-shape);
-  @extend .p--xxs !optional;
+  border-style: solid;
+  border-width: var(--border-width);
+  border-radius: calc(var(--space-xl) / 2.0);
+  height: var(--space-xl);
+  @extend .p-l--xs !optional;
+  @extend .p-r--xs !optional;
 
-  .pill:hover .pill__cancel {
+  &--primary {
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+  }
+
+  &--secondary {
+    border-color: var(--color-secondary);
+    background-color: var(--color-secondary);
+  }
+
+  &:hover .pill__cancel {
     display: block;
+  }
+
+  &:hover {
+    @extend .p-r--xxxs !optional;
   }
 
   &__cancel {
