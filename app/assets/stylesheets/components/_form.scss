@@ -111,6 +111,8 @@ form {
   &-input-group button,
   &-input-group textarea {
     border-radius: 0;
+    min-width: unset;
+    max-width: unset;
   }
 
   &-input-group__small {
