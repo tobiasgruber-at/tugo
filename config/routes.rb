@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :courses, only: [:index, :show]
   resources :theses, only: [:index, :show]
   resources :projects, only: [:index, :show]
-  resources :favorites, only: [:index, :create, :destroy]
+  resources :favorites, only: [:index, :create, :update, :destroy]
   resources :users, only: [:create]
   get '/register', to: 'users#new'
   get '/login', to: 'sessions#new'
