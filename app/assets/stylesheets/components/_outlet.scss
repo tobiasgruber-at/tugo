@@ -1,5 +1,0 @@
-@import "mixins/animations";
-
-html[data-turbo-visit-direction]::view-transition-old(.outlet):only-child {
-  @include animate(appear, 100ms);
-}

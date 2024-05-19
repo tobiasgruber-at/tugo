@@ -31,7 +31,7 @@
   border: dashed var(--border-width) var(--color-light-darker);
   @supports (backdrop-filter: none) {
     background-color: transparent;
-    backdrop-filter: blur(3px) brightness(0.98);
+    backdrop-filter: blur(3px) saturate(0) brightness(0.98);
     box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
   }
   @extend .p--s !optional;
