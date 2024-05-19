@@ -41,9 +41,9 @@ class TissApiController < ApplicationController
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
       res = self.find(endpoint, parser)
-      @favorites = Favorite.where(user_id: session[:user_id])
-      favorite = @favorites&.find { |fav| fav.item_id == @id.to_s }&.id
-      @resource = map_resource(res, favorite, true)
+      favorite = Favorite.find_by(item_id: @id.to_s, user_id: session[:user_id])&.id
+      keywords = favorite.nil? ? nil : Keyword.where(favorite_id: favorite)
+      @resource = map_resource(res, favorite, true, keywords)
     rescue StandardError => e
       puts e.message
       flash.now[:alert] = "An error occurred. Please try again later."
@@ -61,14 +61,14 @@ class TissApiController < ApplicationController
   # @param [String] endpoint the endpoint that should be called
   # @param [Proc] parser a parser that can parse the API response
   # @return [void]
-  def index(endpoint = "", parser = -> (val) { JSON.parse(val) })
+  def index(favorite_type, endpoint = "", parser = -> (val) { JSON.parse(val) })
     if not @search_term.query.nil? and @search_term.valid?
       begin
         res = self.search(endpoint, parser)
         if has_error?(res)
           @resources = nil
         else
-          @favorites = Favorite.where(user_id: session[:user_id])
+          @favorites = Favorite.where(user_id: session[:user_id], favorite_type: favorite_type)
           @resources = map_resources(res)
         end
       rescue StandardError => e
@@ -87,7 +87,7 @@ class TissApiController < ApplicationController
   end
 
   # Maps a fetched resource to a uniform format
-  def map_resource(res, favorites, is_single)
+  def map_resource(res, favorites, is_single, keywords = nil)
     puts "Should be implemented in child class"
   end
 

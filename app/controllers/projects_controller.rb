@@ -4,7 +4,7 @@ class ProjectsController < TissApiController
   # @see TissApiController#index
   def index
     @search_term = SearchTerm.new(search_params)
-    super("search/projectFullSearch/v1.0/projects?searchterm=#{@search_term.query}")
+    super(Favorite.favorite_types["project"],"search/projectFullSearch/v1.0/projects?searchterm=#{@search_term.query}")
     # TODO: capture result and parse course number and semester
   end
 
@@ -27,7 +27,7 @@ class ProjectsController < TissApiController
     end
   end
 
-  def map_resource(res, favorite, is_single)
+  def map_resource(res, favorite, is_single, keywords = nil)
     puts res
 
     if is_single
@@ -45,7 +45,8 @@ class ProjectsController < TissApiController
       nil,
       project_path(id),
       favorite,
-      Favorite.favorite_types["project"]
+      Favorite.favorite_types["project"],
+      keywords
     )
   end
 end

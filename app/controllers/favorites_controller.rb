@@ -76,7 +76,7 @@ class FavoritesController < TissApiController
     if is_error
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     else
-      redirect_back fallback_location: favorites_path, notice: "Updated note."
+      redirect_back fallback_location: favorites_path
     end
   end
 
@@ -116,6 +116,7 @@ class FavoritesController < TissApiController
       nil,
       path,
       id,
+      nil,
       nil
     )
   end

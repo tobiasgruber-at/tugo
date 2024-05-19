@@ -9,7 +9,7 @@ class PeopleController < TissApiController
   # @see TissApiController#index
   def index
     @search_term = SearchTerm.new(search_params)
-    super("psuche?q=#{@search_term.query}&max_treffer=100")
+    super(Favorite.favorite_types["person"], "psuche?q=#{@search_term.query}&max_treffer=100")
   end
 
   # @see TissApiController#show
@@ -31,7 +31,7 @@ class PeopleController < TissApiController
     end
   end
 
-  def map_resource(res, favorite, is_single)
+  def map_resource(res, favorite, is_single, keywords = nil)
     id = res["tiss_id"] || " "
     Resource.new(
       id,
@@ -40,7 +40,8 @@ class PeopleController < TissApiController
       nil,
       person_path(id),
       favorite,
-      Favorite.favorite_types["person"]
+      Favorite.favorite_types["person"],
+      keywords
     )
   end
 end
