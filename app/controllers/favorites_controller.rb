@@ -10,7 +10,7 @@ class FavoritesController < TissApiController
   # @return [void]
   def index
     begin
-      @favorites = Favorite.where(user_id: session[:user_id])
+      @favorites = sort(Favorite.where(user_id: session[:user_id]))
       @favorite_courses = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "course" },
         -> (id) {course_path(id)}
@@ -122,6 +122,19 @@ class FavoritesController < TissApiController
   end
 
   private
+
+  def sort(resources)
+    sortDirection = params["sort_direction"] == "desc" ? :desc : :asc
+    sort = params["sort_by"]
+    unless sort.nil?
+      if sort == "title"
+        resources = resources.order(preview: sortDirection)
+      elsif sort == "date"
+        resources = resources.order(created_at: sortDirection)
+      end
+    end
+    resources
+  end
 
   def favorite_params
     params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)
