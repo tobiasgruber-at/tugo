@@ -1,0 +1,39 @@
+.overlay-parent {
+  position: relative;
+}
+
+.overlay-parent:has(.overlay) {
+  user-select: none;
+  pointer-events: none;
+  overflow: hidden;
+  @extend .p--xs !optional;
+}
+
+.overlay-parent:has(.overlay) > :not(.overlay) {
+  @extend .p-t--0 !optional;
+}
+
+.overlay-parent:has(.overlay) .overlay {
+  pointer-events: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: dashed var(--border-width) var(--color-light-darker);
+  @supports (backdrop-filter: none) {
+    background-color: transparent;
+    backdrop-filter: blur(3px) brightness(0.98);
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  @extend .p--s !optional;
+  @extend .border--rounded !optional;
+}

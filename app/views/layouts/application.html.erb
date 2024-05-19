@@ -22,17 +22,15 @@
     <% end %>
   </div>
   <div class="nav__start">
-    <a class="logo" href="/">
-      TUgo
-    </a>
+    <%= link_to "TUgo", root_path, class: "logo" %>
   </div>
   <div class="nav__end">
     <% if logged_in? %>
-      <a class="nav-btn" href="<%= favorites_path %>">Favorites</a>
-      <a class="nav-btn" href="/logout">Logout</a>
-    <% else logged_in? %>
-      <a class="nav-btn" href="/login">Login</a>
-      <a class="nav-btn" href="/register">Register</a>
+      <%= link_to "Favorites", favorites_path, class: "nav-btn" %>
+      <%= link_to "Logout", logout_path, class: "nav-btn" %>
+    <% else %>
+      <%= link_to "Login", login_path, class: "nav-btn" %>
+      <%= link_to "Register", register_path, class: "nav-btn" %>
     <% end %>
   </div>
 </nav>
@@ -44,7 +42,9 @@
   <% if notice %>
     <%= render partial: "components/notice" %>
   <% end %>
-  <%= yield %>
+  <div class="outlet">
+    <%= yield %>
+  </div>
 </div>
 </body>
 </html>

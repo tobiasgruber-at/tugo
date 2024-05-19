@@ -1,3 +1,4 @@
+<% search_result = false if local_assigns[:search_result].nil? %>
 <% unless search_result %>
   <h2><%= title %></h2>
 <% end %>
@@ -18,7 +19,7 @@
     <% resources.each do |resource| %>
       <div class="list__item btn btn--block ">
         <div class="flex-display flex-gap--xxs jc-space-between position-relative">
-          <a class="position-relative flex-grow--1 ac-center" href="<%= resource.path %>">
+          <%= link_to resource.path, class: "position-relative flex-grow--1 ac-center" do %>
             <div class="flex-display flex-column">
               <% unless resource.addition.nil? %>
                 <div class="flex-display flex-gap--xs">
@@ -32,7 +33,7 @@
                 <span><%= resource.title %></span>
               </div>
             </div>
-          </a>
+          <% end %>
           <div class="list-button">
             <%= render partial: "components/favorite-toggle-button", locals: { resource: resource } %>
           </div>
