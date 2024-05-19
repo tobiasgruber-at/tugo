@@ -28,3 +28,4 @@
 | 05.05.2024 | 16:30 - 17:00 | 0:30h    | t    | fix xml parsing (sometimes there were namespaces prefixes and sometimes not); fix migrations                                                          |
 | 05.05.2024 | 18:00 - 19:00 | 1:00h    | s    | add doc; add readme; fix yardoc generation                                                                                                            |      
 | 19.05.2024 | 11:00 - 16:00 | 5:00h    | t    | add update-favorite endpoint; add keywords endpoints and database models; refactor mappers (now in controllers); add favorites sorting endpoint logic |
+| 19.05.2024 | 11:00 - 17:00 | 6:00h    | s    | favorite notes and keyword css; add default page transition animation                                                                                 |
