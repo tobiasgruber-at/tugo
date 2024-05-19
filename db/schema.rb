@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_05_05_142443) do
+ActiveRecord::Schema[7.1].define(version: 2024_05_19_104223) do
   create_table "favorites", force: :cascade do |t|
     t.string "item_id"
     t.integer "user_id", null: false
@@ -22,6 +22,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_05_142443) do
     t.index ["user_id", "item_id"], name: "index_favorites_on_user_id", unique: true
   end
 
+  create_table "keywords", force: :cascade do |t|
+    t.string "title", null: false
+    t.integer "favorite_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["favorite_id"], name: "index_keywords_on_favorite_id"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", null: false
     t.string "password", null: false
@@ -31,4 +39,5 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_05_142443) do
   end
 
   add_foreign_key "favorites", "users"
+  add_foreign_key "keywords", "favorites"
 end

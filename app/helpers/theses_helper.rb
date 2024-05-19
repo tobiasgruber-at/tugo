@@ -24,7 +24,7 @@ module ThesesHelper
       nil,
       nil,
       thesis_path(id),
-      favorites.nil? ? nil : favorites.find { |fav| fav.item_id == String(id) },
+      favorites.nil? ? nil : (favorites.find { |fav| fav.item_id == String(id) }).id,
       Favorite.favorite_types["thesis"]
     )
   end

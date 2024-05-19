@@ -30,7 +30,7 @@ module CoursesHelper
       prefix,
       addition,
       course_path(id),
-      favorites.nil? ? nil : favorites.find { |fav| fav.item_id == String(id) },
+      favorites.nil? ? nil : (favorites.find { |fav| fav.item_id == String(id) }).id,
       Favorite.favorite_types["course"]
     )
   end

@@ -25,7 +25,7 @@ class UsersController < ApplicationController
       if @user.valid? && @user.save
         session[:user_id] = @user.id
         session[:user_email] = @user.email
-        redirect_to root_path, notice: "Successfully signed up."
+        redirect_to root_path, notice: "Signed up."
       else
         render :new, status: :unprocessable_entity
       end
