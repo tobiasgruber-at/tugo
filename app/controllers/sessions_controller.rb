@@ -32,7 +32,7 @@ class SessionsController < ApplicationController
         return render :new, status: :unprocessable_entity if @session.errors.any?
         session[:user_id] = user.id
         session[:user_email] = user.email
-        redirect_to root_path, notice: "Successfully logged in."
+        redirect_to root_path, notice: "Logged in."
       else
         render :new, status: :unprocessable_entity
       end
@@ -49,7 +49,7 @@ class SessionsController < ApplicationController
   # @return [void]
   def destroy
     reset_session
-    redirect_to login_path, notice: "Successfully logged out."
+    redirect_to login_path, notice: "Logged out."
   end
 
   private

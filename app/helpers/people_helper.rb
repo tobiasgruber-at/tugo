@@ -17,7 +17,7 @@ module PeopleHelper
       nil,
       nil,
       person_path(id),
-      favorites.nil? ? nil : favorites.find { |fav| fav.item_id == String(id) },
+      favorites.nil? ? nil : (favorites.find { |fav| fav.item_id == String(id) }).id,
       Favorite.favorite_types["person"]
     )
   end

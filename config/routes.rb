@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root "home#index"
+  resources :keywords, only: [:create, :destroy]
   resources :people, only: [:index, :show, :update]
   resources :courses, only: [:index, :show]
   resources :theses, only: [:index, :show]
