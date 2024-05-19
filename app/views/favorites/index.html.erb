@@ -3,8 +3,8 @@
 <% end %>
 
 <% unless @favorites.nil? %>
-  <%= render :partial => "layouts/resources", :locals => { resources: map_favorites(@favorite_courses, -> (id) {course_path(id)}), title: "Favorite Courses", search_result: false} %>
-  <%= render :partial => "layouts/resources", :locals => { resources: map_favorites(@favorite_people, -> (id) {person_path(id)}), title: "Favorite People", search_result: false} %>
-  <%= render :partial => "layouts/resources", :locals => { resources: map_favorites(@favorite_theses, -> (id) {thesis_path(id)}), title: "Favorite Theses", search_result: false} %>
-  <%= render :partial => "layouts/resources", :locals => { resources: map_favorites(@favorite_projects, -> (id) {projects_path(id)}), title: "Favorite Projects", search_result: false} %>
+  <%= render :partial => "layouts/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false} %>
+  <%= render :partial => "layouts/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false} %>
+  <%= render :partial => "layouts/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false} %>
+  <%= render :partial => "layouts/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false} %>
 <% end %>

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :favorites
+  has_many :favorites, dependent: :delete_all
 
   PASSWORD_MIN_LENGTH = 6
 

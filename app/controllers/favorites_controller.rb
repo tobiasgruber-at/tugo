@@ -11,11 +11,22 @@ class FavoritesController < TissApiController
   def index
     begin
       @favorites = Favorite.where(user_id: session[:user_id])
-      empty = @favorites.nil? || @favorites.empty?
-      @favorite_courses = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "course" }
-      @favorite_people = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "person" }
-      @favorite_theses = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "thesis" }
-      @favorite_projects = empty ? [] : @favorites.filter { |fav| fav.favorite_type == "project" }
+      @favorite_courses = map_resources(
+        @favorites&.filter { |fav| fav.favorite_type == "course" },
+        -> (id) {course_path(id)}
+      )
+      @favorite_people = map_resources(
+        @favorites&.filter { |fav| fav.favorite_type == "person" },
+         -> (id) {person_path(id)}
+      )
+      @favorite_theses = map_resources(
+        @favorites&.filter { |fav| fav.favorite_type == "thesis" },
+        -> (id) {thesis_path(id)}
+      )
+      @favorite_projects = map_resources(
+        @favorites&.filter { |fav| fav.favorite_type == "project" },
+        -> (id) {project_path(id)}
+      )
     rescue StandardError => e
       puts e.message
       @favorites = nil
@@ -80,6 +91,33 @@ class FavoritesController < TissApiController
       puts e.message
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     end
+  end
+
+  protected
+
+  def map_resources(resources, path_selector_fn)
+    if resources.nil? || resources.empty?
+      []
+    else
+      resources.map do |res|
+        path = path_selector_fn.call(res["item_id"])
+        map_resource(res, path)
+      end
+    end
+  end
+
+
+  def map_resource(res, path)
+    id = res["id"] || ""
+    Resource.new(
+      id,
+      res["preview"],
+      nil,
+      nil,
+      path,
+      id,
+      nil
+    )
   end
 
   private

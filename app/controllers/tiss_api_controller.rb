@@ -21,9 +21,6 @@ class TissApiController < ApplicationController
   # TODO: add YARD doc
   before_action :redirect_if_not_logged_in
 
-  # All API calls have this common base URI
-  URI_BASE = "https://tiss.tuwien.ac.at/api/"
-
   # Initializes a new object of this class.
   #
   # Sets {endpoint_base} to the empty string.
@@ -31,15 +28,6 @@ class TissApiController < ApplicationController
   def initialize
     @endpoint_base = ""
     super
-  end
-
-  # Gets the base URI for the API call.
-  #
-  # The URI is generated from the common URI base and the endpoint base {endpoint_base}.
-  #
-  # @return [String] the base URI for the API call
-  def base
-    URI_BASE + @endpoint_base
   end
 
   # Shows the details of a single resource.
@@ -52,8 +40,10 @@ class TissApiController < ApplicationController
   # @return [void]
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
-      @resource = self.find(endpoint, parser)
+      res = self.find(endpoint, parser)
       @favorites = Favorite.where(user_id: session[:user_id])
+      favorite = @favorites&.find { |fav| fav.item_id == @id.to_s }&.id
+      @resource = map_resource(res, favorite, true)
     rescue StandardError => e
       puts e.message
       flash.now[:alert] = "An error occurred. Please try again later."
@@ -74,11 +64,13 @@ class TissApiController < ApplicationController
   def index(endpoint = "", parser = -> (val) { JSON.parse(val) })
     if not @search_term.query.nil? and @search_term.valid?
       begin
-        @resources = self.search(endpoint, parser)
-        if has_error?(@resources)
+        res = self.search(endpoint, parser)
+        if has_error?(res)
           @resources = nil
+        else
+          @favorites = Favorite.where(user_id: session[:user_id])
+          @resources = map_resources(res)
         end
-        @favorites = Favorite.where(user_id: session[:user_id])
       rescue StandardError => e
         puts e.message
         @resources = nil
@@ -87,14 +79,38 @@ class TissApiController < ApplicationController
     end
   end
 
+  protected
+
+  # Maps many courses to resource objects.
+  def map_resources(resources)
+    puts "Should be implemented in child class"
+  end
+
+  # Maps a fetched resource to a uniform format
+  def map_resource(res, favorites, is_single)
+    puts "Should be implemented in child class"
+  end
+
+  private
+
+  # All API calls have this common base URI
+  URI_BASE = "https://tiss.tuwien.ac.at/api/"
+
+  # Gets the base URI for the API call.
+  #
+  # The URI is generated from the common URI base and the endpoint base {endpoint_base}.
+  #
+  # @return [String] the base URI for the API call
+  def base
+    URI_BASE + @endpoint_base
+  end
+
   # Gets the parameters for the search query
   #
   # @return [ActionController::Parameters] the parameter object for the search query, if any search term is given
   def search_params
     params.require(:search_term).permit(:query) if params[:search_term]
   end
-
-  private
 
   def search(endpoint, parser = -> (val) { JSON.parse(val) })
     uri = URI(base + endpoint)

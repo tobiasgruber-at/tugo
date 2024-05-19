@@ -1,5 +1,5 @@
 <h1>People</h1>
 <%= render partial: "components/search", locals: { resource_path: (people_path), resource_name: "people" } %>
 <% unless @resources.nil? %>
-  <%= render partial: "layouts/resources", locals: { resources: map_people(@resources, @favorites), title: nil, search_result: true} %>
+  <%= render partial: "layouts/resources", locals: { resources: @resources, title: nil, search_result: true} %>
 <% end %>
