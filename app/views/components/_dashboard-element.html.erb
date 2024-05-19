@@ -1,7 +1,7 @@
 <% # default values for unassigned locals
    icon_class = nil if local_assigns[:icon_class].nil?
 %>
-<a class="dashboard__element" href="<%= path %>">
+<%= link_to path, class: "dashboard__element" do %>
   <div class="position-relative">
     <div class="flex-display flex-row flex-gap--xs ai-center">
       <div>
@@ -17,4 +17,4 @@
       </div>
     <% end %>
   </div>
-</a>
+<% end %>

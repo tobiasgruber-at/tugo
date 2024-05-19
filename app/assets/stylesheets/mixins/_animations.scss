@@ -7,6 +7,17 @@
   }
 }
 
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translate(0, 5%) scale(98%);
+  }
+  to {
+    opacity: 1;
+    transition: none;
+  }
+}
+
 @mixin animate($name, $duration) {
-  animation: $name $duration ease forwards;
+  animation: $name $duration ease;
 }

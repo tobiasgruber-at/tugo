@@ -1,26 +1,27 @@
 <h1>Home page</h1>
 <% if logged_in? %>
   <div class="dashboard">
-    <%= render layout: "components/dashboard-element", locals: {path: courses_path, icon_class: "fa-solid fa-graduation-cap"} do %>
+    <%= render layout: "components/dashboard-element", locals: { path: courses_path, icon_class: "fa-solid fa-graduation-cap" } do %>
       Search for <b>courses</b>
     <% end %>
-    <%= render layout: "components/dashboard-element", locals: {path: people_path, icon_class: "fa-solid fa-person"} do %>
+    <%= render layout: "components/dashboard-element", locals: { path: people_path, icon_class: "fa-solid fa-person" } do %>
       Search for <b>people</b>
     <% end %>
-    <%= render layout: "components/dashboard-element", locals: {path: theses_path, icon_class: "fa-solid fa-scroll"} do %>
+    <%= render layout: "components/dashboard-element", locals: { path: theses_path, icon_class: "fa-solid fa-scroll" } do %>
       Search for <b>theses</b>
     <% end %>
-    <%= render layout: "components/dashboard-element", locals: {path: projects_path, icon_class: "fa-solid fa-diagram-project"} do %>
+    <%= render layout: "components/dashboard-element", locals: { path: projects_path, icon_class: "fa-solid fa-diagram-project" } do %>
       Search for <b>projects</b>
     <% end %>
-    <%= render layout: "components/dashboard-element", locals: {path: favorites_path, icon_class: "fa-solid fa-heart"} do %>
+    <%= render layout: "components/dashboard-element", locals: { path: favorites_path, icon_class: "fa-solid fa-heart" } do %>
       Go to <b>favorites</b>
     <% end %>
   </div>
 <% else %>
   <div class="flex-display flex-center">
     <div>
-      Please <a class="link" href="/login">login</a> or <a class="link" href="/register">register</a>.
+      Please <%= link_to "Login", login_path, class: "link" %>
+      or <%= link_to "Register", register_path, class: "link" %>
     </div>
   </div>
 <% end %>

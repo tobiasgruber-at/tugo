@@ -28,6 +28,7 @@
   align-items: center;
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.1);
+  border: dashed var(--border-width) var(--color-light-darker);
   @supports (backdrop-filter: none) {
     background-color: transparent;
     backdrop-filter: blur(3px) brightness(0.98);
