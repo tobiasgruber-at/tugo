@@ -1,0 +1,18 @@
+.pill {
+  border-radius: 45%;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--space-xs);
+  border: var(--border-shape);
+  @extend .p--xxs !optional;
+
+  .pill:hover .pill__cancel {
+    display: block;
+  }
+
+  &__cancel {
+    display: none;
+  }
+}
