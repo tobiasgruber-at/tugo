@@ -1,8 +1,28 @@
 <% if @error %>
   <%= render "components/error", error: @error %>
 <% end %>
-
+<h1>Favorites</h1>
 <% unless @favorites.nil? %>
+  <div class="flex-display flex-row flex-gap--s jc-flex-end p-l--m p-r--m">
+    <% unless sort_by.nil? %>
+      <div>
+        <span>Sort by:</span>
+        <% if sort_by == "title" %>
+          <i class="fa-solid fa-heading"></i>
+        <% elsif sort_by == "date" %>
+          <i class="fa-solid fa-calendar-days"></i>
+        <% end %>
+      </div>
+    <% end %>
+    <div>
+      <span>Sort direction:</span>
+      <% if sort_direction == :desc %>
+        <i class="fa-solid fa-arrow-down-a-z"></i>
+      <% else %>
+        <i class="fa-solid fa-arrow-up-a-z"></i>
+      <% end %>
+    </div>
+  </div>
   <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
   <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
   <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>

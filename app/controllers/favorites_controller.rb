@@ -13,19 +13,19 @@ class FavoritesController < TissApiController
       @favorites = sort(Favorite.where(user_id: session[:user_id]))
       @favorite_courses = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "course" },
-        -> (id) {course_path(id)}
+        -> (id) { course_path(id) }
       )
       @favorite_people = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "person" },
-         -> (id) {person_path(id)}
+        -> (id) { person_path(id) }
       )
       @favorite_theses = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "thesis" },
-        -> (id) {thesis_path(id)}
+        -> (id) { thesis_path(id) }
       )
       @favorite_projects = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "project" },
-        -> (id) {project_path(id)}
+        -> (id) { project_path(id) }
       )
     rescue StandardError => e
       puts e.message
@@ -106,7 +106,6 @@ class FavoritesController < TissApiController
     end
   end
 
-
   def map_resource(res, path)
     id = res["id"] || ""
     Resource.new(
@@ -124,13 +123,13 @@ class FavoritesController < TissApiController
   private
 
   def sort(resources)
-    sortDirection = params["sort_direction"] == "desc" ? :desc : :asc
+    sort_direction = params["sort_direction"] == "desc" ? :desc : :asc
     sort = params["sort_by"]
     unless sort.nil?
       if sort == "title"
-        resources = resources.order(preview: sortDirection)
+        resources = resources.order(preview: sort_direction)
       elsif sort == "date"
-        resources = resources.order(created_at: sortDirection)
+        resources = resources.order(created_at: sort_direction)
       end
     end
     resources
