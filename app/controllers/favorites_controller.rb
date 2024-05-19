@@ -51,6 +51,24 @@ class FavoritesController < TissApiController
     end
   end
 
+  def update
+    is_error = false
+    begin
+      @favorite = Favorite.find(params[:id])
+      unless @favorite.valid? && @favorite.update(favorite_params)
+        is_error = true
+      end
+    rescue StandardError => e
+      puts e.message
+      is_error = true
+    end
+    if is_error
+      redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
+    else
+      redirect_back fallback_location: favorites_path
+    end
+  end
+
   # Removes a favorite.
   #
   # @return [void]
@@ -68,6 +86,10 @@ class FavoritesController < TissApiController
 
   def favorite_params
     params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)
+  end
+
+  def update_favorite_params
+    params.require(:favorite).permit(:note)
   end
 
 end
