@@ -10,4 +10,8 @@ class Resource
     @favorite_id = favorite_id
     @favorite_type = favorite_type
   end
+
+  def is_favorite?
+    not @favorite_id.nil?
+  end
 end

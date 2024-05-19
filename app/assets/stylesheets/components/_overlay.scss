@@ -1,0 +1,35 @@
+.overlay-parent {
+  position: relative;
+}
+
+.overlay-parent:has(.overlay) {
+  user-select: none;
+  pointer-events: none;
+  @extend .p--xs !optional;
+}
+
+.overlay-parent:has(.overlay) :not(.overlay):first-of-type {
+  @extend .p-t--0 !optional;
+}
+
+.overlay-parent:has(.overlay) .overlay {
+  pointer-events: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: rgba(0, 0, 0, 0.1);
+  @supports (backdrop-filter: none) {
+    background-color: transparent;
+    backdrop-filter: blur(2px) brightness(0.9);
+  }
+  @extend .border--rounded !optional;
+}

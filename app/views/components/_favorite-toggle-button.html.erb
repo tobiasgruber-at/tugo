@@ -1,5 +1,5 @@
 <% unless resource.nil? %>
-  <% if resource.favorite_id.nil? %>
+  <% if not resource.is_favorite? %>
     <%= form_with model: Favorite.new do |f| %>
       <%= f.hidden_field :item_id, :value => resource.id %>
       <%= f.hidden_field :preview, :value => resource.title %>
