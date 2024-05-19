@@ -1,3 +1,4 @@
+@import "mixins/color";
 // https://www.hotrails.dev/turbo-rails/css-ruby-on-rails
 
 :root {
@@ -33,66 +34,29 @@
   --space-xxxxl: 4rem; // 64px
 
   // Application colors
-  --hue-primary: 350;
-  --hue-secondary: 100;
-  --hue-tertiary: 50;
-  --hue-error: 0;
-  --hue-success: 120;
+  $hue-primary: 350;
+  @include color-all-gen(primary, $hue-primary, 69%, 50%);
+  @include color-all-gen(secondary, 170, 70%, 65%);
+  @include color-all-gen(tertiary, 50, 90%, 65%);
+  @include color-all-gen(error, 0, 95%, 50%);
+  @include color-all-gen(success, 120, 95%, 45%);
+  @include color-all-gen(white, 0, 0%, 100%);
+  @include color-all-gen(lighter, 0, 0%, 95%);
+  @include color-all-gen(light, 0, 0%, 90%);
+  @include color-all-gen(dark, 0, 0%, 15%);
+  @include color-all-gen(darker, 0, 0%, 10%);
 
-  --hue-primary-rotate: 10;
-  --hue-secondary-rotate: 120;
-  --hue-tertiary-rotate: 70;
-  --hue-error-rotate: 20;
-  --hue-success-rotate: 140;
+  // background
+  @include color-gen(background, $hue-primary, 15%, 95%);
+  @include color-gradation-gen(background, $hue-primary, 15%, 95%);
 
-  --bg-luminosity: 96%;
+  // hover brightness
   --hover-brightness: 96%;
 
-  --color-primary: hsl(var(--hue-primary), 69%, 50%);
-  --color-primary-rotate: hsl(var(--hue-primary-rotate), 69%, 50%);
-  --color-primary-bg: hsl(var(--hue-primary), 69%, var(--bg-luminosity));
-  --color-primary-darker: hsl(var(--hue-primary), 69%, 40%);
-
-  --color-secondary: hsl(var(--hue-secondary), 70%, 55%);
-  --color-secondary-rotate: hsl(var(--hue-secondary-rotate), 70%, 55%);
-  --color-secondary-bg: hsl(var(--hue-secondary), 70%, var(--bg-luminosity));
-  --color-secondary-darker: hsl(var(--hue-secondary), 70%, 45%);
-
-  --color-tertiary: hsl(var(--hue-tertiary), 90%, 65%);
-  --color-tertiary-rotate: hsl(var(--hue-tertiary-rotate), 90%, 65%);
-  --color-tertiary-bg: hsl(var(--hue-tertiary), 90%, var(--bg-luminosity));
-  --color-tertiary-darker: hsl(var(--hue-tertiary), 90%, 55%);
-
-  --color-error: hsl(var(--hue-error), 95%, 50%);
-  --color-error-rotate: hsl(var(--hue-error-rotate), 95%, 50%);
-  --color-error-bg: hsl(var(--hue-error), 95%, var(--bg-luminosity));
-  --color-error-darker: hsl(var(--hue-error), 95%, 40%);
-
-  --color-success: hsl(var(--hue-success), 95%, 45%);
-  --color-success-rotate: hsl(var(--hue-success-rotate), 95%, 45%);
-  --color-success-bg: hsl(var(--hue-success), 95%, var(--bg-luminosity));
-  --color-success-darker: hsl(var(--hue-success), 95%, 35%);
-
-  --color-white: hsl(0, 0%, 100%);
-  --color-background: hsl(var(--hue-primary), 15%, 95%);
-
-  --color-lighter: hsl(0, 0%, 95%);
-  --color-lighter-rotate: hsl(20, 0%, 95%);
-  --color-lighter-bg: hsl(0, 0%, var(--bg-luminosity));
-  --color-lighter-darker: hsl(0, 0%, 85%);
-
-  --color-light: hsl(0, 0%, 90%);
-  --color-light-rotate: hsl(20, 0%, 90%);
-  --color-light-bg: hsl(0, 0%, var(--bg-luminosity));
-  --color-light-darker: hsl(0, 0%, 80%);
-
+  // dark
   --color-dark-raw: 0, 0%, 15%;
-  --color-dark: hsl(var(--color-dark-raw));
-  --color-dark-rotate: hsl(20, 0%, 10%);
-  --color-dark-bg: hsl(0, 0%, var(--bg-luminosity));
-  --color-dark-darker: hsl(0, 0%, 5%);
 
-  --color-text-header: hsl(0, 0%, 15%);
+  --color-text-header: var(--color-dark);
   --color-text-body: hsl(0, 5%, 25%);
   --color-text-muted: hsl(0, 0%, 45%);
   --color-text-light: var(--color-light);

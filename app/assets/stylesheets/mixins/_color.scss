@@ -1,0 +1,38 @@
+@mixin color-all-gen($name, $hue, $saturation, $lightness) {
+  @include color-gen($name, $hue, $saturation, $lightness);
+  @include color-rotate-gen($name, $hue, $saturation, $lightness);
+  @include color-darker-gen($name, $hue, $saturation, $lightness);
+  @include color-bg-gen($name, $hue, $saturation, $lightness);
+  @include color-gradation-gen($name, $hue, $saturation, $lightness);
+}
+
+@mixin color-gen($name, $hue, $saturation, $lightness) {
+  --hue-#{$name}: #{$hue};
+  --color-#{$name}: #{hsl($hue, $saturation, $lightness)};
+}
+
+@mixin color-rotate-gen($name, $hue, $saturation, $lightness) {
+  @if (#{calc(#{$hue} + 20)} > 360) {
+    --hue-#{$name}-rotate: #{calc(#{$hue} + 20 - 360)};
+  } @else {
+    --hue-#{$name}-rotate: #{calc(#{$hue} + 20)};
+  }
+  --color-#{$name}-rotate: #{hsl(var(--hue-#{$name}-rotate), $saturation, $lightness)};
+}
+
+@mixin color-darker-gen($name, $hue, $saturation, $lightness) {
+  $darken-amount: 10%;
+  --color-#{$name}-darker: #{darken(hsl($hue, $saturation, $lightness), $darken-amount)};
+}
+
+@mixin color-bg-gen($name, $hue, $saturation, $lightness) {
+  $bg-luminosity: 96%;
+  --color-#{$name}-bg: #{hsl($hue, $saturation, $bg-luminosity)};
+}
+
+
+@mixin color-gradation-gen($name, $hue, $saturation, $lightness) {
+  @for $i from 1 to 10 {
+    --color-#{$name}-#{$i * 10}: #{hsla($hue, $saturation, $lightness, ($i * 10) / 100)};
+  }
+}
