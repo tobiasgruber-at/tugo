@@ -22,13 +22,12 @@
   <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite_id) : nil, method: :patch do |f| %>
     <div class="form-element">
       <%= f.label :note, disabled: (not resource.is_favorite?) %>
-      <%= f.text_area :note, disabled: (not resource.is_favorite?) %>
+      <%= f.text_area :note, placeholder: "Write your notes here", disabled: (not resource.is_favorite?) %>
     </div>
     <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
   <% end %>
   <h2>Keywords</h2>
   <% if (not @resource.keywords.nil?) and @resource.keywords.any? %>
-    <!-- TODO maybe use a turbo frame? -->
     <div class="flex-display flex-row flex-gap--xs p-t--l p-b--l">
       <% @resource.keywords.each do |keyword| %>
         <div class="pill pill--secondary">
@@ -48,8 +47,8 @@
     <%= f.hidden_field :favorite_id, :value => @resource.favorite_id %>
     <div class="form-element">
       <div class="form-row form-input-group">
-        <%= f.text_field :title %>
-        <%= f.button nil, method: :submit, class: "btn btn--primary form-input-group__small" do %>
+        <%= f.text_field :title, placeholder: "Add new keyword", disabled: (not resource.is_favorite?) %>
+        <%= f.button nil, method: :submit, class: "btn btn--primary form-input-group__small", disabled: (not resource.is_favorite?) do %>
           <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add Keyword" } %>
         <% end %>
       </div>
