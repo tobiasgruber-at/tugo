@@ -4,27 +4,43 @@
 <h1>Favorites</h1>
 <% unless @favorites.nil? %>
   <div class="flex-display flex-row flex-gap--s jc-flex-end p-l--m p-r--m">
-    <% unless sort_by.nil? %>
-      <div>
-        <span>Sort by:</span>
-        <% if sort_by == "title" %>
-          <i class="fa-solid fa-heading"></i>
-        <% elsif sort_by == "date" %>
-          <i class="fa-solid fa-calendar-days"></i>
+    <%= form_with model: @sort_option, url: favorites_path, method: :get, class: "flex-display-inline" do |f| %>
+      <%= f.hidden_field :target, :value => @sort_option.next_target %>
+      <%= f.hidden_field :direction %>
+      <div class="form-element">
+        <%= f.button nil, name: nil, type: :submit, class: "btn btn-light" do %>
+          <div class="flex-display flex-row flex-wrap-none flex-gap--xxs  ai-center">
+            <span>Sort by:</span>
+            <% if @sort_option.target == :title %>
+              <i class="fa-solid fa-heading"></i>
+            <% elsif @sort_option.target == :date %>
+              <i class="fa-solid fa-calendar-days"></i>
+            <% end %>
+          </div>
         <% end %>
       </div>
     <% end %>
-    <div>
-      <span>Sort direction:</span>
-      <% if sort_direction == :desc %>
-        <i class="fa-solid fa-arrow-down-a-z"></i>
-      <% else %>
-        <i class="fa-solid fa-arrow-up-a-z"></i>
-      <% end %>
-    </div>
+    <%= form_with model: @sort_option, url: favorites_path, method: :get, class: "flex-display-inline" do |f| %>
+      <%= f.hidden_field :target %>
+      <%= f.hidden_field :direction, value: @sort_option.next_direction %>
+      <div class="form-element">
+        <%= f.button nil, name: nil, type: :submit, class: "btn btn-light" do %>
+          <div class="flex-display flex-row flex-wrap-none flex-gap--xxs ai-center">
+            <span>Sort direction:</span>
+            <% if @sort_option.direction == :desc %>
+              <i class="fa-solid fa-arrow-down-a-z"></i>
+            <% elsif @sort_option.direction == :asc %>
+              <i class="fa-solid fa-arrow-up-a-z"></i>
+            <% end %>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
   </div>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false } %>
+  <%= turbo_frame_tag do %>
+    <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
+    <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
+    <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>
+    <%= render :partial => "components/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false } %>
+  <% end %>
 <% end %>

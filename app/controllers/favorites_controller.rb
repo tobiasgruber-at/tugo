@@ -3,6 +3,7 @@
 # @!attribute [r] favorite
 #   @return [Favorite] the newly created favorite model (see {#create})
 class FavoritesController < TissApiController
+
   # Shows a list of all favorites.
   #
   # After a call to this method, the {#favorites} instance variable will be set.
@@ -123,16 +124,15 @@ class FavoritesController < TissApiController
   private
 
   def sort(resources)
-    sort_direction = params["sort_direction"] == "desc" ? :desc : :asc
-    sort = params["sort_by"]
-    unless sort.nil?
-      if sort == "title"
-        resources = resources.order(preview: sort_direction)
-      elsif sort == "date"
-        resources = resources.order(created_at: sort_direction)
-      end
+    @sort_option = SortOption.new(sort_params)
+    case (@sort_option.target)
+    when :title
+      return resources.order(preview: @sort_option.direction)
+    when :date
+      return resources.order(created_at: @sort_option.direction)
+    else
+      return resources.order(:preview)
     end
-    resources
   end
 
   def favorite_params
@@ -141,6 +141,10 @@ class FavoritesController < TissApiController
 
   def update_favorite_params
     params.require(:favorite).permit(:note)
+  end
+
+  def sort_params
+    params.require(:sort_option).permit(:target, :direction) if params[:sort_option]
   end
 
 end

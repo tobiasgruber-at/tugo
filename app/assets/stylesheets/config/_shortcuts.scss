@@ -9,6 +9,10 @@
 .flex {
   &-display {
     display: flex;
+
+    &-inline {
+      display: inline-flex;
+    }
   }
 
   &-column {
@@ -43,6 +47,16 @@
     @extend .flex-display;
     flex-wrap: nowrap;
     justify-content: center;
+  }
+}
+
+.d {
+  &-inline {
+    display: inline;
+  }
+
+  &-block {
+    display: block;
   }
 }
 

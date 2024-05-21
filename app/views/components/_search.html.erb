@@ -2,8 +2,8 @@
   <div class="form-element">
     <%= f.label :query, "Search for #{resource_name}" %>
     <div class="form-row form-input-group">
-      <%= f.text_field :query, value: @search_term.query %>
-      <%= f.button nil, name: nil, type: "submit", class: "btn btn--primary form-input-group__small" do %>
+      <%= f.text_field :query %>
+      <%= f.button nil, name: nil, type: :submit, class: "btn btn--primary form-input-group__small" do %>
         <%= render :partial => "components/icon-button", :locals => { icon: "fa-solid fa-magnifying-glass", text: "Search" } %>
       <% end %>
     </div>
