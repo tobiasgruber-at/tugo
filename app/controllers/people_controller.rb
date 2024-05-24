@@ -33,15 +33,18 @@ class PeopleController < TissApiController
 
   def map_resource(res, favorite, is_single, keywords = nil)
     id = res["tiss_id"] || " "
-    Resource.new(
-      id,
-      res["first_name"] + " " + res["last_name"],
-      nil,
-      nil,
-      person_path(id),
-      favorite,
-      Favorite.favorite_types["person"],
-      keywords
+    Person.new(
+      id: id,
+      title: res["first_name"] + " " + res["last_name"],
+      _prefix: nil,
+      addition: nil,
+      path: person_path(id),
+      favorite_id: favorite,
+      favorite_type: Favorite.favorite_types["person"],
+      keywords: keywords,
+      titles_pre: res["preceding_titles"],
+      titles_post: res["postpositioned_titles"],
+      email: res["main_email"]
     )
   end
 end

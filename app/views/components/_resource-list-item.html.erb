@@ -1,0 +1,22 @@
+<div class="list__item btn btn--block ">
+  <div class="flex-display flex-gap--xxs jc-space-between position-relative">
+    <%= link_to resource.path, class: "position-relative flex-grow--1 ac-center" do %>
+      <div class="flex-display flex-column">
+        <% unless resource.addition.nil? %>
+          <div class="flex-display flex-gap--xs">
+            <span class="muted fs--xs"><%= resource.addition %></span>
+          </div>
+        <% end %>
+        <div class="flex-display flex-gap--xxs">
+          <% unless resource._prefix.nil? %>
+            <span class="italic"><%= resource._prefix %></span>
+          <% end %>
+          <span><%= resource.title %></span>
+        </div>
+      </div>
+    <% end %>
+    <div class="list-button">
+      <%= render partial: "components/favorite-toggle-button", locals: { resource: resource } %>
+    </div>
+  </div>
+</div>

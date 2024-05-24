@@ -19,6 +19,7 @@
     </div>
   <% end %>
   <h2>Notes</h2>
+  <!-- TODO: get favorite from resource to prefill form -->
   <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite_id) : nil, method: :patch do |f| %>
     <div class="form-element">
       <%= f.label :note, disabled: (not resource.is_favorite?) %>
@@ -27,9 +28,9 @@
     <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
   <% end %>
   <h2>Keywords</h2>
-  <% if (not @resource.keywords.nil?) and @resource.keywords.any? %>
+  <% if (not resource.keywords.nil?) and resource.keywords.any? %>
     <div class="flex-display flex-row flex-gap--xs p-t--l p-b--l">
-      <% @resource.keywords.each do |keyword| %>
+      <% resource.keywords.each do |keyword| %>
         <div class="pill pill--secondary">
           <span><%= keyword.title %></span>
           <div class="pill__cancel">
@@ -44,15 +45,15 @@
     </div>
   <% end %>
   <%= form_with model: Keyword.new do |f| %>
-    <%= f.hidden_field :favorite_id, :value => @resource.favorite_id %>
+    <%= f.hidden_field :favorite_id, :value => resource.favorite_id %>
     <div class="form-element">
       <div class="form-row form-input-group">
         <%= f.text_field :title, placeholder: "Add new keyword", disabled: (not resource.is_favorite?) %>
-        <%= f.button nil, method: :submit, class: "btn btn--primary form-input-group__small", disabled: (not resource.is_favorite?) do %>
+        <%= f.button nil, name: nil, method: :submit, class: "btn btn--primary form-input-group__small", disabled: (not resource.is_favorite?) do %>
           <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add Keyword" } %>
         <% end %>
       </div>
-      <%= render "components/form-errors", messages: Keyword.new.errors.full_messages_for(:title) %> <!-- TODO set messages -->
+      <%= render "components/form-errors", messages: Keyword.new.errors.full_messages_for(:title) %>
     </div>
   <% end %>
 </div>

@@ -7,7 +7,7 @@ class CoursesController < TissApiController
     super(Favorite.favorite_types["course"], "search/course/v1.0/quickSearch?searchterm=#{@search_term.query}")
   end
 
-  # @see TissApiController#see
+  # @see TissApiController#show
   def show
     @id = params["id"]
     super("course/#{@id}", -> (val) { Nokogiri::XML(val) })
@@ -39,15 +39,15 @@ class CoursesController < TissApiController
       prefix = course_field(res, 1)
       addition = course_field(res, 0)
     end
-    Resource.new(
-      id,
-      title,
-      prefix,
-      addition,
-      course_path(id),
-      favorite,
-      Favorite.favorite_types["course"],
-      keywords
+    Course.new(
+      id: id,
+      title: title,
+      _prefix: prefix,
+      addition: addition,
+      path: course_path(id),
+      favorite_id: favorite,
+      favorite_type: Favorite.favorite_types["course"],
+      keywords: keywords
     )
   end
 

@@ -1,0 +1,22 @@
+<% value = nil if local_assigns[:value].nil? or local_assigns[:value].blank? %>
+<% type = :plain if local_assigns[:type].nil? %>
+<% if not value.nil? or not yield.blank? %>
+  <tr>
+    <td><%= name.strip %>:</td>
+    <td>
+      <% if type == :plain %>
+        <% if not yield.nil? and not yield.blank? %>
+          <%= yield %>
+        <% else %>
+          <%= value %>
+        <% end %>
+      <% elsif type == :tel %>
+        <%= phone_to value, class: "link" %>
+      <% elsif type == :email %>
+        <%= mail_to value, class: "link" %>
+      <% elsif type == :url %>
+        <%= link_to value, value, class: "link" %>
+      <% end %>
+    </td>
+  </tr>
+<% end %>

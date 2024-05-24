@@ -1,3 +1,21 @@
 <% unless @resource.nil? %>
-  <%= render :partial => "components/resource" %>
+  <% content_for :title do %>
+    <div class="flex-display flex-column">
+      <% unless @resource.titles_pre.nil? %>
+        <span class="muted fs--m">
+          <%= @resource.titles_pre %>
+        </span>
+      <% end %>
+      <h1 class="p-t--0"><%= @resource.title %></h1>
+      <% unless @resource.titles_post.nil? %>
+        <span class="muted fs--m">
+          <%= @resource.titles_post %>
+        </span>
+      <% end %>
+    </div>
+  <% end %>
+  <% content_for :resource do %>
+    <%= render partial: "components/person-details", locals: { person: @resource } %>
+  <% end %>
+  <%= render partial: "components/resource", locals: { resource: @resource } %>
 <% end %>

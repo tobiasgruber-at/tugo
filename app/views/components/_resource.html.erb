@@ -1,7 +1,14 @@
 <div class="resource-title">
-  <h1><%= @resource.title %></h1>
+  <% if content_for? :title %>
+    <%= yield :title %>
+  <% else %>
+    <h1><%= resource.title %></h1>
+  <% end %>
   <div class="resource-title__button">
-    <%= render partial: "components/favorite-toggle-button", locals: { resource: @resource, type: :large } %>
+    <%= render partial: "components/favorite-toggle-button", locals: { resource: resource, type: :large } %>
   </div>
 </div>
-<%= render :partial => "components/favorite-additions", :locals => { resource: @resource } %>
+<% if content_for? :resource %>
+  <%= yield :resource %>
+<% end %>
+<%= render :partial => "components/favorite-additions", :locals => { resource: resource } %>

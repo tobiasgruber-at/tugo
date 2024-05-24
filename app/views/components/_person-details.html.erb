@@ -1,0 +1,5 @@
+<% content_for :detail_elements do %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Phone number", value: person.phone, type: :tel } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Email", value: person.email, type: :email } %>
+<% end %>
+<%= render partial: "components/resource-details", locals: { title: "Contact" } %>

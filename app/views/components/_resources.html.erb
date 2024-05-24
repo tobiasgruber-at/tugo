@@ -5,7 +5,9 @@
 <% if resources.nil? or resources == [] %>
   <div class="box box--light">
     <% if search_result %>
-      <div class="box__title">Sorry we could not find what you are looking for</div>
+      <div class="box__title">
+        Sorry we could not find what you are looking for
+      </div>
       Try a different search term
     <% else %>
       <div class="box__title">No items found</div>
@@ -17,28 +19,7 @@
   <% end %>
   <div class="list">
     <% resources.each do |resource| %>
-      <div class="list__item btn btn--block ">
-        <div class="flex-display flex-gap--xxs jc-space-between position-relative">
-          <%= link_to resource.path, class: "position-relative flex-grow--1 ac-center" do %>
-            <div class="flex-display flex-column">
-              <% unless resource.addition.nil? %>
-                <div class="flex-display flex-gap--xs">
-                  <span class="muted fs--xs"><%= resource.addition %></span>
-                </div>
-              <% end %>
-              <div class="flex-display flex-gap--xxs">
-                <% unless resource._prefix.nil? %>
-                  <span class="italic"><%= resource._prefix %></span>
-                <% end %>
-                <span><%= resource.title %></span>
-              </div>
-            </div>
-          <% end %>
-          <div class="list-button">
-            <%= render partial: "components/favorite-toggle-button", locals: { resource: resource } %>
-          </div>
-        </div>
-      </div>
+      <%= render partial: "components/resource-list-item", locals: { resource: resource } %>
     <% end %>
   </div>
 <% end %>

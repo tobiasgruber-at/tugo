@@ -1,0 +1,7 @@
+<% title = "Details" if local_assigns[:title].nil? %>
+<% if content_for? :detail_elements %>
+  <h2><%= title %></h2>
+  <table>
+    <%= yield :detail_elements %>
+  </table>
+<% end %>

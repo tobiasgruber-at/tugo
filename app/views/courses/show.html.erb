@@ -1,3 +1,3 @@
 <% unless @resource.nil? %>
-  <%= render :partial => "components/resource" %>
+  <%= render partial: "components/resource", locals: { resource: @resource } %>
 <% end %>

@@ -1,0 +1,8 @@
+<% content_for :detail_elements do %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Short description", value: project.short_description } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Contract begin", value: project.contract_begin } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Contract end", value: project.contract_end } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Project begin", value: project.project_begin } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Project end", value: project.project_end } %>
+<% end %>
+<%= render partial: "components/resource-details" %>

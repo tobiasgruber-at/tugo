@@ -8,6 +8,7 @@
   user-select: none;
   pointer-events: none;
   overflow: hidden;
+  @extend .m-t--m !optional;
   @extend .p--xs !optional;
 }
 

@@ -28,19 +28,31 @@ class ThesesController < TissApiController
       res.remove_namespaces!
       id = @id
       title = res.css("title *:last-of-type").text
+      institute = "#{res.css("instituteCode").text} #{res.css("instituteName *:last-of-type").text}".strip
+      faculty = "#{res.css("facultyCode").text} #{res.css("facultyName *:last-of-type").text}".strip
+      thesis_keywords = res.css("keywords *:last-of-type").text
+      url = res.css("url").text
     else
       id = res["id"] || ""
       title = res["title"]
+      institute = "#{res["instituteCode"]} #{res["instituteName"]}".strip
+      faculty = "#{res["facultyCode"]} #{res["facultyName"]}".strip
+      thesis_keywords = res["keywords"]
+      url = res["url"]
     end
-    Resource.new(
-      id,
-      title,
-      nil,
-      nil,
-      thesis_path(id),
-      favorite,
-      Favorite.favorite_types["thesis"],
-      keywords
+    Thesis.new(
+      id: id,
+      title: title,
+      _prefix: nil,
+      addition: nil,
+      path: thesis_path(id),
+      favorite_id: favorite,
+      favorite_type: Favorite.favorite_types["thesis"],
+      keywords: keywords,
+      institute: institute,
+      faculty: faculty,
+      thesis_keywords: thesis_keywords,
+      url: url,
     )
   end
 end

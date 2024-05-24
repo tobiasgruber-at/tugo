@@ -1,0 +1,7 @@
+<% content_for :detail_elements do %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Institute", value: thesis.institute } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Faculty", value: thesis.faculty } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "Keywords", value: thesis.thesis_keywords } %>
+  <%= render partial: "components/resource-detail-element", locals: { name: "URL", value: thesis.url, type: :url } %>
+<% end %>
+<%= render partial: "components/resource-details" %>
