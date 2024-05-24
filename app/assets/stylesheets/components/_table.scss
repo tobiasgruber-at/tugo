@@ -1,0 +1,13 @@
+table {
+  width: 100%;
+  border: var(--border-shape) var(--color-primary-bg);
+  border-radius: var(--border-radius);
+}
+
+tr:nth-child(even) {
+  background-color: var(--color-primary-bg);
+}
+
+table tr td {
+  @extend .p--xxxs !optional;
+}
