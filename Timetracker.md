@@ -32,3 +32,4 @@
 | 19.05.2024 | 19:00 - 22:00 | 3:00h    | s    | rewrite color system; add icons to indicate search options                                                                                            | 
 | 21.05.2024 | 11:30 - 16:00 | 4:30h    | s    | add search option model; add placeholders                                                                                                             |                                                                                                             |          
 | 24.05.2024 | 11:30 - 15:00 | 3:30h    | s    | add custom resource models; add resource details to view                                                                                              | 
+| 25.05.2024 | 13:00 - 15:00 | 2:00h    | s,t  | add notes prefill, show keyword validation errors                                                                                                     |
