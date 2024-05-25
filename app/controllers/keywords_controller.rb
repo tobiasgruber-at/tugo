@@ -1,20 +1,17 @@
 class KeywordsController < ApplicationController
   def create
-    is_error = false
+    error_message = nil
     begin
-      keyword = Keyword.new(
-        :favorite_id => keyword_params["favorite_id"],
-        :title => keyword_params["title"],
-      )
-      unless keyword.valid? && keyword.save
-        is_error = true
+      @keyword = Keyword.new(keyword_params)
+      unless @keyword.valid? && @keyword.save
+        error_message = @keyword.errors.full_messages[0]
       end
     rescue StandardError => e
       puts e.message
-      is_error = true
+      error_message = "An error occurred. Please try again later."
     end
-    if is_error
-      redirect_back fallback_location: root_path, alert: "An error occurred. Please try again later."
+    if not error_message.nil?
+      redirect_back fallback_location: root_path, alert: error_message
     else
       redirect_back fallback_location: root_path
     end

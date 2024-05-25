@@ -7,10 +7,10 @@
       </div>
       <div>
         <%= form_with model: Favorite.new do |f| %>
-          <%= f.hidden_field :item_id, :value => resource.id %>
-          <%= f.hidden_field :preview, :value => resource.title %>
-          <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
-          <%= f.hidden_field :note, :value => "" %>
+          <%= f.hidden_field :item_id, value: resource.id %>
+          <%= f.hidden_field :preview, value: resource.title %>
+          <%= f.hidden_field :favorite_type, value: resource.favorite_type %>
+          <%= f.hidden_field :note, value: "" %>
           <%= f.button nil, type: "submit", class: "btn btn--primary" do %>
             <%= render :partial => "components/icon-button", :locals => { icon: "fa-solid fa-plus", text: "Add to Favorites" } %>
           <% end %>
@@ -19,11 +19,10 @@
     </div>
   <% end %>
   <h2>Notes</h2>
-  <!-- TODO: get favorite from resource to prefill form -->
-  <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite_id) : nil, method: :patch do |f| %>
+  <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite.id) : nil, method: :patch do |f| %>
     <div class="form-element">
       <%= f.label :note, disabled: (not resource.is_favorite?) %>
-      <%= f.text_area :note, placeholder: "Write your notes here", disabled: (not resource.is_favorite?) %>
+      <%= f.text_area :note, placeholder: "Write your notes here", disabled: (not resource.is_favorite?), value: resource.favorite&.note %>
     </div>
     <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
   <% end %>
@@ -44,8 +43,8 @@
       <% end %>
     </div>
   <% end %>
-  <%= form_with model: Keyword.new do |f| %>
-    <%= f.hidden_field :favorite_id, :value => resource.favorite_id %>
+  <%= form_with model: Keyword.new, method: :post do |f| %>
+    <%= f.hidden_field :favorite_id, value: resource.favorite&.id %>
     <div class="form-element">
       <div class="form-row form-input-group">
         <%= f.text_field :title, placeholder: "Add new keyword", disabled: (not resource.is_favorite?) %>
@@ -53,7 +52,8 @@
           <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add Keyword" } %>
         <% end %>
       </div>
-      <%= render "components/form-errors", messages: Keyword.new.errors.full_messages_for(:title) %>
+      <%= render "components/form-errors", messages: @keyword&.errors&.full_messages_for(:title) %>
+      <%= @keyword&.errors&.full_messages %>
     </div>
   <% end %>
 </div>

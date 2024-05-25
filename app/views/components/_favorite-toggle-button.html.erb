@@ -17,7 +17,7 @@
       <% end %>
     <% end %>
   <% else %>
-    <%= form_with url: "#{favorite_path(resource.favorite_id)}", method: "delete" do |f| %>
+    <%= form_with url: favorite_path(resource.favorite&.id), method: "delete" do |f| %>
       <% if type == :icon %>
         <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
           <i class="fa-solid fa-heart"></i>

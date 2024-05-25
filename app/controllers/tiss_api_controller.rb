@@ -41,7 +41,7 @@ class TissApiController < ApplicationController
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
       res = self.find(endpoint, parser)
-      favorite = Favorite.find_by(item_id: @id.to_s, user_id: session[:user_id])&.id
+      favorite = Favorite.find_by(item_id: @id.to_s, user_id: session[:user_id])
       keywords = favorite.nil? ? nil : Keyword.where(favorite_id: favorite)
       @resource = map_resource(res, favorite, true, keywords)
     rescue StandardError => e

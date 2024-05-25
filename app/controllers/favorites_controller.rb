@@ -44,10 +44,10 @@ class FavoritesController < TissApiController
     is_error = false
     begin
       @favorite = Favorite.new(
-        :user_id => session[:user_id],
-        :item_id => favorite_params["item_id"],
-        :preview => favorite_params["preview"],
-        :favorite_type => Integer(favorite_params["favorite_type"])
+        user_id: session[:user_id],
+        item_id: favorite_params["item_id"],
+        preview: favorite_params["preview"],
+        favorite_type: Integer(favorite_params["favorite_type"])
       )
       unless @favorite.valid? && @favorite.save
         is_error = true
@@ -96,28 +96,28 @@ class FavoritesController < TissApiController
 
   protected
 
-  def map_resources(resources, path_selector_fn)
-    if resources.nil? || resources.empty?
+  def map_resources(favorites, path_selector_fn)
+    if favorites.nil? || favorites.empty?
       []
     else
-      resources.map do |res|
-        path = path_selector_fn.call(res["item_id"])
-        map_resource(res, path)
+      favorites.map do |fav|
+        path = path_selector_fn.call(fav["item_id"])
+        map_resource(fav, path)
       end
     end
   end
 
-  def map_resource(res, path)
-    id = res["id"] || ""
+  def map_resource(fav, path)
+    id = fav["id"] || ""
     Resource.new(
-      id,
-      res["preview"],
-      nil,
-      nil,
-      path,
-      id,
-      nil,
-      nil
+      id: id,
+      title: fav["preview"],
+      _prefix: nil,
+      addition: nil,
+      path: path,
+      favorite: fav,
+      favorite_type: nil,
+      keywords: nil
     )
   end
 

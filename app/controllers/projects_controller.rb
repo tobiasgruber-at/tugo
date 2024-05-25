@@ -54,7 +54,7 @@ class ProjectsController < TissApiController
       _prefix: nil,
       addition: nil,
       path: project_path(id),
-      favorite_id: favorite,
+      favorite: favorite,
       favorite_type: Favorite.favorite_types["project"],
       keywords: keywords,
       short_description: short_description,

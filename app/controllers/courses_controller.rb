@@ -45,7 +45,7 @@ class CoursesController < TissApiController
       _prefix: prefix,
       addition: addition,
       path: course_path(id),
-      favorite_id: favorite,
+      favorite: favorite,
       favorite_type: Favorite.favorite_types["course"],
       keywords: keywords
     )

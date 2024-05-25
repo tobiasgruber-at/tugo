@@ -46,7 +46,7 @@ class ThesesController < TissApiController
       _prefix: nil,
       addition: nil,
       path: thesis_path(id),
-      favorite_id: favorite,
+      favorite: favorite,
       favorite_type: Favorite.favorite_types["thesis"],
       keywords: keywords,
       institute: institute,
