@@ -28,9 +28,9 @@
           <div class="flex-display flex-row flex-wrap-none flex-gap--xxs ai-center">
             <span>Sort direction:</span>
             <% if @sort_option.direction == :desc %>
-              <i class="fa-solid fa-arrow-down-a-z"></i>
-            <% elsif @sort_option.direction == :asc %>
               <i class="fa-solid fa-arrow-up-a-z"></i>
+            <% elsif @sort_option.direction == :asc %>
+              <i class="fa-solid fa-arrow-down-a-z"></i>
             <% end %>
           </div>
         <% end %>
