@@ -40,7 +40,7 @@ class TissApiController < ApplicationController
   # @return [void]
   def show(endpoint = "", parser = -> (val) { JSON.parse(val) })
     begin
-      res = self.find(endpoint, parser)
+      res = self.search(endpoint, parser)
       favorite = Favorite.find_by(item_id: @id.to_s, user_id: session[:user_id])
       keywords = favorite.nil? ? nil : Keyword.where(favorite_id: favorite)
       @resource = map_resource(res, favorite, true, keywords)
@@ -113,12 +113,6 @@ class TissApiController < ApplicationController
   end
 
   def search(endpoint, parser = -> (val) { JSON.parse(val) })
-    uri = URI(base + endpoint)
-    response = Net::HTTP.get(uri)
-    parser.call(response)
-  end
-
-  def find(endpoint, parser)
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     parser.call(response)

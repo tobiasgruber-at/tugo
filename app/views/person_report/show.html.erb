@@ -1,8 +1,10 @@
-<% if @error %>
-  <%= render "components/error", error: @error %>
-<% end %>
-<h2>Report for: <span class="term"><%= @search_term %></span></h2>
+<% unless alert %>
+  <% if @error %>
+    <%= render "components/error", error: @error %>
+  <% end %>
+  <h2>Report for: <span class="term"><%= @person&.title %></span></h2>
 
-<%= render :partial => "components/resources", :locals => { resources: @courses, title: "Courses", search_result: false } %>
-<%= render :partial => "components/resources", :locals => { resources: @projects, title: "Projects", search_result: false } %>
-<%= render :partial => "components/resources", :locals => { resources: @theses, title: "Theses", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @courses, title: "Courses", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @projects, title: "Projects", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @theses, title: "Theses", search_result: false } %>
+<% end %>
