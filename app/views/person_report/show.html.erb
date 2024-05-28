@@ -3,9 +3,8 @@
     <%= render "components/error", error: @error %>
   <% end %>
   <h2>Report for: <span class="term"><%= @person&.title %></span></h2>
-
-  <%= render partial: "components/person-details", locals: { person: @person, show_report: false, title: "Information" } %>
-  <%= render :partial => "components/resources", :locals => { resources: @courses, title: "Courses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @projects, title: "Projects", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @theses, title: "Theses", search_result: false } %>
+  <%= render partial: "components/person-details", locals: { person: @person, show_report: false } %>
+  <%= render partial: "components/resources", locals: { resources: @courses, title: "Courses" } %>
+  <%= render partial: "components/resources", locals: { resources: @projects, title: "Projects" } %>
+  <%= render partial: "components/resources", locals: { resources: @theses, title: "Theses" } %>
 <% end %>

@@ -11,4 +11,4 @@
 <% if content_for? :resource %>
   <%= yield :resource %>
 <% end %>
-<%= render :partial => "components/favorite-additions", :locals => { resource: resource } %>
+<%= render partial: "components/favorite-additions", locals: { resource: resource } %>

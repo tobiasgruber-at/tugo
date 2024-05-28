@@ -15,7 +15,7 @@
     </div>
   <% end %>
   <% content_for :resource do %>
-    <%= render partial: "components/person-details", locals: { person: @resource, show_report: true, title: "Contact" } %>
+    <%= render partial: "components/person-details", locals: { person: @resource, show_report: true } %>
   <% end %>
   <%= render partial: "components/resource", locals: { resource: @resource } %>
 <% end %>

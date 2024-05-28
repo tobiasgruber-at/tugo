@@ -1,8 +1,8 @@
-<% icon = nil if local_assigns[:icon].nil? %>
+<% icon_class = nil if local_assigns[:icon_class].nil? %>
 <% text = nil if local_assigns[:text].nil? %>
 <div class="flex-display flex-row flex-gap--xs ai-center">
-  <% unless icon.nil? %>
-    <i class="<%= icon %>"></i>
+  <% unless icon_class.nil? or icon_class.blank? %>
+    <i class="<%= icon_class %>"></i>
   <% end %>
   <% unless text.nil? %>
     <span><%= text %></span>

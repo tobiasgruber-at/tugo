@@ -39,7 +39,8 @@ form {
     outline: none;
   }
 
-  input[type=text], textarea {
+  input[type=text],
+  textarea {
     @extend .p-l--s !optional;
   }
 }
@@ -52,7 +53,6 @@ form {
     @extend .flex-gap--xxs !optional;
 
     label {
-      width: 100%;
       @extend .fs--m !optional;
       @extend .muted !optional;
     }
@@ -70,6 +70,13 @@ form {
       border: none;
       outline: none;
       @extend .border--rounded !optional;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+      width: unset;
+      min-width: unset;
+      max-width: unset;
     }
 
     textarea {

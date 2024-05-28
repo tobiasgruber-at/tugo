@@ -1,7 +1,5 @@
-<h1>Favorites</h1>
-<% unless @favorites.nil? %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false } %>
-<% end %>
+<h1>Favorites Report</h1>
+<%= render partial: "components/report-resources", locals: { resources: @favorite_courses, name: "Courses", show_notes: (show_notes), show_keywords: (show_keywords) } %>
+<%= render partial: "components/report-resources", locals: { resources: @favorite_people, name: "People", show_notes: (show_notes), show_keywords: (show_keywords) } %>
+<%= render partial: "components/report-resources", locals: { resources: @favorite_theses, name: "Theses", show_notes: (show_notes), show_keywords: (show_keywords) } %>
+<%= render partial: "components/report-resources", locals: { resources: @favorite_projects, name: "Projects", show_notes: (show_notes), show_keywords: (show_keywords) } %>

@@ -1,0 +1,10 @@
+.section {
+  &-indent {
+    @extend .p-l--m !optional;
+  }
+
+  &-header {
+    width: 100%;
+    border-bottom: solid var(--space-xxxs) var(--color-light)
+  }
+}

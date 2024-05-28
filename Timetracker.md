@@ -33,3 +33,4 @@
 | 21.05.2024 | 11:30 - 16:00 | 4:30h    | s    | add search option model; add placeholders                                                                                                             |                                                                                                             |          
 | 24.05.2024 | 11:30 - 15:00 | 3:30h    | s    | add custom resource models; add resource details to view                                                                                              | 
 | 25.05.2024 | 13:00 - 15:00 | 2:00h    | s,t  | add notes prefill, show keyword validation errors                                                                                                     |
+| 28.05.2024 | 13:00 - 17:00 | 4:00h    | s,t  | add printable favorites report, add person report                                                                                                     |

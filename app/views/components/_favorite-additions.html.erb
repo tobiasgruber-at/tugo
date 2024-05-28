@@ -11,8 +11,8 @@
           <%= f.hidden_field :preview, value: resource.title %>
           <%= f.hidden_field :favorite_type, value: resource.favorite_type %>
           <%= f.hidden_field :note, value: "" %>
-          <%= f.button nil, type: "submit", class: "btn btn--primary" do %>
-            <%= render :partial => "components/icon-button", :locals => { icon: "fa-solid fa-plus", text: "Add to Favorites" } %>
+          <%= f.button nil, type: :submit, class: "btn btn--primary" do %>
+            <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-plus", text: "Add to Favorites" } %>
           <% end %>
         <% end %>
       </div>
@@ -34,8 +34,8 @@
           <span><%= keyword.title %></span>
           <div class="pill__cancel">
             <%= form_with url: keyword_path(keyword.id), method: :delete do |f| %>
-              <%= f.button nil, type: "submit", class: "btn btn--pill p--0 jc-center" do %>
-                <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-xmark" } %>
+              <%= f.button nil, type: :submit, class: "btn btn--pill p--0 jc-center" do %>
+                <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-xmark" } %>
               <% end %>
             <% end %>
           </div>
@@ -48,8 +48,8 @@
     <div class="form-element">
       <div class="form-row form-input-group">
         <%= f.text_field :title, placeholder: "Add new keyword", disabled: (not resource.is_favorite?) %>
-        <%= f.button nil, name: nil, method: :submit, class: "btn btn--primary form-input-group__small", disabled: (not resource.is_favorite?) do %>
-          <%= render partial: "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add Keyword" } %>
+        <%= f.button nil, name: nil, type: :submit, class: "btn btn--primary form-input-group__small", disabled: (not resource.is_favorite?) do %>
+          <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-plus", text: "Add Keyword" } %>
         <% end %>
       </div>
       <%= render "components/form-errors", messages: @keyword&.errors&.full_messages_for(:title) %>

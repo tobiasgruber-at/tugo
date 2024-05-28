@@ -2,29 +2,29 @@
 <% unless resource.nil? %>
   <% if not resource.is_favorite? %>
     <%= form_with model: Favorite.new do |f| %>
-      <%= f.hidden_field :item_id, :value => resource.id %>
-      <%= f.hidden_field :preview, :value => resource.title %>
-      <%= f.hidden_field :favorite_type, :value => resource.favorite_type %>
-      <%= f.hidden_field :note, :value => "" %>
+      <%= f.hidden_field :item_id, value: resource.id %>
+      <%= f.hidden_field :preview, value: resource.title %>
+      <%= f.hidden_field :favorite_type, value: resource.favorite_type %>
+      <%= f.hidden_field :note, value: "" %>
       <% if type == :icon %>
-        <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
-          <%= render partial: "components/icon-button", locals: { icon: "fa-regular fa-heart" } %>
+        <%= f.button nil, type: :submit, class: "btn btn--icon" do %>
+          <%= render partial: "components/icon-button", locals: { icon_class: "fa-regular fa-heart" } %>
         <% end %>
       <% elsif type == :large %>
-        <%= f.button nil, type: "submit", class: "btn btn--primary btn--3d fs--m m-b--0" do %>
-          <%= render :partial => "components/icon-button", locals: { icon: "fa-solid fa-plus", text: "Add to Favorites" } %>
+        <%= f.button nil, type: :submit, class: "btn btn--primary btn--3d fs--m m-b--0" do %>
+          <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-plus", text: "Add to Favorites" } %>
         <% end %>
       <% end %>
     <% end %>
   <% else %>
     <%= form_with url: favorite_path(resource.favorite&.id), method: "delete" do |f| %>
       <% if type == :icon %>
-        <%= f.button nil, type: "submit", class: "btn btn--icon" do %>
+        <%= f.button nil, type: :submit, class: "btn btn--icon" do %>
           <i class="fa-solid fa-heart"></i>
         <% end %>
       <% elsif type == :large %>
-        <%= f.button nil, type: "submit", class: "btn btn--primary btn--3d fs--m m-b--0" do %>
-          <%= render :partial => "components/icon-button", locals: { icon: "fa-solid fa-minus", text: "Remove from Favorites" } %>
+        <%= f.button nil, type: :submit, class: "btn btn--primary btn--3d fs--m m-b--0" do %>
+          <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-minus", text: "Remove from Favorites" } %>
         <% end %>
       <% end %>
     <% end %>
