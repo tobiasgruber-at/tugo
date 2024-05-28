@@ -20,7 +20,7 @@ class CoursesController < TissApiController
       []
     else
       resources["results"].map do |res|
-        favorite = @favorites&.find { |fav| fav.item_id == String(course_id(res)) }&.id
+        favorite = @favorites&.find { |fav| fav.item_id == String(course_id(res)) }
         map_resource(res, favorite, false)
       end
     end

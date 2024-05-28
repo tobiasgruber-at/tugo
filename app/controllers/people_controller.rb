@@ -25,7 +25,7 @@ class PeopleController < TissApiController
       []
     else
       resources["results"].map do |res|
-        favorite = @favorites&.find { |fav| fav.item_id == String(res["tiss_id"]) }&.id
+        favorite = @favorites&.find { |fav| fav.item_id == String(res["tiss_id"]) }
         map_resource(res, favorite, false)
       end
     end
