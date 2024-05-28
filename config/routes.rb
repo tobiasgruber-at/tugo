@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root "home#index"
   resources :keywords, only: [:create, :destroy]
   resources :people, only: [:index, :show, :update]
+  resources :person_report, only: [:show]
   resources :courses, only: [:index, :show]
   resources :theses, only: [:index, :show]
   resources :projects, only: [:index, :show]

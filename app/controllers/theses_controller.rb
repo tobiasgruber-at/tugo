@@ -10,23 +10,20 @@ class ThesesController < TissApiController
     super("thesis/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 
-  protected
-
-  def map_resources(resources)
+  def self.map_theses(resources, favorites, path_selector_fn)
     if resources.nil? || resources.empty?
       []
     else
       resources["results"].map do |res|
-        favorite = @favorites&.find { |fav| fav.item_id == String(res["id"]) }
-        map_resource(res, favorite, false)
+        favorite = favorites&.find { |fav| fav.item_id == String(res["id"]) }
+        ThesesController.map_thesis(res, favorite, false, path_selector_fn, nil)
       end
     end
   end
 
-  def map_resource(res, favorite, is_single, keywords = nil)
+  def self.map_thesis(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
-      id = @id
       title = res.css("title *:last-of-type").text
       institute = "#{res.css("instituteCode").text} #{res.css("instituteName *:last-of-type").text}".strip
       faculty = "#{res.css("facultyCode").text} #{res.css("facultyName *:last-of-type").text}".strip
@@ -45,7 +42,7 @@ class ThesesController < TissApiController
       title: title,
       _prefix: nil,
       addition: nil,
-      path: thesis_path(id),
+      path: path_selector_fn.call(id),
       favorite: favorite,
       favorite_type: Favorite.favorite_types["thesis"],
       keywords: keywords,
@@ -54,5 +51,15 @@ class ThesesController < TissApiController
       thesis_keywords: thesis_keywords,
       url: url,
     )
+  end
+
+  protected
+
+  def map_resources(resources)
+    ThesesController.map_theses(resources, @favorites, -> (id) { thesis_path(id) })
+  end
+
+  def map_resource(res, favorite, is_single, keywords = nil)
+    ThesesController.map_thesis(res, favorite, is_single, -> (id) { thesis_path(id) }, @id, keywords)
   end
 end

@@ -14,8 +14,8 @@ class PeopleController < TissApiController
 
   # @see TissApiController#show
   def show
-    id = params["id"]
-    super("id/#{id}")
+    @id = params["id"]
+    super("id/#{@id}")
   end
 
   protected

@@ -14,25 +14,20 @@ class ProjectsController < TissApiController
     super("pdb/rest/project/v3/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 
-  protected
-
-  def map_resources(resources)
+  def self.map_projects(resources, favorites, path_selector_fn)
     if resources.nil? || resources.empty?
       []
     else
       resources["results"].map do |res|
-        favorite = @favorites&.find { |fav| fav.item_id == String(res["id"]) }
-        map_resource(res, favorite, false)
+        favorite = favorites&.find { |fav| fav.item_id == String(res["id"]) }
+        ProjectsController.map_project(res, favorite, false, path_selector_fn, nil)
       end
     end
   end
 
-  def map_resource(res, favorite, is_single, keywords = nil)
-    puts res
-
+  def self.map_project(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
-      id = @id
       title = res.css("title en").text
       short_description = res.css("shortDescription").text
       contract_begin = res.css("contractBegin").text
@@ -53,7 +48,7 @@ class ProjectsController < TissApiController
       title: title,
       _prefix: nil,
       addition: nil,
-      path: project_path(id),
+      path: path_selector_fn.call(id),
       favorite: favorite,
       favorite_type: Favorite.favorite_types["project"],
       keywords: keywords,
@@ -63,5 +58,15 @@ class ProjectsController < TissApiController
       project_begin: project_begin,
       project_end: project_end
     )
+  end
+
+  protected
+
+  def map_resources(resources)
+    ProjectsController.map_projects(resources, @favorites, -> (id) { project_path(id) })
+  end
+
+  def map_resource(res, favorite, is_single, keywords = nil)
+    ProjectsController.map_project(res, favorite, is_single, -> (id) { project_path(id) }, @id, keywords )
   end
 end

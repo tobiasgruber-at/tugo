@@ -1,1 +1,7 @@
-test
+<h1>Favorites</h1>
+<% unless @favorites.nil? %>
+  <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>
+  <%= render :partial => "components/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false } %>
+<% end %>
