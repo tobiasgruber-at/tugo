@@ -1,9 +1,10 @@
 class FavoritesReportController < TissApiController
-   layout "report"
+  layout "report"
 
-  def index()
+  def index
     begin
       @favorites = Favorite.where(user_id: session[:user_id]).order(preview: :asc)
+      @report_options = ReportOptions.new(report_options_params)
       @favorite_courses = map_resources(
         @favorites&.filter { |fav| fav.favorite_type == "course" },
         -> (id) { course_path(id) }
@@ -52,5 +53,11 @@ class FavoritesReportController < TissApiController
       favorite_type: nil,
       keywords: keywords
     )
+  end
+
+  private
+
+  def report_options_params
+    params.require(:report_options).permit(:show_notes, :show_keywords) if params[:report_options]
   end
 end

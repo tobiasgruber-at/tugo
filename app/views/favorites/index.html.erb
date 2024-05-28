@@ -5,7 +5,7 @@
 <% unless @favorites.nil? %>
   <div class="flex-display flex-row flex-gap--s jc-flex-end p-l--m p-r--m">
     <%= form_with model: @sort_option, url: favorites_path, method: :get, class: "flex-display-inline" do |f| %>
-      <%= f.hidden_field :target, :value => @sort_option.next_target %>
+      <%= f.hidden_field :target, value: @sort_option.next_target %>
       <%= f.hidden_field :direction %>
       <div class="form-element">
         <%= f.button nil, name: nil, type: :submit, class: "btn btn-light" do %>
@@ -37,8 +37,25 @@
       </div>
     <% end %>
   </div>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_courses, title: "Favorite Courses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_people, title: "Favorite People", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_theses, title: "Favorite Theses", search_result: false } %>
-  <%= render :partial => "components/resources", :locals => { resources: @favorite_projects, title: "Favorite Projects", search_result: false } %>
+  <%= render partial: "components/resources", locals: { resources: @favorite_courses, title: "Favorite Courses" } %>
+  <%= render partial: "components/resources", locals: { resources: @favorite_people, title: "Favorite People" } %>
+  <%= render partial: "components/resources", locals: { resources: @favorite_theses, title: "Favorite Theses" } %>
+  <%= render partial: "components/resources", locals: { resources: @favorite_projects, title: "Favorite Projects" } %>
+<% end %>
+<h2>Favorites Report</h2>
+<%= form_with model: @report_options, url: favorites_report_index_url(@report_options), method: :get do |f| %>
+  <p>Generate a printable report of your favorites.</p>
+  <div class="form-element form-row">
+    <%= f.check_box :show_keywords %>
+    <%= f.label :show_keywords, "Include keywords" %>
+  </div>
+  <div class="form-element form-row">
+    <%= f.check_box :show_notes %>
+    <%= f.label :show_notes, "Include notes" %>
+  </div>
+  <div class="form-element">
+    <%= f.button nil, name: nil, type: :submit, formtarget: :_blank, class: "btn btn--primary" do %>
+      <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-print", text: "View print preview" } %>
+    <% end %>
+  </div>
 <% end %>

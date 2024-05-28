@@ -1,0 +1,35 @@
+<% show_notes = nil if local_assigns[:show_notes].nil? %>
+<% show_keywords = nil if local_assigns[:show_keywords].nil? %>
+<h2><%= name %></h2>
+<ul class="section-indent">
+  <% if resources.nil? or resources.empty? %>
+    <p class="muted">
+      No favorite <%= name %>
+    </p>
+  <% else %>
+    <% resources.each do |resource| %>
+      <li>
+        <p><%= resource.title %></p>
+        <div class="section-indent">
+          <% if resource.keywords.any? and show_keywords %>
+            <p class="section-header">Keywords:</p>
+            <div class="flex-display flex-row flex-wrap flex-gap--xxs section-indent">
+              <% resource.keywords.each do |keyword, index| %>
+                <em><%= keyword %></em>
+                <% unless index == resource.keywords.size - 1 %>
+                  <span>,</span>
+                <% end %>
+              <% end %>
+            </div>
+          <% end %>
+          <% if not resource.favorite.note.nil? and not resource.favorite.note.blank? and show_notes %>
+            <div class="flex-display flex-column flex-wrap-none">
+              <p class="section-header">Notes:</p>
+              <em class="section-indent pre"><%= resource.favorite.note %></em>
+            </div>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

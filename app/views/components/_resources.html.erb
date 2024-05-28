@@ -2,7 +2,7 @@
 <% unless search_result %>
   <h2><%= title %></h2>
 <% end %>
-<% if resources.nil? or resources == [] %>
+<% if resources.nil? or resources.empty? %>
   <div class="box box--light">
     <% if search_result %>
       <div class="box__title">

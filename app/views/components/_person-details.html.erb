@@ -1,6 +1,4 @@
-<a href="<%= url_for :controller => 'person_report', :action => 'show', :id => person.id %>">
-  <button class="btn--primary btn--3d">Open report</button>
-</a>
+<%= link_to "Open report", (url_for controller: "person_report", action: "show", id: person.id), class: "btn btn--primary" %>
 <% content_for :detail_elements do %>
   <%= render partial: "components/resource-detail-element", locals: { name: "Phone number", value: person.phone, type: :tel } %>
   <%= render partial: "components/resource-detail-element", locals: { name: "Email", value: person.email, type: :email } %>
