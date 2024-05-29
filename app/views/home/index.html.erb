@@ -1,5 +1,6 @@
 <h1>Home page</h1>
 <% if logged_in? %>
+  <h2>Search</h2>
   <div class="dashboard">
     <%= render layout: "components/dashboard-element", locals: { path: courses_path, icon_class: "fa-solid fa-graduation-cap" } do %>
       Search for <b>courses</b>
@@ -13,8 +14,14 @@
     <%= render layout: "components/dashboard-element", locals: { path: projects_path, icon_class: "fa-solid fa-diagram-project" } do %>
       Search for <b>projects</b>
     <% end %>
+  </div>
+  <h2>Favorites & Report</h2>
+  <div class="dashboard">
     <%= render layout: "components/dashboard-element", locals: { path: favorites_path, icon_class: "fa-solid fa-heart" } do %>
       Go to <b>favorites</b>
+    <% end %>
+    <%= render layout: "components/dashboard-element", locals: { path: favorites_path, icon_class: "fa-solid fa-file-invoice" } do %>
+      Generate a favorites <b>report</b>
     <% end %>
   </div>
 <% else %>

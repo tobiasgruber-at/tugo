@@ -7,7 +7,7 @@
   &__title {
     display: block;
     font-weight: bold;
-    @extend .fs--xxl !optional;
+    @extend .fs--m !optional;
   }
 
   &--lighter {

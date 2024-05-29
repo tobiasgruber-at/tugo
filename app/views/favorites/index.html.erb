@@ -3,59 +3,10 @@
 <% end %>
 <h1>Favorites</h1>
 <% unless @favorites.nil? %>
-  <div class="flex-display flex-row flex-gap--s jc-flex-end p-l--m p-r--m">
-    <%= form_with model: @sort_option, url: favorites_path, method: :get, class: "flex-display-inline" do |f| %>
-      <%= f.hidden_field :target, value: @sort_option.next_target %>
-      <%= f.hidden_field :direction %>
-      <div class="form-element">
-        <%= f.button nil, name: nil, type: :submit, class: "btn btn-light" do %>
-          <div class="flex-display flex-row flex-wrap-none flex-gap--xxs  ai-center">
-            <span>Sort by:</span>
-            <% if @sort_option.target == :title %>
-              <i class="fa-solid fa-heading"></i>
-            <% elsif @sort_option.target == :date %>
-              <i class="fa-solid fa-calendar-days"></i>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-    <%= form_with model: @sort_option, url: favorites_path, method: :get, class: "flex-display-inline" do |f| %>
-      <%= f.hidden_field :target %>
-      <%= f.hidden_field :direction, value: @sort_option.next_direction %>
-      <div class="form-element">
-        <%= f.button nil, name: nil, type: :submit, class: "btn btn-light" do %>
-          <div class="flex-display flex-row flex-wrap-none flex-gap--xxs ai-center">
-            <span>Sort direction:</span>
-            <% if @sort_option.direction == :desc %>
-              <i class="fa-solid fa-arrow-up-a-z"></i>
-            <% elsif @sort_option.direction == :asc %>
-              <i class="fa-solid fa-arrow-down-a-z"></i>
-            <% end %>
-          </div>
-        <% end %>
-      </div>
-    <% end %>
-  </div>
+  <%= render partial: "favorites/sort-options", locals: { sort_option: @sort_option, path: (favorites_path) } %>
   <%= render partial: "components/resources", locals: { resources: @favorite_courses, title: "Favorite Courses" } %>
   <%= render partial: "components/resources", locals: { resources: @favorite_people, title: "Favorite People" } %>
   <%= render partial: "components/resources", locals: { resources: @favorite_theses, title: "Favorite Theses" } %>
   <%= render partial: "components/resources", locals: { resources: @favorite_projects, title: "Favorite Projects" } %>
 <% end %>
-<h2>Favorites Report</h2>
-<%= form_with model: @report_options, url: favorites_report_index_url(@report_options), method: :get do |f| %>
-  <p>Generate a printable report of your favorites.</p>
-  <div class="form-element form-row">
-    <%= f.check_box :show_keywords %>
-    <%= f.label :show_keywords, "Include keywords" %>
-  </div>
-  <div class="form-element form-row">
-    <%= f.check_box :show_notes %>
-    <%= f.label :show_notes, "Include notes" %>
-  </div>
-  <div class="form-element">
-    <%= f.button nil, name: nil, type: :submit, formtarget: :_blank, class: "btn btn--primary" do %>
-      <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-print", text: "View print preview" } %>
-    <% end %>
-  </div>
-<% end %>
+<%= render partial: "favorites-report-form", locals: { report_option: @report_option } %>

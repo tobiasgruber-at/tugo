@@ -1,25 +1,28 @@
 <% search_result = false if local_assigns[:search_result].nil? %>
-<% unless search_result %>
-  <h2><%= title %></h2>
-<% end %>
-<% if resources.nil? or resources.empty? %>
-  <div class="box box--light">
-    <% if search_result %>
-      <div class="box__title">
-        Sorry we could not find what you are looking for
-      </div>
-      Try a different search term
-    <% else %>
-      <div class="box__title">No items found</div>
-    <% end %>
-  </div>
-<% else %>
-  <% if search_result %>
-    <h2>Results for <span class="term"><%= @search_term.query %></span>:</h2>
+<% section_id = search_result ? "search-result" : title.parameterize %>
+<section id="<%= section_id %>">
+  <% unless search_result %>
+    <h2><%= title %></h2>
   <% end %>
-  <div class="list">
-    <% resources.each do |resource| %>
-      <%= render partial: "components/resource-list-item", locals: { resource: resource } %>
+  <% if resources.nil? or resources.empty? %>
+    <div class="box box--light">
+      <% if search_result %>
+        <div class="box__title">
+          Sorry we could not find what you are looking for
+        </div>
+        Try a different search term
+      <% else %>
+        <div class="box__title">No items found</div>
+      <% end %>
+    </div>
+  <% else %>
+    <% if search_result %>
+      <h2>Results for <span class="term"><%= @search_term.query %></span>:</h2>
     <% end %>
-  </div>
-<% end %>
+    <div class="list">
+      <% resources.each do |resource| %>
+        <%= render partial: "components/resource-list-item", locals: { resource: resource } %>
+      <% end %>
+    </div>
+  <% end %>
+</section>

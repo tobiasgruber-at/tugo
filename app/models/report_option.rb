@@ -1,4 +1,4 @@
-class ReportOptions
+class ReportOption
   include ActiveModel::API
   include ActiveModel::Attributes
 
