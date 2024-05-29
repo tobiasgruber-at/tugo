@@ -28,8 +28,8 @@
   }
 
   &--dark {
-    background-color: var(--color-dark);
     color: var(--color-text-light);
+    background-color: var(--color-dark);
   }
 
   &--primary {
@@ -68,7 +68,6 @@
     @extend .p-b--xxs !optional;
     @extend .p-l--xs !optional;
     @extend .p-r--xs !optional;
-    color: var(--color-white);
     border: var(--border-shape) var(--color-dark) !important;
     border-radius: var(--border-radius);
     box-shadow: 1px 1px 0 0 var(--color-dark),

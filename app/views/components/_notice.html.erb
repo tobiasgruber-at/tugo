@@ -1,6 +1,10 @@
 <% if notice %>
   <div class="box box--success">
     <div class="box__title">Success</div>
-    <%= notice %>
+    <% unless notice.blank? %>
+      <div>
+        <%= notice %>
+      </div>
+    <% end %>
   </div>
 <% end %>

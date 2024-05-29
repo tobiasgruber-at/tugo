@@ -34,8 +34,12 @@ form {
 
   input[type=button]:active,
   input[type=submit]:active,
+  input[type=checkbox]:active,
+  input[type=radio]:active,
   input[type=button]:focus,
-  input[type=submit]:focus {
+  input[type=submit]:focus,
+  input[type=checkbox]:focus,
+  input[type=radio]:focus {
     outline: none;
   }
 
@@ -55,6 +59,11 @@ form {
     label {
       @extend .fs--m !optional;
       @extend .muted !optional;
+    }
+
+    input[type=checkbox] ~ label,
+    input[type=radio] ~ label {
+      color: var(--color-text-body);
     }
 
     .field_with_errors label {

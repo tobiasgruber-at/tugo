@@ -59,7 +59,7 @@
   --color-text-header: var(--color-dark);
   --color-text-body: hsl(0, 5%, 25%);
   --color-text-muted: hsl(0, 0%, 45%);
-  --color-text-light: var(--color-light);
+  --color-text-light: var(--color-lighter);
 
   --background-gradient-deg: 90deg;
   --background-primary: linear-gradient(var(--background-gradient-deg), var(--color-primary), var(--color-primary-rotate)), var(--color-primary);
