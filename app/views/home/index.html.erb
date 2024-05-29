@@ -20,7 +20,7 @@
     <%= render layout: "components/dashboard-element", locals: { path: favorites_path, icon_class: "fa-solid fa-heart" } do %>
       Go to <b>favorites</b>
     <% end %>
-    <%= render layout: "components/dashboard-element", locals: { path: favorites_path, icon_class: "fa-solid fa-file-invoice" } do %>
+    <%= render layout: "components/dashboard-element", locals: { path: favorites_path(anchor: "favorites-report"), icon_class: "fa-solid fa-file-invoice" } do %>
       Generate a favorites <b>report</b>
     <% end %>
   </div>
