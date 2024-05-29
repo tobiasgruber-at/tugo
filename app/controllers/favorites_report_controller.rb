@@ -58,6 +58,6 @@ class FavoritesReportController < TissApiController
   private
 
   def report_options_params
-    params.require(:report_options).permit(:show_notes, :show_keywords) if params[:report_options]
+    params.require(:report_option).permit(:show_notes, :show_keywords) if params[:report_option]
   end
 end
