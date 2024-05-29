@@ -35,7 +35,7 @@ class FavoritesReportController < TissApiController
       favorites.map do |fav|
         id = fav["item_id"]
         path = path_selector_fn.call(id)
-        keywords = fav.nil? ? nil : Keyword.where(favorite_id: id)
+        keywords = fav.nil? ? nil : Keyword.where(favorite_id: fav["id"])
         map_resource(fav, path, keywords)
       end
     end

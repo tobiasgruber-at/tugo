@@ -14,11 +14,13 @@
           <% if resource.keywords.any? and show_keywords %>
             <p class="section-header">Keywords:</p>
             <div class="flex-display flex-row flex-wrap flex-gap--xxs section-indent">
-              <% resource.keywords.each do |keyword, index| %>
-                <em><%= keyword %></em>
-                <% unless index == resource.keywords.size - 1 %>
-                  <span>,</span>
-                <% end %>
+              <% resource.keywords.each_with_index do |keyword, index| %>
+                <span class="flex-display-inline flex-row">
+                  <em><%= keyword.title %></em>
+                  <% unless index >= resource.keywords.size - 1 %>
+                    <span>,</span>
+                  <% end %>
+                </span>
               <% end %>
             </div>
           <% end %>
