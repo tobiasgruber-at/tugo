@@ -1,18 +1,12 @@
-<% # default values for unassigned locals
-   icon_class = nil if local_assigns[:icon_class].nil?
-%>
+<% icon_class = nil if local_assigns[:icon_class].nil? %>
 <%= link_to path, class: "dashboard__element" do %>
-  <div class="position-relative">
-    <div class="flex-display flex-row flex-gap--xs ai-center">
-      <div>
-        <%= yield %>
-      </div>
-      <div>
-        <i class="fa-solid fa-arrow-right"></i>
-      </div>
+  <div class="flex-display flex-wrap-none flex-row flex-gap--l jc-space-between ai-center">
+    <div class="flex-display flex-wrap flex-row flex-gap--xs ai-center">
+      <span><%= yield %></span>
+      <span><i class="fa-solid fa-arrow-right"></i></span>
     </div>
-    <% unless icon_class.nil? %>
-      <div class="position-absolute top-0 right-0 muted">
+    <% unless icon_class.nil? or icon_class.blank? %>
+      <div class="muted">
         <i class="<%= icon_class %>"></i>
       </div>
     <% end %>
