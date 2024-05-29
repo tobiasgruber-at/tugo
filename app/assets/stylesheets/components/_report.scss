@@ -1,3 +1,5 @@
 body.report {
   background-color: white;
+  @extend .p-t--l !optional;
+  @extend .p--xs !optional;
 }
