@@ -34,7 +34,7 @@
           <span><%= keyword.title %></span>
           <div class="pill__cancel">
             <%= form_with url: keyword_path(keyword.id), method: :delete do |f| %>
-              <%= f.button nil, type: :submit, class: "btn btn--pill p--0 jc-center" do %>
+              <%= f.button nil, type: :submit, class: "btn btn--pill p--0 ai-center jc-center" do %>
                 <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-xmark" } %>
               <% end %>
             <% end %>
