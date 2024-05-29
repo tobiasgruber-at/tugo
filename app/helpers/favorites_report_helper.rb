@@ -1,9 +1,9 @@
 module FavoritesReportHelper
   def show_notes
-    @report_options.show_notes
+    @report_option.show_notes
   end
 
   def show_keywords
-    @report_options.show_keywords
+    @report_option.show_keywords
   end
 end
