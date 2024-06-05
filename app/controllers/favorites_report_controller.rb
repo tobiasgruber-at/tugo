@@ -33,10 +33,9 @@ class FavoritesReportController < TissApiController
 
   # Maps many items to resources
   #
-  # @param resources Items to be mapped
-  # @param favorites All favorites of the user
-  # @param path_selector_fn Selects the details path for each single item
-  # @return [void]
+  # @param [Array<Favorite>, nil] favorites All favorites of the user
+  # @param [] path_selector_fn Selects the details path for each single item
+  # @return [Array<Resource>]
   def map_resources(favorites, path_selector_fn)
     if favorites.nil? || favorites.empty?
       []
@@ -52,22 +51,19 @@ class FavoritesReportController < TissApiController
 
   # Maps one item to a resource
   #
-  # @param res The fetched item
-  # @param favorite Favorite object, or null if it is no favorite
-  # @param is_single Whether it was fetched in a list, or as a single item
-  # @param path_selector_fn Selects the details path
-  # @param id ID of the item
-  # @param keywords Added keywords for this item
+  # @param [Favorite, nil] favorite Favorite object, or null if it is no favorite
+  # @param [String] path
+  # @param [Array<Keyword>, nil] keywords Added keywords for this item
   # @return [void]
-  def map_resource(fav, path, keywords)
-    id = fav["id"] || ""
+  def map_resource(favorite, path, keywords)
+    id = favorite["id"] || ""
     Resource.new(
       id: id,
-      title: fav["preview"],
+      title: favorite["preview"],
       _prefix: nil,
       addition: nil,
       path: path,
-      favorite: fav,
+      favorite: favorite,
       favorite_type: nil,
       keywords: keywords
     )
@@ -75,6 +71,10 @@ class FavoritesReportController < TissApiController
 
   private
 
+  # Gets the parameters for the report options
+  #
+  # @private
+  # @return [ActionController::Parameters]
   def report_options_params
     params.require(:report_option).permit(:show_notes, :show_keywords) if params[:report_option]
   end

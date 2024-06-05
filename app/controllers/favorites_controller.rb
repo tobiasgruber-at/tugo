@@ -7,8 +7,6 @@ class FavoritesController < TissApiController
   # Shows a list of all favorites.
   #
   # After a call to this method, the {#favorites} instance variable will be set.
-  #
-  # @return [void]
   def index
     begin
       @favorites = sort(Favorite.where(user_id: session[:user_id]))
@@ -106,7 +104,7 @@ class FavoritesController < TissApiController
   #
   # @param favorites Favorites to be mapped
   # @param path_selector_fn Selects the details path for each single item
-  # @return [void]
+  # @return [Array<Resource>]
   def map_resources(favorites, path_selector_fn)
     if favorites.nil? || favorites.empty?
       []
@@ -120,9 +118,9 @@ class FavoritesController < TissApiController
 
   # Maps one favorite to a resource
   #
-  # @param fav The favorite
-  # @param path Path to the resource details
-  # @return [void]
+  # @param [Favorite] fav The favorite
+  # @param [String] path Path to the resource details
+  # @return [Resource]
   def map_resource(fav, path)
     id = fav["id"] || ""
     Resource.new(
@@ -139,9 +137,12 @@ class FavoritesController < TissApiController
 
   private
 
-  # Sorts resources.
-  # Title or created date either descending or ascending.
-  # @return Sorted list.
+  # Sorts the given resources based on options passed in via params.
+  #
+  # @private
+  # @see SortOption
+  # @param [Array<Resource>] resources the resources to be sorted
+  # @return [Array<Resource>] a sorted resource list
   def sort(resources)
     @sort_option = SortOption.new(sort_params)
     case (@sort_option.target)
@@ -155,16 +156,25 @@ class FavoritesController < TissApiController
   end
 
   # The validated create favorite body
+  #
+  # @private
+  # @return [ActionController::Parameters]
   def favorite_params
     params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)
   end
 
   # The validated update favorite body
+  #
+  # @private
+  # @return [ActionController::Parameters]
   def update_favorite_params
     params.require(:favorite).permit(:note)
   end
 
   # The validated sort params
+  #
+  # @private
+  # @return [ActionController::Parameters]
   def sort_params
     params.require(:sort_option).permit(:target, :direction) if params[:sort_option]
   end

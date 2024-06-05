@@ -12,10 +12,10 @@ class ThesesController < TissApiController
 
   # Maps many theses to resources
   #
-  # @param resources Resources to be mapped
-  # @param favorites All favorites of the user
-  # @param path_selector_fn Selects the details path for each single item
-  # @return [void]
+  # @param [] resources Resources to be mapped
+  # @param [Array<Favorite>] favorites All favorites of the user
+  # @param [] path_selector_fn Selects the details path for each single item
+  # @return [Array<Thesis>]
   def self.map_theses(resources, favorites, path_selector_fn)
     if resources.nil? || resources.empty?
       []
@@ -29,13 +29,13 @@ class ThesesController < TissApiController
 
   # Maps one thesis to a resource
   #
-  # @param res The fetched course
-  # @param favorite Favorite object, or null if it is no favorite
-  # @param is_single Whether it was fetched in a list, or as a single item
-  # @param path_selector_fn Selects the details path
-  # @param id ID of the thesis
-  # @param keywords Added keywords for this thesis
-  # @return [void]
+  # @param [] res The fetched course
+  # @param [Favorite, nil] favorite Favorite object, or null if it is no favorite
+  # @param [Boolean] is_single Whether it was fetched in a list, or as a single item
+  # @param [] path_selector_fn Selects the details path
+  # @param [Integer, nil] id ID of the thesis
+  # @param [Array<Keyword>, nil] keywords Added keywords for this thesis
+  # @return [Thesis]
   def self.map_thesis(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!

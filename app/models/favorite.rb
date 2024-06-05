@@ -1,3 +1,4 @@
+# This represents a favorite
 class Favorite < ApplicationRecord
   belongs_to :user
   has_many :keywords, dependent: :delete_all

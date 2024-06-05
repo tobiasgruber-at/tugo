@@ -1,10 +1,11 @@
 # This represents a search.
 #
 # This search contains a query, that is searched for.
+# @!attribute [rw] query
+#   @return [String] the search query
 class SearchTerm
   include ActiveModel::API
 
-  # TODO: add YARD doc
   attr_accessor :query
 
   # The search requires a query, that is at least three characters long.

@@ -1,19 +1,6 @@
 module PersonReportHelper
-  # Wraps all substrings in a given text and wraps them in a <mark> element,
-  # if they match a given regex.
-  #
-  # @param [String] text the text to be searched
-  # @param [String] regex_pattern the regex pattern
-  # @param [String] highlighter the replacement
-  # @return [String] the highlighted string
-  def highlight_regex(text, regex_pattern, highlighter = "<mark>\1</mark>")
-    text.gsub(Regexp.new(regex_pattern, Regexp::IGNORECASE)) do |match|
-      highlighter.gsub("\1", match)
-    end.html_safe
-  end
-
-  # TODO add link to other method
-  # Performs :highlight_regex, if the condition is true, else it will output the given text.
+  # Performs {ActionView#Helpers#TextHelper#highlight}, if the condition is true, else it will output the given text.
+  # The highlighting is always case insensitive.
   #
   # @param [Boolean] condition if true, the given text will be highlighted
   # @param [String] text the text to be searched

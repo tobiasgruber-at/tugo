@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
   end
 
   # Redirects the user to the login page if not logged in.
-  # @private
+  # @return [void]
   def redirect_if_not_logged_in
     unless logged_in?
       redirect_to login_path
@@ -34,7 +34,7 @@ class ApplicationController < ActionController::Base
   end
 
   # Redirects the user to the home page if logged in.
-  # @private
+  # @return [void]
   def redirect_if_logged_in
     if logged_in?
       redirect_to root_path

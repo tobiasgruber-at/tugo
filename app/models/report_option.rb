@@ -1,3 +1,8 @@
+# This represents the options for a report.
+# @!attribute [rw] show_notes
+#   @return [Boolean] true, if the notes should be shown
+# @!attribute [rw] show_keywords
+#   @return [Boolean] true, if the keywords should be shown
 class ReportOption
   include ActiveModel::API
   include ActiveModel::Attributes

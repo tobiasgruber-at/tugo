@@ -18,7 +18,6 @@ require 'json'
 #   @return [String] endpoint base for all API URIs of this class
 class TissApiController < ApplicationController
 
-  # TODO: add YARD doc
   before_action :redirect_if_not_logged_in
 
   # Initializes a new object of this class.
@@ -100,6 +99,7 @@ class TissApiController < ApplicationController
   #
   # The URI is generated from the common URI base and the endpoint base {endpoint_base}.
   #
+  # @private
   # @return [String] the base URI for the API call
   def base
     URI_BASE + @endpoint_base
@@ -107,21 +107,37 @@ class TissApiController < ApplicationController
 
   # Gets the parameters for the search query
   #
+  # @private
   # @return [ActionController::Parameters] the parameter object for the search query, if any search term is given
   def search_params
     params.require(:search_term).permit(:query) if params[:search_term]
   end
 
+  # Performs a get request on the given endpoint
+  #
+  # @private
+  # @param [String] endpoint the endpoint for the get request
+  # @param [] parser
   def search(endpoint, parser = -> (val) { JSON.parse(val) })
     uri = URI(base + endpoint)
     response = Net::HTTP.get(uri)
     parser.call(response)
   end
 
+  # Returns whether the given resources have an error
+  #
+  # @private
+  # @param [Array<Resource>] resources
+  # @return [Boolean] true, if an error exist, false otherwise
   def has_error?(resources)
     not get_error_msg(resources).nil?
   end
 
+  # Gets the error message from the resources, or nil if none exist.
+  #
+  # @private
+  # @param [Array<Resource>] resources
+  # @return [String, nil] the error message
   def get_error_msg(resources)
     resources['error_message']
   end

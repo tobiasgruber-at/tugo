@@ -32,13 +32,13 @@ class CoursesController < TissApiController
 
   # Maps one course to a resource
   #
-  # @param res The fetched course
-  # @param favorite Favorite object, or null if it is no favorite
-  # @param is_single Whether it was fetched in a list, or as a single item
-  # @param path_selector_fn Selects the details path
-  # @param id ID of the course
-  # @param keywords Added keywords for this course
-  # @return [void]
+  # @param [] res The fetched course
+  # @param [Favorite, nil] favorite Favorite object, or null if it is no favorite
+  # @param [Boolean] is_single Whether it was fetched in a list, or as a single item
+  # @param [] path_selector_fn Selects the details path
+  # @param [Integer, nil] id ID of the course
+  # @param [Array<Keyword>, nil] keywords Added keywords for this course
+  # @return [Course]
   def self.map_course(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
@@ -79,7 +79,9 @@ class CoursesController < TissApiController
 
   # Extracts the course id of a course response.
   #
-  # @return Course id
+  # @private
+  # @param [] course
+  # @return [String] Course id
   def self.course_id(course)
     course_nr = course["detail_url"].match(/courseNr=([\dA-Za-z]+(\.\d+)?)/)[1]
     semester = course["detail_url"].match(/semester=(\d+\w)/)[1]
@@ -88,7 +90,10 @@ class CoursesController < TissApiController
 
   # Gets a given field from the course
   #
-  # @return The fields' value
+  # @private
+  # @param [] course
+  # @param [Integer] index
+  # @return [String] The fields' value
   def self.course_field(course, index)
     title = course["title"].to_s
     fields = parse_course_title(title)
@@ -97,7 +102,9 @@ class CoursesController < TissApiController
 
   # Parses the course title
   #
-  # @return Course title
+  # @private
+  # @param [String] title
+  # @return [Array<String>] course title
   def self.parse_course_title(title)
     pattern = /^([0-9A-Z.]+) ([A-Z]{2}) (.*?), ([0-9]{4}[S|W]?)$/
     title.scan(pattern)[0]
