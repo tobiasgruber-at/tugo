@@ -1,4 +1,7 @@
 class PersonReportController < TissApiController
+  # Shows a page that renders all related data of a given person in all four sections: person, courses, projects and theses.
+  #
+  # @return nil
   def show
     begin
       @id = params[:id]

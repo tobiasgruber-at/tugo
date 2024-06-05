@@ -10,6 +10,12 @@ class ThesesController < TissApiController
     super("thesis/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 
+  # Maps many theses to resources
+  #
+  # @param resources Resources to be mapped
+  # @param favorites All favorites of the user
+  # @param path_selector_fn Selects the details path for each single item
+  # @return [void]
   def self.map_theses(resources, favorites, path_selector_fn)
     if resources.nil? || resources.empty?
       []
@@ -21,6 +27,15 @@ class ThesesController < TissApiController
     end
   end
 
+  # Maps one thesis to a resource
+  #
+  # @param res The fetched course
+  # @param favorite Favorite object, or null if it is no favorite
+  # @param is_single Whether it was fetched in a list, or as a single item
+  # @param path_selector_fn Selects the details path
+  # @param id ID of the thesis
+  # @param keywords Added keywords for this thesis
+  # @return [void]
   def self.map_thesis(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
@@ -55,10 +70,12 @@ class ThesesController < TissApiController
 
   protected
 
+  # @see TissApiController#map_resources
   def map_resources(resources)
     ThesesController.map_theses(resources, @favorites, -> (id) { thesis_path(id) })
   end
 
+  # @see TissApiController#map_resource
   def map_resource(res, favorite, is_single, keywords = nil)
     ThesesController.map_thesis(res, favorite, is_single, -> (id) { thesis_path(id) }, @id, keywords)
   end

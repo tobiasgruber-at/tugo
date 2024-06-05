@@ -13,6 +13,12 @@ class CoursesController < TissApiController
     super("course/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 
+  # Maps many courses to resources
+  #
+  # @param resources Resources to be mapped
+  # @param favorites All favorites of the user
+  # @param path_selector_fn Selects the details path for each single item
+  # @return [void]
   def self.map_courses(resources, favorites, path_selector_fn)
     if resources.nil? || resources["results"].nil? || resources.empty?
       []
@@ -24,6 +30,15 @@ class CoursesController < TissApiController
     end
   end
 
+  # Maps one course to a resource
+  #
+  # @param res The fetched course
+  # @param favorite Favorite object, or null if it is no favorite
+  # @param is_single Whether it was fetched in a list, or as a single item
+  # @param path_selector_fn Selects the details path
+  # @param id ID of the course
+  # @param keywords Added keywords for this course
+  # @return [void]
   def self.map_course(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
@@ -50,28 +65,39 @@ class CoursesController < TissApiController
 
   protected
 
+  # @see TissApiController#map_resources
   def map_resources(resources)
     CoursesController.map_courses(resources, @favorites, -> (id) { course_path(id) })
   end
 
+  # @see TissApiController#map_resource
   def map_resource(res, favorite, is_single, keywords = nil)
     CoursesController.map_course(res, favorite, is_single, -> (id) { course_path(id) }, @id, keywords)
   end
 
   private
 
+  # Extracts the course id of a course response.
+  #
+  # @return Course id
   def self.course_id(course)
     course_nr = course["detail_url"].match(/courseNr=([\dA-Za-z]+(\.\d+)?)/)[1]
     semester = course["detail_url"].match(/semester=(\d+\w)/)[1]
     "#{course_nr}-#{semester}"
   end
 
+  # Gets a given field from the course
+  #
+  # @return The fields' value
   def self.course_field(course, index)
     title = course["title"].to_s
     fields = parse_course_title(title)
     fields[index]
   end
 
+  # Parses the course title
+  #
+  # @return Course title
   def self.parse_course_title(title)
     pattern = /^([0-9A-Z.]+) ([A-Z]{2}) (.*?), ([0-9]{4}[S|W]?)$/
     title.scan(pattern)[0]

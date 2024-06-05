@@ -27,7 +27,7 @@
   </div>
   <div class="nav__end">
     <% if logged_in? %>
-      <%= link_to "Report", favorites_path(anchor: "favorites-report"), class: "nav-btn" %>
+      <%= link_to "Report", favorites_path, class: "nav-btn" %>
       <%= link_to "Favorites", favorites_path, class: "nav-btn" %>
       <%= link_to "Logout", logout_path, class: "nav-btn" %>
     <% else %>

@@ -1,6 +1,9 @@
 class FavoritesReportController < TissApiController
   layout "report"
 
+  # Shows a printable list of all favorites.
+  #
+  # @return [void]
   def index
     begin
       @favorites = Favorite.where(user_id: session[:user_id]).order(preview: :asc)
@@ -28,6 +31,12 @@ class FavoritesReportController < TissApiController
     end
   end
 
+  # Maps many items to resources
+  #
+  # @param resources Items to be mapped
+  # @param favorites All favorites of the user
+  # @param path_selector_fn Selects the details path for each single item
+  # @return [void]
   def map_resources(favorites, path_selector_fn)
     if favorites.nil? || favorites.empty?
       []
@@ -41,6 +50,15 @@ class FavoritesReportController < TissApiController
     end
   end
 
+  # Maps one item to a resource
+  #
+  # @param res The fetched item
+  # @param favorite Favorite object, or null if it is no favorite
+  # @param is_single Whether it was fetched in a list, or as a single item
+  # @param path_selector_fn Selects the details path
+  # @param id ID of the item
+  # @param keywords Added keywords for this item
+  # @return [void]
   def map_resource(fav, path, keywords)
     id = fav["id"] || ""
     Resource.new(
