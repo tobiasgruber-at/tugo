@@ -10,6 +10,7 @@ class PersonReportController < TissApiController
         -> (id) {person_path(id)},
         @id
       )
+      @search_term = params[:search_term] ? params[:search_term][:query] : ""
       unless @person.nil?
         @courses = CoursesController.map_courses(
           search("search/course/v1.0/quickSearch?searchterm=#{@person.title}"),
@@ -31,5 +32,12 @@ class PersonReportController < TissApiController
       puts e.message
       flash.now[:alert] = "An error occurred. Please try again later."
     end
+  end
+
+  # Gets the parameters for the search query
+  #
+  # @return [ActionController::Parameters] the parameter object for the search query, if any search term is given
+  def search_params
+    params.require(:search_term).permit(:query) if params[:search_term]
   end
 end
