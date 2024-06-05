@@ -21,7 +21,7 @@
     <% end %>
     <div class="list">
       <% resources.each do |resource| %>
-        <%= render partial: "components/resource-list-item", locals: { resource: resource } %>
+        <%= render partial: "components/resource-list-item", locals: { resource: resource, highlighted: highlighted } %>
       <% end %>
     </div>
   <% end %>

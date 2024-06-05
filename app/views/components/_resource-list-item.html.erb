@@ -4,14 +4,14 @@
       <div class="flex-display flex-column">
         <% unless resource.addition.nil? %>
           <div class="flex-display flex-gap--xs">
-            <span class="muted fs--xs"><%= resource.addition %></span>
+            <span class="muted fs--xs"><%= highlighted ? highlight_regex(resource.addition, @search_term) : resource.addition %></span>
           </div>
         <% end %>
         <div class="flex-display flex-gap--xxs">
           <% unless resource._prefix.nil? %>
-            <span class="italic"><%= resource._prefix %></span>
+            <span class="italic"><%= highlighted ? highlight_regex(resource._prefix, @search_term) : resource._prefix %></span>
           <% end %>
-          <span><%= resource.title %></span>
+          <span><%= highlighted ? highlight_regex(resource.title, @search_term) : resource.title %></span>
         </div>
       </div>
     <% end %>

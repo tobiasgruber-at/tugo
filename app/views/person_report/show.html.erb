@@ -4,8 +4,7 @@
   <% end %>
   <p class="fs--xxl p-b--m"><b>Report for:</b></p>
   <%= render partial: "components/person-title", locals: { person: @person } %>
-  <%= render partial: "components/person-details", locals: { person: @person } %>
-  <%= render partial: "components/resources", locals: { resources: @courses, title: "Courses" } %>
-  <%= render partial: "components/resources", locals: { resources: @projects, title: "Projects" } %>
-  <%= render partial: "components/resources", locals: { resources: @theses, title: "Theses" } %>
+  <%= render partial: "components/resources", locals: { resources: @courses, title: "Courses", highlighted: true } %>
+  <%= render partial: "components/resources", locals: { resources: @projects, title: "Projects", highlighted: true } %>
+  <%= render partial: "components/resources", locals: { resources: @theses, title: "Theses", highlighted: true } %>
 <% end %>
