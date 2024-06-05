@@ -60,7 +60,7 @@ class FavoritesController < TissApiController
     if is_error
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     else
-      redirect_back fallback_location: favorites_path
+      redirect_back fallback_location: favorites_path(anchor: "favorites-sort-options")
     end
   end
 
@@ -78,7 +78,7 @@ class FavoritesController < TissApiController
     if is_error
       redirect_back fallback_location: favorites_path, alert: "An error occurred. Please try again later."
     else
-      redirect_back fallback_location: favorites_path
+      redirect_back fallback_location: favorites_path(anchor: "favorites-sort-options")
     end
   end
 

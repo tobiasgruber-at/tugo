@@ -27,6 +27,7 @@
   </div>
   <div class="nav__end">
     <% if logged_in? %>
+      <%= link_to "Report", favorites_path(anchor: "favorites-report"), class: "nav-btn" %>
       <%= link_to "Favorites", favorites_path, class: "nav-btn" %>
       <%= link_to "Logout", logout_path, class: "nav-btn" %>
     <% else %>
@@ -36,7 +37,7 @@
   </div>
 </nav>
 
-<div class="container p-t--l p-b--xxxl">
+<main class="container p-t--l p-b--xxxl">
   <% if alert %>
     <%= render partial: "components/error", locals: { error: alert } %>
   <% end %>
@@ -44,6 +45,6 @@
     <%= render partial: "components/notice" %>
   <% end %>
   <%= yield %>
-</div>
+</main>
 </body>
 </html>

@@ -2,11 +2,14 @@
   <%= render "components/error", error: @error %>
 <% end %>
 <h1>Favorites</h1>
-<% unless @favorites.nil? %>
-  <%= render partial: "favorites/sort-options", locals: { sort_option: @sort_option, path: (favorites_path) } %>
-  <%= render partial: "components/resources", locals: { resources: @favorite_courses, title: "Favorite Courses", highlighted: false } %>
-  <%= render partial: "components/resources", locals: { resources: @favorite_people, title: "Favorite People", highlighted: false } %>
-  <%= render partial: "components/resources", locals: { resources: @favorite_theses, title: "Favorite Theses", highlighted: false } %>
-  <%= render partial: "components/resources", locals: { resources: @favorite_projects, title: "Favorite Projects", highlighted: false } %>
-<% end %>
 <%= render partial: "favorites/favorites-report-form", locals: { report_option: @report_option } %>
+<h2>Your Favorites</h2>
+<% unless @favorites.nil? %>
+  <%= turbo_frame_tag "favorites", navigates: "_top", target: "_top" do %>
+    <%= render partial: "favorites/sort-options", locals: { sort_option: @sort_option, path: (favorites_path) } %>
+    <%= render partial: "components/resources", locals: { resources: @favorite_courses, title: "Favorite Courses", highlighted: false } %>
+    <%= render partial: "components/resources", locals: { resources: @favorite_people, title: "Favorite People", highlighted: false } %>
+    <%= render partial: "components/resources", locals: { resources: @favorite_theses, title: "Favorite Theses", highlighted: false } %>
+    <%= render partial: "components/resources", locals: { resources: @favorite_projects, title: "Favorite Projects", highlighted: false } %>
+  <% end %>
+<% end %>
