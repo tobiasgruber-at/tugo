@@ -2,8 +2,9 @@
   <% if @error %>
     <%= render "components/error", error: @error %>
   <% end %>
-  <h2>Report for: <span class="term"><%= @person&.title %></span></h2>
-  <%= render partial: "components/person-details", locals: { person: @person, show_report: false } %>
+  <p class="fs--xxl p-b--m"><b>Report for:</b></p>
+  <%= render partial: "components/person-title", locals: { person: @person } %>
+  <%= render partial: "components/person-details", locals: { person: @person } %>
   <%= render partial: "components/resources", locals: { resources: @courses, title: "Courses" } %>
   <%= render partial: "components/resources", locals: { resources: @projects, title: "Projects" } %>
   <%= render partial: "components/resources", locals: { resources: @theses, title: "Theses" } %>

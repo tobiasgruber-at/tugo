@@ -1,0 +1,15 @@
+<% unless person.nil? %>
+  <div class="flex-display flex-column">
+    <% unless person.titles_pre.nil? %>
+        <span class="muted fs--m">
+          <%= person.titles_pre %>
+        </span>
+    <% end %>
+    <h1 class="p-t--0"><%= person.title %></h1>
+    <% unless person.titles_post.nil? %>
+        <span class="muted fs--m">
+          <%= person.titles_post %>
+        </span>
+    <% end %>
+  </div>
+<% end %>
