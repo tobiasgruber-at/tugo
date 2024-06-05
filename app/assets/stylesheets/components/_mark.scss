@@ -1,0 +1,18 @@
+mark {
+  display: inline;
+  position: relative;
+  z-index: -1;
+  background-color: unset;
+}
+
+mark::before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: var(--color-tertiary);
+  border-radius: var(--border-radius);
+  top: calc(var(--space-xxxs) * -0.5);
+  right: calc(var(--space-xxxs) * -0.5);
+  bottom: calc(var(--space-xxxs) * -0.5);
+  left: calc(var(--space-xxxs) * -0.5);
+}

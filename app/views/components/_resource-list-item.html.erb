@@ -1,17 +1,24 @@
+<% highlighted = false if local_assigns[:highlighted].nil? %>
 <div class="list__item btn btn--block ">
   <div class="flex-display flex-gap--xxs jc-space-between position-relative">
     <%= link_to resource.path, class: "position-relative flex-grow--1 ac-center" do %>
       <div class="flex-display flex-column">
         <% unless resource.addition.nil? %>
           <div class="flex-display flex-gap--xs">
-            <span class="muted fs--xs"><%= highlighted ? highlight_regex(resource.addition, @search_term) : resource.addition %></span>
+            <span class="muted fs--xs">
+              <%= highlight_regex_if(highlighted, resource.addition, @find_term&.query) %>
+            </span>
           </div>
         <% end %>
         <div class="flex-display flex-gap--xxs">
           <% unless resource._prefix.nil? %>
-            <span class="italic"><%= highlighted ? highlight_regex(resource._prefix, @search_term) : resource._prefix %></span>
+            <span class="italic">
+              <%= highlight_regex_if(highlighted, resource._prefix, @find_term&.query) %>
+            </span>
           <% end %>
-          <span><%= highlighted ? highlight_regex(resource.title, @search_term) : resource.title %></span>
+          <span>
+            <%= highlight_regex_if(highlighted, resource.title, @find_term&.query) %>
+            </span>
         </div>
       </div>
     <% end %>

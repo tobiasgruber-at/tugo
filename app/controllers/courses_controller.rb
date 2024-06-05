@@ -36,8 +36,6 @@ class CoursesController < TissApiController
       prefix = CoursesController.course_field(res, 1)
       addition = CoursesController.course_field(res, 0)
     end
-    puts 444
-    puts id
     Course.new(
       id: id,
       title: title,
@@ -64,8 +62,6 @@ class CoursesController < TissApiController
 
   def self.course_id(course)
     course_nr = course["detail_url"].match(/courseNr=([\dA-Za-z]+(\.\d+)?)/)[1]
-    puts 333
-    puts course["detail_url"]
     semester = course["detail_url"].match(/semester=(\d+\w)/)[1]
     "#{course_nr}-#{semester}"
   end

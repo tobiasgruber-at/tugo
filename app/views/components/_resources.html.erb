@@ -1,4 +1,5 @@
 <% search_result = false if local_assigns[:search_result].nil? %>
+<% highlighted = false if local_assigns[:highlighted].nil? %>
 <% section_id = search_result ? "search-result" : title.parameterize %>
 <section id="<%= section_id %>">
   <% unless search_result %>

@@ -7,10 +7,10 @@ class PersonReportController < TissApiController
         search("person/v22/id/#{@id}"),
         @favorites&.find { |fav| fav.item_id == String(@id) },
         true,
-        -> (id) {person_path(id)},
+        -> (id) { person_path(id) },
         @id
       )
-      @search_term = params[:search_term] ? params[:search_term][:query] : ""
+      @find_term = FindTerm.new(find_params)
       unless @person.nil?
         @courses = CoursesController.map_courses(
           search("search/course/v1.0/quickSearch?searchterm=#{@person.title}"),
@@ -34,10 +34,10 @@ class PersonReportController < TissApiController
     end
   end
 
-  # Gets the parameters for the search query
+  # Gets the parameters for the find query
   #
-  # @return [ActionController::Parameters] the parameter object for the search query, if any search term is given
-  def search_params
-    params.require(:search_term).permit(:query) if params[:search_term]
+  # @return [ActionController::Parameters] the parameter object for the find query, if any find term is given
+  def find_params
+    params.require(:find_term).permit(:query) if params[:find_term]
   end
 end
