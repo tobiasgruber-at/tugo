@@ -81,12 +81,12 @@ class TissApiController < ApplicationController
 
   protected
 
-  # Maps many courses to resource objects.
+  # Maps many fetched items to uniform resource objects.
   def map_resources(resources)
     throw NotImplementedError "Should be implemented in child class"
   end
 
-  # Maps a fetched resource to a uniform format
+  # Maps a fetched item to a uniform resource format.
   def map_resource(res, favorites, is_single, keywords = nil)
     throw NotImplementedError "Should be implemented in child class"
   end

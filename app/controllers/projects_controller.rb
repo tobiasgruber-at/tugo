@@ -14,6 +14,12 @@ class ProjectsController < TissApiController
     super("pdb/rest/project/v3/#{@id}", -> (val) { Nokogiri::XML(val) })
   end
 
+  # Maps many projects to resources
+  #
+  # @param resources Resources to be mapped
+  # @param favorites All favorites of the user
+  # @param path_selector_fn Selects the details path for each single item
+  # @return [void]
   def self.map_projects(resources, favorites, path_selector_fn)
     if resources.nil? || resources.empty?
       []
@@ -25,6 +31,15 @@ class ProjectsController < TissApiController
     end
   end
 
+  # Maps one project to a resource
+  #
+  # @param res The fetched project
+  # @param favorite Favorite object, or null if it is no favorite
+  # @param is_single Whether it was fetched in a list, or as a single item
+  # @param path_selector_fn Selects the details path
+  # @param id ID of the project
+  # @param keywords Added keywords for this project
+  # @return [void]
   def self.map_project(res, favorite, is_single, path_selector_fn, id, keywords = nil)
     if is_single
       res.remove_namespaces!
@@ -62,10 +77,12 @@ class ProjectsController < TissApiController
 
   protected
 
+  # @see TissApiController#map_resources
   def map_resources(resources)
     ProjectsController.map_projects(resources, @favorites, -> (id) { project_path(id) })
   end
 
+  # @see TissApiController#map_resource
   def map_resource(res, favorite, is_single, keywords = nil)
     ProjectsController.map_project(res, favorite, is_single, -> (id) { project_path(id) }, @id, keywords )
   end

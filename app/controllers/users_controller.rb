@@ -39,6 +39,7 @@ class UsersController < ApplicationController
 
   private
 
+  # The validated parameters for a user
   def user_params
     params.require(:user).permit(:email, :password)
   end

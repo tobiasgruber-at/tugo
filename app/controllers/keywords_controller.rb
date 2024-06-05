@@ -1,4 +1,7 @@
 class KeywordsController < ApplicationController
+  # Creates a keyword for a given resource
+  #
+  # @return nil
   def create
     error_message = nil
     begin
@@ -17,6 +20,9 @@ class KeywordsController < ApplicationController
     end
   end
 
+  # Deletes a keyword for a given resource
+  #
+  # @return nil
   def destroy
     begin
       Keyword.destroy(params[:id])
@@ -27,6 +33,7 @@ class KeywordsController < ApplicationController
     end
   end
 
+  # The validated keyword body
   def keyword_params
     params.require(:keyword).permit(:favorite_id, :title)
   end

@@ -54,6 +54,7 @@ class SessionsController < ApplicationController
 
   private
 
+  # The validated parameter for a new session
   def session_params
     params.require(:session).permit(:email, :password)
   end

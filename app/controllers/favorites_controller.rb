@@ -64,6 +64,11 @@ class FavoritesController < TissApiController
     end
   end
 
+  # Updates an existing favorite.
+  #
+  # After a call to this method, the {#favorite} instance variable will be set.
+  #
+  # @return [void]
   def update
     is_error = false
     begin
@@ -97,6 +102,11 @@ class FavoritesController < TissApiController
 
   protected
 
+  # Maps many favorites to resources
+  #
+  # @param favorites Favorites to be mapped
+  # @param path_selector_fn Selects the details path for each single item
+  # @return [void]
   def map_resources(favorites, path_selector_fn)
     if favorites.nil? || favorites.empty?
       []
@@ -108,6 +118,11 @@ class FavoritesController < TissApiController
     end
   end
 
+  # Maps one favorite to a resource
+  #
+  # @param fav The favorite
+  # @param path Path to the resource details
+  # @return [void]
   def map_resource(fav, path)
     id = fav["id"] || ""
     Resource.new(
@@ -124,6 +139,9 @@ class FavoritesController < TissApiController
 
   private
 
+  # Sorts resources.
+  # Title or created date either descending or ascending.
+  # @return Sorted list.
   def sort(resources)
     @sort_option = SortOption.new(sort_params)
     case (@sort_option.target)
@@ -136,14 +154,17 @@ class FavoritesController < TissApiController
     end
   end
 
+  # The validated create favorite body
   def favorite_params
     params.require(:favorite).permit(:item_id, :preview, :favorite_type, :note)
   end
 
+  # The validated update favorite body
   def update_favorite_params
     params.require(:favorite).permit(:note)
   end
 
+  # The validated sort params
   def sort_params
     params.require(:sort_option).permit(:target, :direction) if params[:sort_option]
   end
