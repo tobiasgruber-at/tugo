@@ -3,7 +3,9 @@
     <%= render partial: "components/person-title", locals: { person: @resource } %>
   <% end %>
   <% content_for :resource do %>
-    <%= link_to "Open report", (url_for controller: "person_report", action: "show", id: @resource.id), class: "btn btn--primary" %>
+    <%= link_to url_for(controller: "person_report", action: "show", id: @resource.id), class: "btn btn--secondary btn--block" do %>
+      <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-file-invoice", text: "Open Report" } %>
+    <% end %>
     <%= render partial: "components/person-details", locals: { person: @resource } %>
   <% end %>
   <%= render partial: "components/resource", locals: { resource: @resource } %>

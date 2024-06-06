@@ -12,8 +12,7 @@ form {
   textarea {
     background-color: var(--color-white);
     transition: box-shadow 300ms, min-height 300ms;
-    @extend .p--s !optional;
-    @extend .p-t--xs !optional;
+    @extend .p--xs !optional;
     @extend .fs--m !optional;
     @extend .box-shadow--tiny !optional;
   }

@@ -1,0 +1,10 @@
+<%= form_with model: @find_term, url: person_report_path, method: :get do |f| %>
+  <div class="form-element">
+    <div class="form-row form-input-group">
+      <%= f.text_field :query, placeholder: "Find on page" %>
+      <%= f.button nil, name: nil, type: :submit, class: "btn btn--primary form-input-group__small" do %>
+        <%= render partial: "components/icon-button", locals: { icon_class: "fa-solid fa-magnifying-glass", text: "Find" } %>
+      <% end %>
+    </div>
+  </div>
+<% end %>

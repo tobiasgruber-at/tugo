@@ -4,21 +4,22 @@
   gap: var(--space-xxs);
   flex-wrap: nowrap;
   align-items: center;
-  border-style: solid;
-  border-width: var(--border-width);
+  border-width: 0;
   border-radius: calc(var(--space-xl) / 2.0);
   height: var(--space-xl);
   @extend .p-l--xs !optional;
   @extend .p-r--xs !optional;
 
   &--primary {
-    border-color: var(--color-primary);
-    background-color: var(--color-primary);
+    background: var(--background-primary);
   }
 
   &--secondary {
-    border-color: var(--color-secondary);
-    background-color: var(--color-secondary);
+    background: var(--background-secondary);
+  }
+
+  &--tertiary {
+    background: var(--background-tertiary);
   }
 
   &:hover .pill__cancel {
