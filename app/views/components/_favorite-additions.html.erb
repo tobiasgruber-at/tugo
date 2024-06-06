@@ -21,14 +21,13 @@
   <h2>Notes</h2>
   <%= form_with model: Favorite.new, url: resource.is_favorite? ? favorite_path(resource.favorite.id) : nil, method: :patch do |f| %>
     <div class="form-element">
-      <%= f.label :note, disabled: (not resource.is_favorite?) %>
       <%= f.text_area :note, placeholder: "Write your notes here", disabled: (not resource.is_favorite?), value: resource.favorite&.note %>
     </div>
     <%= f.submit "Save", class: "btn btn--primary", disabled: (not resource.is_favorite?) %>
   <% end %>
   <h2>Keywords</h2>
   <% if (not resource.keywords.nil?) and resource.keywords.any? %>
-    <div class="flex-display flex-row flex-gap--xs p-t--l p-b--l">
+    <div class="flex-display flex-row flex-wrap flex-gap--xs p-t--l p-b--l">
       <% resource.keywords.each do |keyword| %>
         <div class="pill pill--secondary">
           <span><%= keyword.title %></span>
