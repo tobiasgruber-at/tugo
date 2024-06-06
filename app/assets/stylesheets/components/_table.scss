@@ -9,5 +9,10 @@ tr:nth-child(even) {
 }
 
 table tr td {
+  display: inline;
   @extend .p--xxxs !optional;
+}
+
+table tr td a {
+  display: inline;
 }
